@@ -50,7 +50,7 @@ def parse(path):
             "likes": num(r["likes"]), "likes_hidden": r["likes"].lower() == "hidden",
             "comments": num(r["comments"]), "views": num(r["views"]),
             "slides": num(r["slides"]), "seconds": num(r["seconds"]), "hashtags": num(r["hashtags"]),
-            "owner": owner, "partners": r["collab"], "visual": re.sub(r"^other \((.*)\)$", r"\1", r["visual"]),
+            "owner": owner, "partners": r["collab"], "visual": re.sub(r"\s*\(.*\)$", "", re.sub(r"^other \((.*)\)$", r"\1", r["visual"])),
             "topic": r["topic"], "cta": r["cta"] not in ("none", ""), "caption": r["caption"],
         })
     return profile, posts

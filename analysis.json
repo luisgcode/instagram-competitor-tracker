@@ -42,5 +42,27 @@
       "No voice of their own. Nothing explains the product, the technology or how to choose.",
       "Replies are emoji only. Real answers to real questions would stand out."
     ]
+  },
+  "valorfireplaces": {
+    "headline": "The most disciplined account so far and the least watched. A calendar that runs like clockwork, built on photos almost nobody reacts to.",
+    "points": [
+      ["Visual style", "Single photos of bright, professionally shot rooms with the fireplace as the centre, indoors and outdoors. No text on the image, no branded frame. A few images look generated, and one dealer post carries Instagram's generated content label."],
+      ["Topics and series", "The clearest editorial structure of the accounts read. Seasonal posts (first day of fall, Labour Day, October), education openers that repeat (Did you know, Myth vs Fact), and technology explainers that return every few weeks: HeatShift, HeatSplit, AutoFire, No Power No Problem. Two product launches in the period."],
+      ["Video style", "Almost none. Three Reels in three months, each 31 to 41 seconds of slow product and flame footage with original audio and no text on screen."],
+      ["How they write", "Long, calm, educational captions of three to five paragraphs, few emojis. Nearly every one closes with link in the bio and four to seven hashtags. Questions to the audience are rare."],
+      ["Who appears", "Models in lifestyle photos and three dealers through shared posts. No designers, no creators, no installers, no real customers."],
+      ["Community", "They do not reply to comments. Five posts checked, no answer on any of them."]
+    ],
+    "read": "Valor runs Instagram as a scheduled brochure. About two posts a week, on the same weekdays, in the early afternoon, many of them timed to the exact hour, which points to a scheduling tool. Every post follows the same path: teach something, then send people to find a dealer or get a quote. It is consistent and well organised, and it earns almost nothing: zero to two comments per post, and their own Reels reach 560 to 630 views on 4,300 followers. The lesson is that rhythm alone does not create attention. The format does.",
+    "borrow": [
+      "The calendar itself: fixed days, fixed time, seasonal hooks planned ahead. It is the one thing the other accounts lack.",
+      "Named education formats that repeat, such as Did you know and Myth vs Fact. Easy to recognise and easy to produce.",
+      "One clear next step on every post, find a dealer or get a quote."
+    ],
+    "gaps": [
+      "Almost no video. Three Reels in three months, while Reels are what gets watched on every other account.",
+      "Photos with long captions get no reaction: zero to two comments per post.",
+      "No people. No creators, no designers, no customers, and no replies to comments."
+    ]
   }
 }
