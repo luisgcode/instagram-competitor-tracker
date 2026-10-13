@@ -43,7 +43,8 @@ window.TRACKER_DATA = {
      "topic": "fall Timber Fire mood",
      "cta": true,
      "caption": "Sitting by the fire is always cozy, but during fall it hits different. The DaVinci Timber Fire series brings a rustic",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/lopistoves/reel/Dd699i-vF2P/",
@@ -63,7 +64,8 @@ window.TRACKER_DATA = {
      "topic": "Washington gas ban explainer",
      "cta": false,
      "caption": "Natural gas in Washington: Is it being banned? What's actually in the legislation? And what does it mean for homeowners",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/davincifire/reel/Dd4e-SwhKzt/",
@@ -83,7 +85,8 @@ window.TRACKER_DATA = {
      "topic": "modular custom range",
      "cta": true,
      "caption": "The sky's the limit with DaVinci Custom Fireplaces. With modular design, seven different unit types, and multiple glass",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/lopistoves/reel/DduEdL6h3je/",
@@ -103,7 +106,8 @@ window.TRACKER_DATA = {
      "topic": "dealer training facility",
      "cta": false,
      "caption": "At Travis Industries, our training facilities give hearth professionals hands-on experience selling, installing, and se",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/davincifire/reel/DdFU5uYhxC8/",
@@ -123,7 +127,8 @@ window.TRACKER_DATA = {
      "topic": "holographic electric fireplaces",
      "cta": false,
      "caption": "These holographic fireplaces are truly next level. They retain many of the customization options that DaVinci Custom Fir",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/lopistoves/p/Dc4QB5oj37C/",
@@ -143,7 +148,8 @@ window.TRACKER_DATA = {
      "topic": "factory production pride",
      "cta": false,
      "caption": "Precision starts here. Every detail matters when raw materials become something built to last. Built by skilled hands.",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/davincifire/reel/Dcy8oMBhMi6/",
@@ -163,7 +169,8 @@ window.TRACKER_DATA = {
      "topic": "marble-wrapped lobby unit",
      "cta": false,
      "caption": "\"Of the original phenomena, light is the most enthralling.\" - Leonardo da Vinci Thanks to @wickedwraps for dressing up",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/lopistoves/p/Dce1WYtjyRP/",
@@ -183,7 +190,8 @@ window.TRACKER_DATA = {
      "topic": "President's Club dealer event",
      "cta": false,
      "caption": "We had a great time last week with our President's Club dealers showing off new products and getting feedback. Thanks t",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/firegardenoutdoors/reel/DcOpm3cgA0j/",
@@ -203,7 +211,8 @@ window.TRACKER_DATA = {
      "topic": "President's Club day 2",
      "cta": false,
      "caption": "The Prism. Day 2 of 2026 Presidents Club went off without a hitch. We spent all day at the factory learning and seeing",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/firegardenoutdoors/reel/DcNCSvKAleH/",
@@ -223,7 +232,8 @@ window.TRACKER_DATA = {
      "topic": "President's Club music night",
      "cta": false,
      "caption": "Pure vibes at this years presidents club...and a roping contest #summer #firegarden #lopi #fireplacex #davincifireplace",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/firegardenoutdoors/reel/DcMkmqvyr6c/",
@@ -243,7 +253,8 @@ window.TRACKER_DATA = {
      "topic": "dealer training meeting",
      "cta": false,
      "caption": "We're sharing the love this week with some of our top dealers. Training on new gas and electric fireplaces, social media",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/firegardenoutdoors/reel/DcKkaiSg-3L/",
@@ -263,7 +274,8 @@ window.TRACKER_DATA = {
      "topic": "President's Club kickoff",
      "cta": false,
      "caption": "We're just getting started! Thanks to @mcmenamins_anderson_school for hosting us! #presidentsclub #topdealers #fireplace",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/davincifire/p/DblherwGtUH/",
@@ -283,7 +295,8 @@ window.TRACKER_DATA = {
      "topic": "see-thru units in testing",
      "cta": true,
      "caption": "A couple see thru units coming through production and testing today give you an idea of the unique possibilities and ma",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/davincifire/p/DbeI7m9ySYf/",
@@ -303,7 +316,8 @@ window.TRACKER_DATA = {
      "topic": "see-thru modern entry",
      "cta": false,
      "caption": "Some fireplaces warm a room. This one connects two. The Timber Fire See-Thru brings dual fire views to this modern entr",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/davincifire/reel/DbMOLGCScL7/",
@@ -323,7 +337,8 @@ window.TRACKER_DATA = {
      "topic": "corner custom fireplace",
      "cta": true,
      "caption": "This 42 by 20 right hand corner custom fireplace is just one of limitless possibilities when it comes to DaVinci. What w",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/lopistoves/reel/DbG49fOSDDH/",
@@ -343,7 +358,8 @@ window.TRACKER_DATA = {
      "topic": "90-second factory tour",
      "cta": false,
      "caption": "Have you ever seen a tour of an 11 acre factory in 90 seconds? Don't blink! #lopi #fireplacex #firegarden #davinci #made",
-     "collab": true
+     "collab": true,
+     "paid": false
     }
    ],
    "analysis": {
@@ -419,7 +435,8 @@ window.TRACKER_DATA = {
      "topic": "reading nook fireplace build",
      "cta": false,
      "caption": "Okay, a little nugget reading nook built right into the fireplace? Yes please. Extra seating in the living room is a tota",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/smokystonenaples/p/Dd4HWOJm9ox/",
@@ -439,7 +456,8 @@ window.TRACKER_DATA = {
      "topic": "outdoor lanai fireplace",
      "cta": true,
      "caption": "From walls to ceilings, every detail matters. This custom outdoor fireplace was designed as the lanai's focal point, f",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/hbwc_woodworks/reel/DdsR9WKoGJe/",
@@ -459,7 +477,8 @@ window.TRACKER_DATA = {
      "topic": "Orion V2 insert install",
      "cta": false,
      "caption": "Finally got the @modernflamesusa Orion V2 Traditional Electric insert. Amazing look and the sound is remarkable. #family",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/taylorsfireplaces/p/DdovXQGx-pf/",
@@ -479,7 +498,8 @@ window.TRACKER_DATA = {
      "topic": "100-inch residential lobby units",
      "cta": false,
      "caption": "100\" electric units at the Wyndham residence in Garden City",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/smokystonenaples/p/DdUcvBqm616/",
@@ -499,7 +519,8 @@ window.TRACKER_DATA = {
      "topic": "outdoor quartzite fireplace",
      "cta": true,
      "caption": "The finishing touch that makes a statement all on its own. This custom outdoor fireplace features polished Taj Crystal",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/ourhartfulhome/reel/DcUHrmbylB3/",
@@ -519,7 +540,8 @@ window.TRACKER_DATA = {
      "topic": "DIY master bedroom reveal",
      "cta": false,
      "caption": "Master Bedroom #diyhomedecor #diyrenovation #masterbedroom #bedroomideas",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/modernflamesusa/p/DcO3TNtSEqk/",
@@ -539,7 +561,8 @@ window.TRACKER_DATA = {
      "topic": "year-round fireplace article",
      "cta": true,
      "caption": "Who says you can't use your fireplace year round? From the immersive flame technology and customizable experiences of t",
-     "collab": false
+     "collab": false,
+     "paid": false
     }
    ],
    "analysis": {
@@ -615,7 +638,8 @@ window.TRACKER_DATA = {
      "topic": "fireplace season radiant heat",
      "cta": true,
      "caption": "Fireplace season is here. When the temperatures drop, a Valor gas fireplace delivers more than just beautiful flames. Wi",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DeKL-Lpm3yN/",
@@ -635,7 +659,8 @@ window.TRACKER_DATA = {
      "topic": "G2 insert launch",
      "cta": true,
      "caption": "Introducing the Valor G2 gas fireplace insert! The all-new G2 is the ideal upgrade for smaller wood-burning or outdated",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DeAFGgvDFRT/",
@@ -655,7 +680,8 @@ window.TRACKER_DATA = {
      "topic": "October planning, find a dealer",
      "cta": true,
      "caption": "October is here, and cooler weather is settling in. Now is the perfect time to consider adding the warmth and efficienc",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/vintage_stove/p/Dd44kp0hJ0e/",
@@ -675,7 +701,8 @@ window.TRACKER_DATA = {
      "topic": "dealer light-up sign",
      "cta": false,
      "caption": "How great does our new @valorfireplaces light up sign our wonderful Valor rep gave us look ?! #valor #valorgasstove #val",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/Dd2KbQfF5qs/",
@@ -695,7 +722,8 @@ window.TRACKER_DATA = {
      "topic": "HeatSplit heat distribution",
      "cta": true,
      "caption": "Valor HeatSplit With the Valor HeatSplit Heat Distribution System, warmth from your fireplace can be directed to other",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DduIA_ll0Ao/",
@@ -715,7 +743,8 @@ window.TRACKER_DATA = {
      "topic": "No Power No Problem",
      "cta": true,
      "caption": "No electricity? Still cozy. With Valor, when you have no power, you won't have to worry about how to keep warm. Valor ga",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/barbecuesgalore/reel/Ddt_wYnxVuB/",
@@ -735,7 +764,8 @@ window.TRACKER_DATA = {
      "topic": "dealer install showcase",
      "cta": false,
      "caption": "When it comes to your home, every detail matters. At @barbecuesgalore, we're proud to install @valorfireplaces with",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DdmVHUVjCrR/",
@@ -755,7 +785,8 @@ window.TRACKER_DATA = {
      "topic": "first day of fall",
      "cta": true,
      "caption": "Today we welcome the first day of the fall season! The new season brings cooler mornings, earlier evenings, and cozy ni",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DdZWP_5l51-/",
@@ -775,7 +806,8 @@ window.TRACKER_DATA = {
      "topic": "HeatShift design freedom",
      "cta": true,
      "caption": "DID YOU KNOW? You can get more creative with your fireplace design thanks to Valor HeatShift. Valor HeatShift is design",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DdUTk2Pided/",
@@ -795,7 +827,8 @@ window.TRACKER_DATA = {
      "topic": "plan ahead for fall",
      "cta": true,
      "caption": "The weather may still be warm, but the fall season and colder days are just around the corner. Now is the time to start",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/Dc_mSTvkfq0/",
@@ -815,7 +848,8 @@ window.TRACKER_DATA = {
      "topic": "Labour Day greeting",
      "cta": false,
      "caption": "The Labour Day long weekend marks that familiar shift from summer to a new season. The backpacks are coming out, sched",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/Dctu_6QjKwe/",
@@ -835,7 +869,8 @@ window.TRACKER_DATA = {
      "topic": "end-of-summer outdoor fireplace",
      "cta": true,
      "caption": "There's still plenty of summer left to enjoy, but as August comes to a close, cooler evenings are just around the corne",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/thecozydogfireplaceshoppe/p/DboBwSQRg1U/",
@@ -855,7 +890,8 @@ window.TRACKER_DATA = {
      "topic": "birch log fuel bed",
      "cta": false,
      "caption": "Where comfort meets innovation. Photo: @valorfireplaces",
-     "collab": true
+     "collab": true,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/reel/DchCku9AvPp/",
@@ -875,7 +911,8 @@ window.TRACKER_DATA = {
      "topic": "HeatShift explainer",
      "cta": true,
      "caption": "A fireplace should bring warmth and comfort to your home without making the space around it uncomfortably hot. Valor's H",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DcRP_w2FnOI/",
@@ -895,7 +932,8 @@ window.TRACKER_DATA = {
      "topic": "Get a Quote tool",
      "cta": true,
      "caption": "Ready to bring your fireplace vision to life? Getting started with Valor is now easier than ever. Our online Get a Quot",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DcMS9L3mk2T/",
@@ -915,7 +953,8 @@ window.TRACKER_DATA = {
      "topic": "530V Portrait launch",
      "cta": true,
      "caption": "A familiar Valor classic, reimagined. The new Portrait gas fireplace 530V brings the trusted versatility of the Portrai",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/Db_QHCFGnju/",
@@ -935,7 +974,8 @@ window.TRACKER_DATA = {
      "topic": "summer outdoor fireplaces",
      "cta": true,
      "caption": "Summer isn't over yet, and the best memories are often made when the sun goes down. With a Valor outdoor fireplace, you",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/Db3olyIGlwy/",
@@ -955,7 +995,8 @@ window.TRACKER_DATA = {
      "topic": "design focal point options",
      "cta": true,
      "caption": "Today's fireplace designs are all about creating an eye-catching focal point that reflects your personal style. Whether",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DbwCzArmp7P/",
@@ -975,7 +1016,8 @@ window.TRACKER_DATA = {
      "topic": "Myth vs Fact radiant heat",
      "cta": true,
      "caption": "MYTH vs. FACT. Myth: Gas fireplaces are just for ambiance. Fact: Valor gas fireplaces are designed to deliver radi",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DbeBOXjjXMt/",
@@ -995,7 +1037,8 @@ window.TRACKER_DATA = {
      "topic": "radiant heat explained",
      "cta": true,
      "caption": "Did you know that a Valor Fireplace is designed to provide radiant heat? Instead of relying primarily on blowing warm a",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DbTk4zukSma/",
@@ -1015,7 +1058,8 @@ window.TRACKER_DATA = {
      "topic": "plug-and-play electric",
      "cta": true,
      "caption": "Looking for an easy way to add warmth and style to your home without a major renovation? Valor electric fireplaces are",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/reel/DbGvybnjih2/",
@@ -1035,7 +1079,8 @@ window.TRACKER_DATA = {
      "topic": "AutoFire system",
      "cta": true,
      "caption": "Comfort meets innovation with Valor Fireplaces AutoFire. Designed to optimize your fireplace's performance, the AutoFi",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/Da5s9ZyjESB/",
@@ -1055,7 +1100,8 @@ window.TRACKER_DATA = {
      "topic": "what makes a home",
      "cta": true,
      "caption": "Some things just make a space feel like home: A favourite chair in the perfect corner, a place to gather with the pe",
-     "collab": false
+     "collab": false,
+     "paid": false
     },
     {
      "url": "https://www.instagram.com/valorfireplaces/p/DayFdKhFLMa/",
@@ -1075,7 +1121,8 @@ window.TRACKER_DATA = {
      "topic": "electric, no gas line",
      "cta": true,
      "caption": "Bring style and comfort to your home, without gas lines or a chimney. Valor electric fireplaces offer a stylish, simple",
-     "collab": false
+     "collab": false,
+     "paid": false
     }
    ],
    "analysis": {
@@ -1124,9 +1171,1150 @@ window.TRACKER_DATA = {
    "name": "Napoleon",
    "us": false,
    "color": "--s5",
-   "readings": [],
-   "posts": [],
-   "analysis": null
+   "readings": [
+    {
+     "followers": 16303,
+     "following": 550,
+     "posts_total": 2291,
+     "date": "2026-10-13"
+    }
+   ],
+   "posts": [
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DePgexZR7dk/",
+     "date": "2026-10-12",
+     "hour": "15:00",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "timeless home tips",
+     "cta": false,
+     "caption": "Timeless homes aren't built in a day. Creating a home that stands the test of time means slowing down",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DePgPPdxUat/",
+     "date": "2026-10-10",
+     "hour": "17:00",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 1,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Luminex electric fireplace",
+     "cta": false,
+     "caption": "The Napoleon Luminex Electric Fireplace brings the sights and sounds of a real fire into everyday spaces",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DePq68bNIOb/",
+     "date": "2026-10-08",
+     "hour": "15:20",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: jessica_cinnamon_design",
+     "visual": "Design Council branded template",
+     "topic": "fireplace wall nooks",
+     "cta": false,
+     "caption": "Turn your fireplace wall into a functional work of art. Napoleon Design Council member Jessica Cinnamon",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/nycfireplaces_outdoor_kitchens/reel/DeM4YKCRJrf/",
+     "date": "2026-10-07",
+     "hour": "13:30",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 5,
+     "views": 32600,
+     "slides": null,
+     "seconds": 71.2,
+     "hashtags": 5,
+     "owner": "nycfireplaces_outdoor_kitchens",
+     "partners": "collab: nycfireplaces_outdoor_kitchens",
+     "visual": "customer home or repost",
+     "topic": "dealer install, two models",
+     "cta": true,
+     "caption": "If you're planning a fireplace before the holidays, now is the time to start. This home went with both",
+     "collab": true,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DeKXB04kXty/",
+     "date": "2026-10-06",
+     "hour": "13:50",
+     "format": "Carousel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 1,
+     "views": null,
+     "slides": 4,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Phantom outdoor heater",
+     "cta": false,
+     "caption": "Crisp autumn air and cozy outdoor warmth. You can extend your outdoor season with efficient comfort",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Dd_8RYOxhqX/",
+     "date": "2026-10-02",
+     "hour": "12:44",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "fall interior reset",
+     "cta": false,
+     "caption": "Reset Your Interior for Fall. A new season is an incredible time to make a few thoughtful design changes",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Dd7C6zQBWZr/",
+     "date": "2026-09-30",
+     "hour": "15:05",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Elora gas stove",
+     "cta": false,
+     "caption": "The Napoleon Elora Gas Stove brings thoughtful engineering and modern design to the traditional stove",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/Dd1xLokRCyd/",
+     "date": "2026-09-28",
+     "hour": "14:04",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": 831,
+     "slides": null,
+     "seconds": 16.9,
+     "hashtags": 0,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "event or trade show",
+     "topic": "IDS Vancouver recap",
+     "cta": false,
+     "caption": "We had so much fun at IDS Vancouver. Thank you to everyone who visited our space to share ideas",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/Dd1hC7lRVuh/",
+     "date": "2026-09-28",
+     "hour": "11:35",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 2,
+     "views": 41600,
+     "slides": null,
+     "seconds": 34.0,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: brianmccourtdesigns",
+     "visual": "person on camera",
+     "topic": "fireplace proportions makeover",
+     "cta": false,
+     "caption": "Proportions matter more than you might think. Design Council member Brian McCourt transformed this space",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DdxAU2rj_q-/",
+     "date": "2026-09-26",
+     "hour": "17:30",
+     "format": "Carousel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 2,
+     "views": null,
+     "slides": 4,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Timberwolf smokeless fire pit",
+     "cta": true,
+     "caption": "Take the fire with you. From backyard evenings with the neighbours to weekend getaways under the stars",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/DdruRYUPRbo/",
+     "date": "2026-09-24",
+     "hour": "16:17",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 2,
+     "views": 26800,
+     "slides": null,
+     "seconds": 64.4,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: designs_av",
+     "visual": "person on camera",
+     "topic": "new-build fireplace planning",
+     "cta": false,
+     "caption": "A fireplace can transform a room, but the best designs start by considering how it will live in the space",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/cwilighting/reel/DdmBxtZNMEC/",
+     "date": "2026-09-22",
+     "hour": "11:12",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": 276,
+     "slides": null,
+     "seconds": 6.7,
+     "hashtags": 7,
+     "owner": "cwilighting",
+     "partners": "collab: cwilighting",
+     "visual": "event or trade show",
+     "topic": "IDS Vancouver booth teaser",
+     "cta": true,
+     "caption": "Lighting meets design at IDS Vancouver 2026. We're excited to join Napoleon at their booth",
+     "collab": true,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DdjtSUexaiF/",
+     "date": "2026-09-21",
+     "hour": "13:34",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 3,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Ascent Linear 76 launch",
+     "cta": true,
+     "caption": "The Ascent Linear just got bigger. The new Napoleon Ascent Linear 76 Gas Fireplace brings the same design",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/DdcRcWFPQoj/",
+     "date": "2026-09-18",
+     "hour": "16:19",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 1,
+     "views": 2091,
+     "slides": null,
+     "seconds": 74.8,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: michelleberwickdesign_",
+     "visual": "person on camera",
+     "topic": "family room Luxuria design",
+     "cta": false,
+     "caption": "Some spaces naturally become the heart of the home. For Napoleon Design Council member Michelle Berwick",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DdW7OluxEEU/",
+     "date": "2026-09-16",
+     "hour": "14:26",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "National Preparedness Month",
+     "cta": false,
+     "caption": "A well-designed home is ready for everyday living and the unexpected. National Preparedness Month",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DdUcE2_OPO8/",
+     "date": "2026-09-15",
+     "hour": "15:42",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 3,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Ascent Linear 76 launch",
+     "cta": true,
+     "caption": "A new size joins the Ascent Linear collection. The Napoleon Ascent Linear 76 Gas Fireplace expands the series",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DdM5aPtvrbC/",
+     "date": "2026-09-12",
+     "hour": "16:57",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 1,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Entice electric easy install",
+     "cta": true,
+     "caption": "You can add a little more coziness to your home, without it turning into a big project",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/DdHpQKXPF0j/",
+     "date": "2026-09-10",
+     "hour": "16:01",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": 5434,
+     "slides": null,
+     "seconds": 24.7,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: jessica_cinnamon_design",
+     "visual": "person on camera",
+     "topic": "designer showroom visit",
+     "cta": false,
+     "caption": "More choices. More ways to bring a design together. Napoleon Design Council member Jessica Cinnamon",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DdFEVE9vN93/",
+     "date": "2026-09-09",
+     "hour": "15:59",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 1,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Elevation X electric",
+     "cta": false,
+     "caption": "Fire that looks, moves, and sounds remarkably real. The Napoleon Elevation X Electric Fireplace",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/trulitegasproducts/reel/DdEv11Vh2UO/",
+     "date": "2026-09-09",
+     "hour": "13:00",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 4,
+     "views": 355,
+     "slides": null,
+     "seconds": 35.9,
+     "hashtags": 7,
+     "owner": "trulitegasproducts",
+     "partners": "collab: trulitegasproducts",
+     "visual": "person on camera",
+     "topic": "dealer Vector Series spotlight",
+     "cta": true,
+     "caption": "Today, we're highlighting the Napoleon Vector Series! Looking to add warmth, style, and comfort",
+     "collab": true,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Dc6P-x3xHGr/",
+     "date": "2026-09-05",
+     "hour": "11:09",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Rosedale app control",
+     "cta": false,
+     "caption": "Complete control over your fireplace, right at your fingertips",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Dc1eBedBqxR/",
+     "date": "2026-09-03",
+     "hour": "14:36",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 1,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Rosedale electric insert",
+     "cta": false,
+     "caption": "Innovation that gives you more freedom to design. The Napoleon Rosedale Electric Insert",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/Dcwi3i0P8Qh/",
+     "date": "2026-09-01",
+     "hour": "16:43",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 2,
+     "views": 10000,
+     "slides": null,
+     "seconds": 69.4,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: brianmccourtdesigns",
+     "visual": "person on camera",
+     "topic": "Tall Linear Vector project",
+     "cta": false,
+     "caption": "Timeless design should never come at the expense of premium performance. Design Council member Brian McCourt",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Dco2YjovqZx/",
+     "date": "2026-08-29",
+     "hour": "16:58",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 1,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Havelock Elite stove launch",
+     "cta": true,
+     "caption": "Built to perform. Designed to fit beautifully. The all new Napoleon Havelock Elite Gas Stove",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Dcjil6ivkY1/",
+     "date": "2026-08-27",
+     "hour": "15:30",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 1,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: michelleberwickdesign_",
+     "visual": "Design Council branded template",
+     "topic": "layered lighting tips",
+     "cta": false,
+     "caption": "The right lighting can transform the way a fireplace feels in your home. Design Council member Michelle Berwick",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/DcbRXOaxqeW/",
+     "date": "2026-08-24",
+     "hour": "10:25",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": 1052,
+     "slides": null,
+     "seconds": 25.3,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Rosedale Electric launch",
+     "cta": true,
+     "caption": "Bring new life to your home with the new Napoleon Rosedale Electric. Designed for effortless transformation",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DcYzn-aRJAJ/",
+     "date": "2026-08-23",
+     "hour": "11:27",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: mikeholmesjr",
+     "visual": "Design Council branded template",
+     "topic": "closet design tips",
+     "cta": false,
+     "caption": "Design your closet around how you live. Design Council member Mike Holmes Jr recommends thinking beyond",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/DcTryLRxEqT/",
+     "date": "2026-08-21",
+     "hour": "11:43",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 1,
+     "views": 802,
+     "slides": null,
+     "seconds": 39.9,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "window wall + Luxuria",
+     "cta": false,
+     "caption": "When designing a room with a large window wall, the goal is to enhance the view",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DcOtTTUR6WI/",
+     "date": "2026-08-19",
+     "hour": "13:19",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Tall Bay Luxuria launch",
+     "cta": true,
+     "caption": "Luxury, reimagined. The all-new Napoleon Tall Bay Luxuria Gas Fireplace is designed to create immersive spaces",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/michelleberwickdesign_/reel/DcOMk37REiW/",
+     "date": "2026-08-19",
+     "hour": "08:34",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 3,
+     "views": 1810,
+     "slides": null,
+     "seconds": 22.3,
+     "hashtags": 3,
+     "owner": "michelleberwickdesign_",
+     "partners": "collab: michelleberwickdesign_",
+     "visual": "room or lifestyle interior",
+     "topic": "designer partnership",
+     "cta": false,
+     "caption": "There's nothing quite like the warmth of a fireplace to make a house feel like home",
+     "collab": true,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/DcMSrRZRH0R/",
+     "date": "2026-08-18",
+     "hour": "14:48",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": 1350,
+     "slides": null,
+     "seconds": 25.2,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Elora hybrid stove launch",
+     "cta": true,
+     "caption": "Traditional warmth. Modern design. Say hello to the all-new Napoleon Elora Hybrid Stove",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/Db_waItPekB/",
+     "date": "2026-08-13",
+     "hour": "17:58",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 2,
+     "views": 36900,
+     "slides": null,
+     "seconds": 68.9,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: jessica_cinnamon_design",
+     "visual": "person on camera",
+     "topic": "design flexibility",
+     "cta": false,
+     "caption": "When every detail matters, flexibility makes all the difference. Design Council member Jessica Cinnamon",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/Db6cV2sPl9K/",
+     "date": "2026-08-11",
+     "hour": "16:26",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": 1135,
+     "slides": null,
+     "seconds": 26.6,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Astound SlimMount teaser",
+     "cta": true,
+     "caption": "Coming soon: the new Napoleon Astound SlimMount Electric Fireplace, a contemporary design",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/Dbyn_GAvDxi/",
+     "date": "2026-08-08",
+     "hour": "15:34",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": 1332,
+     "slides": null,
+     "seconds": 23.3,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Rosedale 2 gas insert",
+     "cta": true,
+     "caption": "The new Napoleon Rosedale 2 Gas Insert: designed to bring new life to existing fireplaces",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/houseandhomemag/reel/Dbtau6DD2zB/",
+     "date": "2026-08-06",
+     "hour": "15:02",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 5,
+     "views": 28400,
+     "slides": null,
+     "seconds": 75.9,
+     "hashtags": 0,
+     "owner": "houseandhomemag",
+     "partners": "collab: houseandhomemag, michelleberwickdesign_",
+     "visual": "room or lifestyle interior",
+     "topic": "House & Home designer feature",
+     "cta": true,
+     "caption": "Let's talk fireplaces! Designer Michelle Berwick opted for a pared-back, natural look",
+     "collab": true,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Dbq2vmGxYII/",
+     "date": "2026-08-05",
+     "hour": "15:09",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Rosedale 2 insert launch",
+     "cta": true,
+     "caption": "Your old fireplace deserves a new beginning. Introducing the new Napoleon Rosedale 2 Gas Insert",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DboPPiWR1W3/",
+     "date": "2026-08-04",
+     "hour": "14:45",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 4,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: designs_av",
+     "visual": "Design Council branded template",
+     "topic": "architectural detailing",
+     "cta": false,
+     "caption": "The details are what give a space its character. Design Council member designs_av highlights the impact",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Dblq3ZgRqLm/",
+     "date": "2026-08-03",
+     "hour": "14:49",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 3,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "luxury interior tips",
+     "cta": true,
+     "caption": "Sophisticated interior design is about choosing every detail with intention",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/DbjRuJOhADc/",
+     "date": "2026-08-02",
+     "hour": "16:30",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": 11300,
+     "slides": null,
+     "seconds": 16.2,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: brianmccourtdesigns",
+     "visual": "person on camera",
+     "topic": "warranty and support confidence",
+     "cta": false,
+     "caption": "The best designs are backed by lasting confidence. For Design Council member Brian McCourt",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/DbgDvGVB7aV/",
+     "date": "2026-08-01",
+     "hour": "10:30",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": 1234,
+     "slides": null,
+     "seconds": 19.9,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "product only",
+     "topic": "Tall Bay Luxuria teaser",
+     "cta": false,
+     "caption": "A fireplace that's built to your vision and finished with luxury. Coming soon",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DbdkfJTRcez/",
+     "date": "2026-07-31",
+     "hour": "11:20",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: mikeholmesjr",
+     "visual": "Design Council branded template",
+     "topic": "kitchen backsplash tips",
+     "cta": false,
+     "caption": "A kitchen backsplash plays a bigger role in design than most people realize",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Dba1j_yxuYE/",
+     "date": "2026-07-30",
+     "hour": "09:51",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "workplace design",
+     "cta": false,
+     "caption": "The spaces we work in shape the way we feel. Modern workplace design is embracing warmer materials",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DbWY308PbZt/",
+     "date": "2026-07-28",
+     "hour": "16:23",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 2,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Tall Linear Vector, offices",
+     "cta": false,
+     "caption": "Great spaces leave a lasting impression. The Napoleon Tall Linear Vector with Luminous Logs",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/uintahfireplace/reel/DbW73-SI6lm/",
+     "date": "2026-07-28",
+     "hour": "21:47",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": 273,
+     "slides": null,
+     "seconds": 133.1,
+     "hashtags": 4,
+     "owner": "uintahfireplace",
+     "partners": "collab: uintahfireplace",
+     "visual": "product only",
+     "topic": "Elevation X app control",
+     "cta": false,
+     "caption": "Who doesn't love the option to control a fireplace from an app along with a remote?",
+     "collab": true,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/DbOHQ9MBekV/",
+     "date": "2026-07-25",
+     "hour": "11:15",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 2,
+     "views": 1346,
+     "slides": null,
+     "seconds": 16.6,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "product only",
+     "topic": "Astound SlimMount teaser",
+     "cta": false,
+     "caption": "It's almost here. Ultra realistic flames in an ultra slim profile",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/reel/DbL6FZbxF4l/",
+     "date": "2026-07-24",
+     "hour": "14:42",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 1,
+     "views": 10100,
+     "slides": null,
+     "seconds": 39.0,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: brianmccourtdesigns",
+     "visual": "person on camera",
+     "topic": "fireplace as focal point",
+     "cta": false,
+     "caption": "Let the fireplace be the star of the show. Design Council member Brian McCourt designed this feature wall",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/DbENZ5hxNrU/",
+     "date": "2026-07-21",
+     "hour": "14:56",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "small-space Astound FlexMount",
+     "cta": false,
+     "caption": "Designing a small space is about refinement, not compromise",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Da-mimNR37-/",
+     "date": "2026-07-19",
+     "hour": "10:41",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "outdoor hosting tips",
+     "cta": false,
+     "caption": "This is your sign to create the ultimate outdoor hosting space",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/houseandhomemag/reel/Da5wf6hkggA/",
+     "date": "2026-07-17",
+     "hour": "13:32",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 12,
+     "views": 63300,
+     "slides": null,
+     "seconds": 69.8,
+     "hashtags": 0,
+     "owner": "houseandhomemag",
+     "partners": "collab: houseandhomemag, jessica_cinnamon_design",
+     "visual": "room or lifestyle interior",
+     "topic": "House & Home designer feature",
+     "cta": true,
+     "caption": "Let's talk fireplaces! \"A fireplace will always make your room more inviting,\" says Jessica Cinnamon",
+     "collab": true,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Da6GsR3Pl-4/",
+     "date": "2026-07-17",
+     "hour": "16:46",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "none",
+     "visual": "room or lifestyle interior",
+     "topic": "Riverside outdoor fireplace",
+     "cta": true,
+     "caption": "An outdoor fireplace is the perfect centrepiece for an outdoor space that invites people to gather",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "url": "https://www.instagram.com/napoleonfireplace/p/Da3S1MrR4I4/",
+     "date": "2026-07-16",
+     "hour": "14:34",
+     "format": "Photo",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 0,
+     "views": null,
+     "slides": null,
+     "seconds": null,
+     "hashtags": 3,
+     "owner": "napoleonfireplace",
+     "partners": "paid partnership: michelleberwickdesign_",
+     "visual": "Design Council branded template",
+     "topic": "mantel height guidance",
+     "cta": false,
+     "caption": "Let the room guide your fireplace design. Design Council member Michelle Berwick notes that mantel heights",
+     "collab": false,
+     "paid": true
+    },
+    {
+     "url": "https://www.instagram.com/houseandhomemag/reel/DayBTViCKGC/",
+     "date": "2026-07-14",
+     "hour": "13:25",
+     "format": "Reel",
+     "likes": null,
+     "likes_hidden": true,
+     "comments": 15,
+     "views": 26000,
+     "slides": null,
+     "seconds": 70.2,
+     "hashtags": 0,
+     "owner": "houseandhomemag",
+     "partners": "collab: houseandhomemag",
+     "visual": "room or lifestyle interior",
+     "topic": "House & Home fireplace feature",
+     "cta": false,
+     "caption": "House & Home fireplace feature, no caption shown",
+     "collab": true,
+     "paid": false
+    }
+   ],
+   "analysis": {
+    "headline": "The only account run as a real programme: a paid council of designers, a magazine partnership and a launch calendar, posted almost every day.",
+    "points": [
+     [
+      "Visual style",
+      "Two looks side by side. Calm, warm-wood interiors for product posts, many of which look like renders. And a fixed Design Council template: marble background, the designer's round photo with a yellow name tag, a yellow headline in capitals and the Napoleon logo. It is the only branded template among the accounts read."
+     ],
+     [
+      "Topics and series",
+      "Design Council is the backbone: five paid designers giving one design tip each, once or twice a week, as Reels and as template posts, always under the same hashtag. Around it runs a launch cycle that repeats for every new product: a teaser, the launch, then a second post. Four launches followed that pattern in three months. A third strand is a partnership with a home magazine."
+     ],
+     [
+      "Video style",
+      "Designer Reels are 16 to 75 seconds with the designer talking to camera inside the Design Council frame. Product Reels are short, 17 to 27 seconds, flames and music only. Partner Reels are the longest, over a minute."
+     ],
+     [
+      "How they write",
+      "Long, structured captions with sub headers and tips. Always exactly three hashtags. Launch posts close with learn more through the link in our bio. Questions to the audience are rare and come mostly from partners."
+     ],
+     [
+      "Who appears",
+      "Paid interior designers, a well known TV builder, a home decor magazine, three dealers, a lighting brand and a builder. A PR agency is tagged on the paid posts, which suggests the programme is managed for them."
+     ],
+     [
+      "Community",
+      "They do not reply on their own posts. They do leave one reply on partner Reels."
+     ]
+    ],
+    "read": "Napoleon buys its reach, and it works. A Reel with a paid designer is seen about nine times more than one of their own product Reels, and the magazine Reels go higher still: the top one reached 63,300 views on an account with 16,300 followers. Without those, Napoleon looks like everyone else: product Reels sit around 1,000 to 1,300 views and photos draw zero to three comments. So the lesson is not that Napoleon makes better content. It is that a face people trust, talking about design rather than about the product, is what gets watched. Their volume is also far above the rest, about four posts a week, weekends included.",
+    "borrow": [
+     "A small council of named designers with a fixed format. It gives them a weekly series, a recognisable look and borrowed audiences at once.",
+     "Design advice first, product second. Their most watched Reels are about proportions, lighting and planning a room, with the fireplace as part of the answer.",
+     "The launch cycle: teaser, launch, follow up. Each new product gets three moments instead of one.",
+     "A media partner. Three magazine Reels together were seen about thirteen times more than all eight of their own product Reels."
+    ],
+    "gaps": [
+     "Their own content is weak without the paid names. Product Reels and photos get the same low numbers as everyone else.",
+     "They do not answer comments on their own posts.",
+     "Many interiors look rendered. Real homes and real installs would feel more honest next to them.",
+     "The reach depends on budget. If the programme stops, the numbers go with it."
+    ]
+   }
   }
  ]
 };

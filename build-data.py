@@ -69,6 +69,7 @@ def main():
             a["readings"].append(dict(profile, date=day))
             for p in posts:
                 p["collab"] = p["owner"] != acc["handle"]
+                p["paid"] = p["partners"].lower().startswith("paid partnership")
                 by_url[p["url"]] = p
             last = max(last or day, day)
         a["posts"] = sorted(by_url.values(), key=lambda p: p["date"], reverse=True)

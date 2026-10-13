@@ -64,5 +64,29 @@
       "Photos with long captions get no reaction: zero to two comments per post.",
       "No people. No creators, no designers, no customers, and no replies to comments."
     ]
+  },
+  "napoleonfireplace": {
+    "headline": "The only account run as a real programme: a paid council of designers, a magazine partnership and a launch calendar, posted almost every day.",
+    "points": [
+      ["Visual style", "Two looks side by side. Calm, warm-wood interiors for product posts, many of which look like renders. And a fixed Design Council template: marble background, the designer's round photo with a yellow name tag, a yellow headline in capitals and the Napoleon logo. It is the only branded template among the accounts read."],
+      ["Topics and series", "Design Council is the backbone: five paid designers giving one design tip each, once or twice a week, as Reels and as template posts, always under the same hashtag. Around it runs a launch cycle that repeats for every new product: a teaser, the launch, then a second post. Four launches followed that pattern in three months. A third strand is a partnership with a home magazine."],
+      ["Video style", "Designer Reels are 16 to 75 seconds with the designer talking to camera inside the Design Council frame. Product Reels are short, 17 to 27 seconds, flames and music only. Partner Reels are the longest, over a minute."],
+      ["How they write", "Long, structured captions with sub headers and tips. Always exactly three hashtags. Launch posts close with learn more through the link in our bio. Questions to the audience are rare and come mostly from partners."],
+      ["Who appears", "Paid interior designers, a well known TV builder, a home decor magazine, three dealers, a lighting brand and a builder. A PR agency is tagged on the paid posts, which suggests the programme is managed for them."],
+      ["Community", "They do not reply on their own posts. They do leave one reply on partner Reels."]
+    ],
+    "read": "Napoleon buys its reach, and it works. A Reel with a paid designer is seen about nine times more than one of their own product Reels, and the magazine Reels go higher still: the top one reached 63,300 views on an account with 16,300 followers. Without those, Napoleon looks like everyone else: product Reels sit around 1,000 to 1,300 views and photos draw zero to three comments. So the lesson is not that Napoleon makes better content. It is that a face people trust, talking about design rather than about the product, is what gets watched. Their volume is also far above the rest, about four posts a week, weekends included.",
+    "borrow": [
+      "A small council of named designers with a fixed format. It gives them a weekly series, a recognisable look and borrowed audiences at once.",
+      "Design advice first, product second. Their most watched Reels are about proportions, lighting and planning a room, with the fireplace as part of the answer.",
+      "The launch cycle: teaser, launch, follow up. Each new product gets three moments instead of one.",
+      "A media partner. Three magazine Reels together were seen about thirteen times more than all eight of their own product Reels."
+    ],
+    "gaps": [
+      "Their own content is weak without the paid names. Product Reels and photos get the same low numbers as everyone else.",
+      "They do not answer comments on their own posts.",
+      "Many interiors look rendered. Real homes and real installs would feel more honest next to them.",
+      "The reach depends on budget. If the programme stops, the numbers go with it."
+    ]
   }
 }

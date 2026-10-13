@@ -221,7 +221,7 @@ const tip=$('tip');
 function showTip(ev,html){tip.innerHTML=html;tip.hidden=false;const w=tip.offsetWidth,h=tip.offsetHeight;let x=ev.clientX+14,y=ev.clientY+14;if(x+w>innerWidth-8)x=ev.clientX-w-14;if(y+h>innerHeight-8)y=ev.clientY-h-14;tip.style.left=Math.max(8,x)+'px';tip.style.top=Math.max(8,y)+'px'}
 function hover(node,html){node.addEventListener('mousemove',e=>showTip(e,html));node.addEventListener('mouseleave',()=>{tip.hidden=true})}
 const dot=a=>`<i class="dot" style="background:var(${a.color})"></i>`;
-const pstart=()=>new Date(END-P*7*DAY);
+const pstart=()=>new Date(END-P*7*DAY-DAY);
 
 function stat(a){
   const from=pstart(), ps=a.posts.filter(p=>dt(p.date)>from), reels=ps.filter(p=>p.format==='Reel'&&p.views!=null);
@@ -281,14 +281,14 @@ function views(s){
   const W=Math.max(300,box.clientWidth),H=230,m={l:44,r:16,t:16,b:26},from=pstart();
   const max=Math.max(...s.reels.map(p=>p.views))*1.1,x=d=>m.l+((d-from)/(END-from))*(W-m.l-m.r),y=v=>H-m.b-(v/max)*(H-m.t-m.b);
   const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img','aria-label':'Views per Reel over time'});
-  const step=max>6000?2000:max>3000?1000:500;
+  const raw=max/5,pw=Math.pow(10,Math.floor(Math.log10(raw))),step=[1,2,5,10].map(k=>k*pw).find(k=>k>=raw);
   for(let t=0;t<=max;t+=step){svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:y(t),y2:y(t),style:`stroke:var(${t?'--grid':'--axis'})`,'stroke-width':1}));svg.appendChild(el('text',{x:m.l-8,y:y(t)+4,'text-anchor':'end'},nf(t)))}
   for(let i=0;i<=4;i++){const d=new Date(+from+(END-from)*i/4);svg.appendChild(el('text',{x:x(d),y:H-8,'text-anchor':i===0?'start':i===4?'end':'middle'},dfmt(d)))}
   const mv=s.medViews;svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:y(mv),y2:y(mv),style:'stroke:var(--ink2)','stroke-width':1,'stroke-dasharray':'4 3'}));
   svg.appendChild(el('text',{x:W-m.r,y:y(mv)-5,'text-anchor':'end',class:'v'},'Typical '+nf(mv)));
   s.reels.forEach(p=>{const c=el('circle',{cx:x(dt(p.date)),cy:y(p.views),r:6,style:p.collab?`fill:var(--surface);stroke:var(${s.a.color})`:`fill:var(${s.a.color});stroke:var(--surface)`,'stroke-width':2});
     const hit=el('circle',{cx:x(dt(p.date)),cy:y(p.views),r:14,fill:'transparent'});
-    hover(hit,`<b>${esc(cap(p.topic))}</b><br>${dfmt(dt(p.date))} · ${p.collab?'From partner @'+esc(p.owner):'Own post'}<br>${nf(p.views)} views · ${p.comments} comments · ${p.seconds?Math.round(p.seconds)+' s':''}`);
+    hover(hit,`<b>${esc(cap(p.topic))}</b><br>${dfmt(dt(p.date))} · ${p.collab?'From partner @'+esc(p.owner):p.paid?'Own post, paid partnership':'Own post'}<br>${nf(p.views)} views · ${p.comments} comments · ${p.seconds?Math.round(p.seconds)+' s':''}`);
     svg.appendChild(c);svg.appendChild(hit)});
   box.appendChild(svg);
 }
@@ -323,7 +323,7 @@ function hbar(id,rows,color){
 }
 const grp=(reels,label,color)=>{const v=reels.map(p=>p.views);return{label,n:v.length,v:med(v),lo:Math.min(...v),hi:Math.max(...v),color}};
 function watched(s){
-  hbar('byown',[grp(s.reels.filter(p=>!p.collab),'Own Reels','--own'),grp(s.reels.filter(p=>p.collab),'Reels from partners','--collab')],'--own');
+  hbar('byown',[grp(s.reels.filter(p=>!p.collab&&!p.paid),'Own Reels','--own'),grp(s.reels.filter(p=>p.paid),'Paid designer Reels','--accent'),grp(s.reels.filter(p=>p.collab),'Reels from partners','--collab')],'--own');
   const kinds=[...new Set(s.reels.map(p=>p.visual))];
   hbar('byvis',kinds.map(k=>grp(s.reels.filter(p=>p.visual===k),cap(k))).sort((a,b)=>b.v-a.v),'--f2');
 }
@@ -333,6 +333,9 @@ function stats(s){
   if(v.length)L.push(['The typical Reel',`<b>${nf(med(v))} views.</b> Half of their Reels land between ${nf(q(v,.25))} and ${nf(q(v,.75))}. The best reached ${nf(Math.max(...v))}, the weakest ${nf(Math.min(...v))}.`]);
   if(own.length&&col.length){const om=med(own.map(p=>p.views)),k=col.filter(p=>p.views>om).length;
     L.push(['Partner posts against their own',`<b>${k} of ${col.length} Reels from partners beat the typical own Reel</b> (${Math.round(k/col.length*100)}%). Reels from partners get ${nf(med(col.map(p=>p.views)))} views, their own get ${nf(om)}.`])}
+  const paid=s.reels.filter(p=>p.paid),plain=s.reels.filter(p=>!p.paid&&!p.collab);
+  if(paid.length>1&&plain.length>1){const pm=med(paid.map(p=>p.views)),qm=med(plain.map(p=>p.views));
+    L.push(['What the paid designers add',`<b>A Reel with a paid designer gets ${nf(pm)} views, one without gets ${nf(qm)}</b>, about ${Math.round(pm/qm)} times more. ${paid.filter(p=>p.views>qm).length} of ${paid.length} paid Reels beat the typical unpaid one.`])}
   const lg=s.reels.filter(p=>p.seconds>=45),sh=s.reels.filter(p=>p.seconds&&p.seconds<45);
   if(lg.length>1&&sh.length>1)L.push(['Longer or shorter Reels',`Reels of 45 seconds or more get <b>${nf(med(lg.map(p=>p.views)))} views</b> (${lg.length} Reels). Shorter ones get <b>${nf(med(sh.map(p=>p.views)))}</b> (${sh.length} Reels).`]);
   const ds=s.ps.map(p=>+dt(p.date)).sort((a,b)=>a-b);let gap=0;for(let i=1;i<ds.length;i++)gap=Math.max(gap,Math.round((ds[i]-ds[i-1])/DAY));
@@ -360,7 +363,7 @@ function analysis(s){
 function posts(s){
   const rows=[...s.ps].sort((a,b)=>(b.views==null?-1:b.views)-(a.views==null?-1:a.views));
   $('posts').innerHTML=`<tr><th class="l">Date</th><th class="l">Format</th><th class="l">Published by</th><th class="l">What it is</th><th>Views</th><th>Comments</th><th>Likes</th><th class="l">Post</th></tr>`+
-  rows.map(p=>`<tr><td class="l">${dfmt(dt(p.date))}</td><td class="l">${esc(p.format)}</td><td class="l"><span class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):'Own'}</span></td><td class="cap"><b style="color:var(--ink);font-weight:650">${esc(cap(p.topic))}.</b> ${esc(p.caption)}…</td><td>${nf(p.views)}</td><td>${p.comments==null?'n/a':p.comments}</td><td>${p.likes_hidden?'hidden':nf(p.likes)}</td><td class="l"><a href="${esc(p.url)}" target="_blank" rel="noopener">Open</a></td></tr>`).join('');
+  rows.map(p=>`<tr><td class="l">${dfmt(dt(p.date))}</td><td class="l">${esc(p.format)}</td><td class="l"><span class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></td><td class="cap"><b style="color:var(--ink);font-weight:650">${esc(cap(p.topic))}.</b> ${esc(p.caption)}…</td><td>${nf(p.views)}</td><td>${p.comments==null?'n/a':p.comments}</td><td>${p.likes_hidden?'hidden':nf(p.likes)}</td><td class="l"><a href="${esc(p.url)}" target="_blank" rel="noopener">Open</a></td></tr>`).join('');
 }
 
 function draw(){
