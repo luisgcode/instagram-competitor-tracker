@@ -95,6 +95,8 @@ a{color:var(--accent)}
 .an p{margin:0;color:var(--ink2);font-size:13.5px}
 .readbox{border-left:3px solid var(--accent);padding:4px 0 4px 14px}
 .readbox p{margin:0;color:var(--ink);font-size:14px;max-width:80ch}
+.plan{margin:4px 0 0;padding-left:20px;color:var(--ink);font-size:14px;max-width:86ch}
+.plan li{margin-bottom:6px}
 .lists{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 28px}
 .lists ul{margin:0;padding-left:18px;color:var(--ink2);font-size:13.5px}
 .lists li{margin-bottom:6px}
@@ -133,6 +135,11 @@ a{color:var(--accent)}
     <span class="lab">Period</span>
     <div class="seg" id="period"></div>
   </div>
+
+  <section class="panel" id="overallpanel" hidden>
+    <div class="phead"><h2>What the five accounts tell us</h2><p class="sub">The read across all of them, and what it means for our plan</p></div>
+    <div class="pbody" id="overall"></div>
+  </section>
 
   <div class="tiles" id="tiles"></div>
 
@@ -251,11 +258,11 @@ function tiles(s,others){
 }
 
 function board(S){
-  $('board').innerHTML=`<tr><th class="l">Account</th><th>Followers</th><th>Posts</th><th>Posts / wk</th><th>Posts from partners</th><th>Typical Reel views</th><th>Views compared to followers</th><th>Comments / post</th><th>Typical likes</th><th class="l">Format mix</th></tr>`+
+  $('board').innerHTML=`<tr><th class="l">Account</th><th>Followers</th><th>Posts</th><th>Posts / wk</th><th>Posts from partners</th><th>Typical Reel views</th><th>Views compared to followers</th><th>Comments / post</th><th class="l">Format mix</th></tr>`+
   D.accounts.map(a=>{const s=S.find(x=>x.a===a);
-    if(!s)return `<tr><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td class="wait" colspan="9">Reading in progress</td></tr>`;
-    const vpf=s.medViews!=null&&s.fol?(s.medViews/s.fol).toFixed(1)+'x':'n/a';
-    return `<tr class="${a.handle===focus?'focus':''}"><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td>${nf(s.fol)}</td><td>${s.ps.length}</td><td>${one(s.ppw)}</td><td>${s.collabShare==null?'n/a':Math.round(s.collabShare*100)+'%'}</td><td>${nf(s.medViews)}</td><td>${vpf}</td><td>${one(s.com)}</td><td>${s.likesHidden?'hidden':nf(s.likes)}</td><td class="l"><span class="mix" title="Reels ${Math.round(s.mix[0]*100)}%, Carousels ${Math.round(s.mix[1]*100)}%, Photos ${Math.round(s.mix[2]*100)}%">${s.mix.map((m,i)=>m>0?`<i style="flex:${m};background:var(--f${i+1})"></i>`:'').join('')}</span></td></tr>`}).join('');
+    if(!s)return `<tr><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td class="wait" colspan="8">Reading in progress</td></tr>`;
+    const r=s.medViews!=null&&s.fol?s.medViews/s.fol:null,vpf=r==null?'n/a':r.toFixed(r<1?2:1)+'x';
+    return `<tr class="${a.handle===focus?'focus':''}"><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td>${nf(s.fol)}</td><td>${s.ps.length}</td><td>${one(s.ppw)}</td><td>${s.collabShare==null?'n/a':Math.round(s.collabShare*100)+'%'}</td><td>${nf(s.medViews)}</td><td>${vpf}</td><td>${one(s.com)}</td><td class="l"><span class="mix" title="Reels ${Math.round(s.mix[0]*100)}%, Carousels ${Math.round(s.mix[1]*100)}%, Photos ${Math.round(s.mix[2]*100)}%">${s.mix.map((m,i)=>m>0?`<i style="flex:${m};background:var(--f${i+1})"></i>`:'').join('')}</span></td></tr>`}).join('');
 }
 
 function rhythm(s){
@@ -351,19 +358,19 @@ function stats(s){
 }
 
 function analysis(s){
-  const A=s.a.analysis,box=$('analysis');$('antitle').textContent='How '+s.a.name+' runs the account';
+  const A=s.a.analysis,box=$('analysis');$('antitle').textContent=s.a.us?'How we run our account':'How '+s.a.name+' runs the account';
   if(!A){box.innerHTML='<p class="empty">The written analysis is added once the reading of this account is complete.</p>';return}
   box.innerHTML=`<p class="headline">${esc(A.headline)}</p>
   <div class="an">${A.points.map(p=>`<div><h3>${esc(p[0])}</h3><p>${esc(p[1])}</p></div>`).join('')}</div>
   <div class="readbox"><h3>My read of the strategy</h3><p>${esc(A.read)}</p></div>
-  <div class="lists"><div><h3>Worth borrowing</h3><ul>${A.borrow.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
-  <div><h3>Where they are weak</h3><ul>${A.gaps.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`;
+  <div class="lists"><div><h3>${esc(A.borrow_title||'Worth borrowing')}</h3><ul>${A.borrow.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+  <div><h3>${esc(A.gaps_title||'Where they are weak')}</h3><ul>${A.gaps.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`;
 }
 
 function posts(s){
   const rows=[...s.ps].sort((a,b)=>(b.views==null?-1:b.views)-(a.views==null?-1:a.views));
-  $('posts').innerHTML=`<tr><th class="l">Date</th><th class="l">Format</th><th class="l">Published by</th><th class="l">What it is</th><th>Views</th><th>Comments</th><th>Likes</th><th class="l">Post</th></tr>`+
-  rows.map(p=>`<tr><td class="l">${dfmt(dt(p.date))}</td><td class="l">${esc(p.format)}</td><td class="l"><span class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></td><td class="cap"><b style="color:var(--ink);font-weight:650">${esc(cap(p.topic))}.</b> ${esc(p.caption)}…</td><td>${nf(p.views)}</td><td>${p.comments==null?'n/a':p.comments}</td><td>${p.likes_hidden?'hidden':nf(p.likes)}</td><td class="l"><a href="${esc(p.url)}" target="_blank" rel="noopener">Open</a></td></tr>`).join('');
+  $('posts').innerHTML=`<tr><th class="l">Date</th><th class="l">Format</th><th class="l">Published by</th><th class="l">What it is</th><th>Views</th><th>Comments</th><th class="l">Post</th></tr>`+
+  rows.map(p=>`<tr><td class="l">${dfmt(dt(p.date))}</td><td class="l">${esc(p.format)}</td><td class="l"><span class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></td><td class="cap"><b style="color:var(--ink);font-weight:650">${esc(cap(p.topic))}.</b> ${esc(p.caption)}…</td><td>${nf(p.views)}</td><td>${p.comments==null?'n/a':p.comments}</td><td class="l"><a href="${esc(p.url)}" target="_blank" rel="noopener">Open</a></td></tr>`).join('');
 }
 
 function draw(){
@@ -371,9 +378,11 @@ function draw(){
   const S=ready.map(stat),s=S.find(x=>x.a.handle===focus);
   if(!s){$('tiles').innerHTML='<p class="empty">No readings loaded yet.</p>';return}
   tiles(s,S.filter(x=>x!==s));board(S);rhythm(s);views(s);heat(s);watched(s);stats(s);analysis(s);posts(s);
-  const ln=$('likesnote');ln.hidden=!s.likesHidden;ln.textContent=s.a.name+' also hides the like count on every post, so for this account the reaction is measured with views and comments.';
+  const ln=$('likesnote');ln.hidden=!S.every(x=>x.likesHidden);ln.textContent='Likes are missing from this dashboard on purpose: every account read hides its like counts, so reaction is measured with views and comments.';
 }
 $('asof').innerHTML=`Last reading: <b>${END.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})}</b> · Posts since <b>${dfmt(START)}</b> · <b>${ready.length} of ${D.accounts.length}</b> accounts read`;
+if(D.overall&&ready.length===D.accounts.length){const O=D.overall;$('overallpanel').hidden=false;
+  $('overall').innerHTML=`<p class="headline">${esc(O.headline)}</p><div class="an">${O.findings.map(f=>`<div><h3>${esc(f[0])}</h3><p>${esc(f[1])}</p></div>`).join('')}</div><div class="readbox"><h3>What I would do with this</h3><ol class="plan">${O.plan.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></div>`}
 let t;addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(draw,120)});
 draw();
 })();

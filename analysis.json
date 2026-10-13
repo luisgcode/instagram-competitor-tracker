@@ -88,5 +88,48 @@
       "Many interiors look rendered. Real homes and real installs would feel more honest next to them.",
       "The reach depends on budget. If the programme stops, the numbers go with it."
     ]
+  },
+  "dimplex_northamerica": {
+    "headline": "We have the largest audience of the five and a feed built around the product. The Reels that travel are the ones our partners make.",
+    "points": [
+      ["Visual style", "Two looks. A spec sheet template on a beige background, with the product in the centre and thin lines pointing at its features. And clean interior scenes, many of them render style. Our Reels are short flame close ups on black."],
+      ["Topics and series", "Product by product: Ignite Quest, Ignite Bold, Ignite Ultra, Vital, Revillusion, Storm Surround, the Optimyst range. One clear run around IDS Vancouver in September (teaser, giveaway, a Reel from the show, a partner tie in) and the summer promotion in July."],
+      ["Video style", "Six Reels in three months, four of them ours. Ours run 15 to 48 seconds and show flames and product only, with music or original audio. No voice and no text on screen. The two partner Reels have a person talking and text on screen."],
+      ["How we write", "A one line headline, one paragraph on features, four or five hashtags. Few emojis, no questions to the audience. A call to action appears only for availability or a promotion."],
+      ["Who appears", "Almost never a person. Partners in the period: a stone brand, a distributor, a trade show, an apartment project, a DIY creator and a dealer. That same dealer also publishes with Napoleon."],
+      ["Community", "No replies to comments in the five posts checked."]
+    ],
+    "read": "Our account works as a product catalogue. It is consistent and on brand, and it reaches very few of the 19,400 people who follow us: a typical Reel we make ourselves is seen about 775 times. The two Reels made by partners tell a different story. A dealer showing a 120 inch Opti-myst install reached 32,800 views, around forty times our typical Reel, and a DIY creator reached 3,455. The audience is there. What it responds to is a real person showing a real installation, not the product on its own.",
+    "borrow_title": "What already works for us",
+    "borrow": [
+      "Partner Reels. Our two best results of the period both came from someone else's account, a dealer and a creator.",
+      "The largest follower base of the five accounts, 19,400, ahead of Napoleon.",
+      "A real series around IDS Vancouver, with a teaser, a giveaway and a Reel from the floor.",
+      "A recognisable spec sheet template that nobody else uses."
+    ],
+    "gaps_title": "Where we can move first",
+    "gaps": [
+      "Put a person on camera. None of our own Reels has a voice or a face, and those are the ones that get watched everywhere else.",
+      "Make more Reels. Six of our eighteen posts were Reels, and only four were ours.",
+      "Answer comments. No account of the five does it on its own posts, so it is an open lane.",
+      "Give every post a next step: where to buy, find a dealer, see it at a showroom."
+    ]
+  },
+  "_overall": {
+    "headline": "Across five accounts the product alone does not get watched. A person with their own audience does.",
+    "findings": [
+      ["Own product content has a ceiling", "Reels a brand makes about its own product land between roughly 400 and 2,800 views on every account that makes them, whether it has 3,000 followers or 19,400."],
+      ["Every breakout has a person behind it", "Paid designers for Napoleon (41,600 views), a home magazine (63,300), a decor creator for Modern Flames (23,600), a dealer for us (32,800). The same dealer delivered 32,600 for Napoleon."],
+      ["Posting more is not the lever", "Valor posts on a strict schedule, about twice a week, and gets the lowest numbers. Modern Flames barely posts and has the most watched Reel per follower."],
+      ["We have the audience, not the reach", "Dimplex has the most followers of the five, and a typical Reel we make ourselves is seen about 775 times, around 4 views for every 100 followers."],
+      ["Nobody talks back", "No account answers comments on its own posts, and all five hide their like counts."]
+    ],
+    "plan": [
+      "Lead with partners. Line up shared Reels with dealers and home creators every month. One dealer Reel brought forty times the views of our typical one.",
+      "Put a face and a voice in our own Reels. Design advice first, product as part of the answer.",
+      "Create one named weekly series with a fixed look, the way Napoleon runs its Design Council.",
+      "Keep a calendar with fixed days, and give each launch three moments: teaser, launch, follow up.",
+      "Answer every comment. It costs nothing and no competitor does it."
+    ]
   }
 }

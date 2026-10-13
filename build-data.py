@@ -74,7 +74,7 @@ def main():
             last = max(last or day, day)
         a["posts"] = sorted(by_url.values(), key=lambda p: p["date"], reverse=True)
         out.append(a)
-    data = {"scope_start": SCOPE_START, "last_reading": last, "accounts": out}
+    data = {"scope_start": SCOPE_START, "last_reading": last, "overall": analysis.get("_overall"), "accounts": out}
     io.open(os.path.join(HERE, "data.js"), "w", encoding="utf-8", newline="\n").write(
         "window.TRACKER_DATA = " + json.dumps(data, ensure_ascii=False, indent=1) + ";\n")
     for a in out:
