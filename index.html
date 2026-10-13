@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Instagram Competitor Tracker</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Built by Marketing Lab · Glen Dimplex Americas. House style shared with the other Marketing Lab dashboards. */
+:root{
+  color-scheme:light;
+  --bg:#f5f5f5; --surface:#ffffff; --head:#f9f9f9; --ink:#1a1a1a; --ink2:#555555; --muted:#777777;
+  --grid:rgba(0,0,0,0.07); --axis:rgba(0,0,0,0.18); --line:rgba(0,0,0,0.10);
+  --accent:#d9314e; --dark:#1d1d1d;
+  --s1:#d9314e; --s2:#2a78d6; --s3:#1baf7a; --s4:#eda100; --s5:#4a3aa7;
+  --up:#1a8a4a; --down:#b07d10;
+  --h0:#f0f0f0; --h1:#f6ccd4; --h2:#ec98a7; --h3:#d9314e; --h4:#8f1a30;
+  --own:#1d1d1d; --collab:#bdbdbd;
+  --f1:#1d1d1d; --f2:#777777; --f3:#cfcfcf;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.apphead{padding:0 32px;min-height:56px;background:var(--dark);display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px}
+.apphead svg{color:#fff;opacity:.7;flex:none;width:22px;height:22px}
+.apptitle{font-size:15px;font-weight:500;letter-spacing:-.01em;color:#fff;margin:0}
+.apbadge{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);padding:2px 8px;border-radius:3px}
+.apright{margin-left:auto;font-size:13px;color:rgba(255,255,255,.6)}
+.wrap{max-width:1400px;margin:0 auto;padding-inline:22px;padding-block:32px 72px;display:flex;flex-direction:column;gap:22px}
+.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 8px}
+h1{font-size:clamp(24px,3.4vw,34px);line-height:1.15;margin:0 0 10px;font-weight:750;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:15px;margin:0;font-weight:650}
+h3{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 4px}
+.lede{color:var(--muted);max-width:68ch;margin:0;font-size:15px}
+.updated{color:var(--muted);font-size:13px;margin:12px 0 0}
+.updated b{color:var(--ink);font-weight:650}
+.sub{color:var(--muted);margin:0;font-size:12.5px}
+.controls{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.lab{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.seg,.chips{display:inline-flex;flex-wrap:wrap;gap:4px}
+.seg{margin-right:14px}
+.seg button,.chip{font-family:inherit;font-size:12.5px;font-weight:600;background:#fff;color:var(--muted);border:1px solid rgba(0,0,0,.16);border-radius:5px;padding:6px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.seg button:hover,.chip:not(:disabled):hover{border-color:var(--accent);color:var(--accent)}
+.seg button[aria-pressed="true"],.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip:disabled{cursor:default;background:transparent;border-style:dashed;color:#9a9a9a}
+.chip small{font-weight:500;font-size:11px;opacity:.85}
+.dot{width:11px;height:11px;border-radius:3px;flex:none;display:inline-block}
+.chip[aria-pressed="true"] .dot{outline:2px solid #fff}
+button:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px 16px;min-width:0}
+.tile .big{font-size:28px;font-weight:600;line-height:1.1;margin:8px 0 6px;color:var(--accent);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.tile .cmp{font-size:12.5px;color:var(--muted)}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;min-width:0;display:flex;flex-direction:column;overflow:hidden}
+.phead{display:flex;flex-wrap:wrap;gap:4px 14px;justify-content:space-between;align-items:baseline;padding:12px 16px;background:var(--head);border-bottom:1px solid var(--line)}
+.pbody{padding:16px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.pbody.flush{padding:0}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+th{font-weight:500;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:right;padding:10px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:10px 14px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+th:first-child,td:first-child,th.l,td.l{text-align:left}
+td.cap{white-space:normal;min-width:240px;text-align:left;color:var(--ink2)}
+td.wait{text-align:left;color:var(--muted);font-style:italic}
+tr.focus td{background:#fff6f7;font-weight:650}
+.who{display:inline-flex;align-items:center;gap:8px}
+.tag{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap}
+.tag.own{background:rgba(0,0,0,.08);color:var(--ink)} .tag.collab{background:transparent;border:1px solid var(--axis);color:var(--muted)}
+.mix{display:inline-flex;width:110px;height:10px;gap:2px;vertical-align:middle}
+.mix i{display:block;height:100%;border-radius:2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:11px;height:11px;border-radius:3px;flex:none;display:inline-block}
+.sw.ring{background:#fff;border:2px solid var(--muted);border-radius:50%}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--sans);font-size:11px;fill:var(--muted)}
+svg text.v{fill:var(--ink);font-weight:600} svg text.n{fill:var(--ink2);font-size:12.5px}
+select{font:inherit;font-size:12.5px;background:#fff;color:var(--ink);border:1px solid rgba(0,0,0,.16);border-radius:5px;padding:4px 8px;margin-left:6px}
+a{color:var(--accent)}
+#tip{position:fixed;z-index:60;pointer-events:none;background:var(--dark);color:#fff;font-size:12px;padding:8px 10px;border-radius:6px;max-width:280px;line-height:1.5;font-variant-numeric:tabular-nums}
+#tip b{font-weight:700}
+.stats{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 26px}
+.stats li{font-size:13.5px;color:var(--ink2);border-left:3px solid var(--line);padding-left:12px}
+.stats b{color:var(--ink);font-weight:650}
+.stats .k{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:2px}
+.caveat{font-size:12.5px;color:var(--down);background:rgba(176,125,16,.10);border-radius:4px;padding:8px 12px;margin:0}
+.headline{font-size:17px;line-height:1.4;font-weight:600;margin:0;max-width:70ch;text-wrap:pretty}
+.an{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 28px}
+.an p{margin:0;color:var(--ink2);font-size:13.5px}
+.readbox{border-left:3px solid var(--accent);padding:4px 0 4px 14px}
+.readbox p{margin:0;color:var(--ink);font-size:14px;max-width:80ch}
+.lists{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 28px}
+.lists ul{margin:0;padding-left:18px;color:var(--ink2);font-size:13.5px}
+.lists li{margin-bottom:6px}
+.blind{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.blind div{border:1px dashed var(--axis);border-radius:4px;padding:10px 12px;font-size:13px;color:var(--muted)}
+.blind b{display:block;color:var(--ink);font-weight:650}
+.empty{color:var(--muted);font-size:13px;margin:0}
+.credit-tab{position:fixed;bottom:0;left:50%;transform:translateX(-50%);background:var(--dark);color:rgba(255,255,255,.55);font-family:"Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:6px 20px;border-radius:6px 6px 0 0;white-space:nowrap;z-index:50;pointer-events:none}
+.credit-tab strong{color:var(--accent);font-weight:700}
+@media (max-width:900px){ .tiles{grid-template-columns:repeat(2,minmax(0,1fr))} .two,.stats,.an,.lists{grid-template-columns:minmax(0,1fr)} .blind{grid-template-columns:repeat(2,minmax(0,1fr))} .apphead{padding:8px 16px} }
+@media (max-width:460px){ .wrap{padding-inline:16px} .apright{margin-left:0;width:100%} }
+</style>
+</head>
+<body>
+<header class="apphead">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+  <p class="apptitle">Marketing Lab Tools</p>
+  <span class="apbadge">GDA</span>
+  <span class="apright">Competitor social tracking</span>
+</header>
+
+<div class="wrap">
+  <div>
+    <p class="eyebrow">Dimplex · Instagram</p>
+    <h1>Instagram Competitor Tracker</h1>
+    <p class="lede">What Dimplex and four competitors do on Instagram, read from their public profiles once a week: how often they post, what gets watched, and how they run the account.</p>
+    <p class="updated" id="asof"></p>
+  </div>
+
+  <div class="controls">
+    <span class="lab">Account</span>
+    <div class="chips" id="chips"></div>
+    <span class="lab">Period</span>
+    <div class="seg" id="period"></div>
+  </div>
+
+  <div class="tiles" id="tiles"></div>
+
+  <section class="panel">
+    <div class="phead"><h2>How every account compares</h2>
+      <div class="legend"><span><i class="sw" style="background:var(--f1)"></i>Reels</span><span><i class="sw" style="background:var(--f2)"></i>Carousels</span><span><i class="sw" style="background:var(--f3)"></i>Photos</span></div></div>
+    <div class="pbody flush"><div class="scroll"><table id="board"></table></div></div>
+  </section>
+
+  <div class="two">
+    <section class="panel">
+      <div class="phead"><h2>Posting rhythm</h2><p class="sub">Posts per week</p></div>
+      <div class="pbody"><div id="rhythm"></div>
+        <div class="legend"><span><i class="sw" style="background:var(--own)"></i>Own posts</span><span><i class="sw" style="background:var(--collab)"></i>Shared posts from partner accounts</span></div></div>
+    </section>
+    <section class="panel">
+      <div class="phead"><h2>Reel views, post by post</h2><p class="sub">Each dot is one Reel</p></div>
+      <div class="pbody"><div id="views"></div>
+        <div class="legend"><span><i class="sw" id="lgown" style="border-radius:50%"></i>Own Reel</span><span><i class="sw ring" id="lgcol"></i>Shared Reel from a partner account</span><span>Dashed line: the typical Reel (median)</span></div></div>
+    </section>
+  </div>
+
+  <div class="two">
+    <section class="panel">
+      <div class="phead"><h2>When they post</h2><p class="sub">Day and time, Eastern Time</p></div>
+      <div class="pbody"><div id="heat"></div><div class="legend" id="heatleg"></div></div>
+    </section>
+    <section class="panel">
+      <div class="phead"><h2>What gets watched</h2><p class="sub">Typical views per Reel, by kind of content</p></div>
+      <div class="pbody"><div><h3>By who published it</h3><div id="byown"></div></div><div><h3>By what it shows</h3><div id="byvis"></div></div></div>
+    </section>
+  </div>
+
+  <section class="panel">
+    <div class="phead"><h2>The numbers behind it, and what to expect</h2><p class="sub" id="statsub"></p></div>
+    <div class="pbody"><p class="caveat" id="caveat" hidden></p><ul class="stats" id="stats"></ul></div>
+  </section>
+
+  <section class="panel">
+    <div class="phead"><h2 id="antitle">How they run the account</h2><p class="sub">Style, topics and strategy, from looking at every post</p></div>
+    <div class="pbody" id="analysis"></div>
+  </section>
+
+  <section class="panel">
+    <div class="phead"><h2>Every post in the period</h2><p class="sub">Most watched first</p></div>
+    <div class="pbody flush"><div class="scroll"><table id="posts"></table></div></div>
+  </section>
+
+  <section class="panel">
+    <div class="phead"><h2>What stays hidden</h2><p class="sub">Private to each account. No outside reading can see these for a competitor.</p></div>
+    <div class="pbody"><div class="blind">
+      <div><b>Saves</b>How many people kept the post</div>
+      <div><b>Shares</b>How many sent it to someone</div>
+      <div><b>Reach</b>How many unique people saw it</div>
+      <div><b>Stories</b>They disappear after 24 hours</div>
+    </div><p class="sub" id="likesnote" hidden></p></div>
+  </section>
+</div>
+<div class="credit-tab">Marketing <strong>Lab</strong> · GDA</div>
+<div id="tip" hidden></div>
+
+<script src="data.js"></script>
+<script>
+(function(){
+const D=window.TRACKER_DATA, NS='http://www.w3.org/2000/svg', DAY=864e5;
+const $=id=>document.getElementById(id);
+const dt=s=>new Date(s+'T12:00:00');
+const END=dt(D.last_reading), START=dt(D.scope_start), ALLW=Math.max(1,Math.round((END-START)/DAY/7));
+const ready=D.accounts.filter(a=>a.posts.length);
+let focus=(ready.find(a=>a.us)||ready[0]||D.accounts[0]).handle, P=ALLW;
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const nf=n=>n==null||isNaN(n)?'n/a':n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e4?(n/1e3).toFixed(1)+'K':Math.round(n).toLocaleString('en-US');
+const one=n=>n==null||isNaN(n)?'n/a':(Math.round(n*10)/10).toLocaleString('en-US');
+const avg=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:null;
+function q(a,p){if(!a.length)return null;const s=[...a].sort((x,y)=>x-y),i=(s.length-1)*p,lo=Math.floor(i),hi=Math.ceil(i);return s[lo]+(s[hi]-s[lo])*(i-lo)}
+const med=a=>q(a,.5);
+const dfmt=d=>d.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+const cap=s=>s?s.charAt(0).toUpperCase()+s.slice(1):s;
+function el(n,at,txt){const e=document.createElementNS(NS,n);for(const k in at)e.setAttribute(k,at[k]);if(txt!=null)e.textContent=txt;return e}
+const tip=$('tip');
+function showTip(ev,html){tip.innerHTML=html;tip.hidden=false;const w=tip.offsetWidth,h=tip.offsetHeight;let x=ev.clientX+14,y=ev.clientY+14;if(x+w>innerWidth-8)x=ev.clientX-w-14;if(y+h>innerHeight-8)y=ev.clientY-h-14;tip.style.left=Math.max(8,x)+'px';tip.style.top=Math.max(8,y)+'px'}
+function hover(node,html){node.addEventListener('mousemove',e=>showTip(e,html));node.addEventListener('mouseleave',()=>{tip.hidden=true})}
+const dot=a=>`<i class="dot" style="background:var(${a.color})"></i>`;
+const pstart=()=>new Date(END-P*7*DAY);
+
+function stat(a){
+  const from=pstart(), ps=a.posts.filter(p=>dt(p.date)>from), reels=ps.filter(p=>p.format==='Reel'&&p.views!=null);
+  const rd=a.readings[a.readings.length-1]||{};
+  const likes=ps.filter(p=>p.likes!=null).map(p=>p.likes);
+  return {a,ps,reels,fol:rd.followers,ppw:ps.length/P,collabShare:ps.length?ps.filter(p=>p.collab).length/ps.length:null,
+    medViews:med(reels.map(p=>p.views)),com:avg(ps.filter(p=>p.comments!=null).map(p=>p.comments)),
+    likes:likes.length?med(likes):null,likesHidden:ps.length>0&&ps.every(p=>p.likes_hidden),
+    mix:['Reel','Carousel','Photo'].map(f=>ps.filter(p=>p.format===f).length/Math.max(1,ps.length))};
+}
+
+function controls(){
+  $('chips').innerHTML='';
+  D.accounts.forEach(a=>{const ok=a.posts.length>0,b=document.createElement('button');b.type='button';b.className='chip';b.id='chip-'+a.handle;
+    b.disabled=!ok;b.setAttribute('aria-pressed',a.handle===focus);b.innerHTML=dot(a)+esc(a.name)+(ok?'':' <small>reading in progress</small>');
+    if(ok)b.onclick=()=>{focus=a.handle;draw()};$('chips').appendChild(b)});
+  $('period').innerHTML='';
+  [[4,'Last 4 weeks'],[ALLW,'All '+ALLW+' weeks']].forEach(([w,l])=>{const b=document.createElement('button');b.type='button';b.id='per-'+w;b.textContent=l;b.setAttribute('aria-pressed',P===w);b.onclick=()=>{P=w;draw()};$('period').appendChild(b)});
+}
+
+function tiles(s,others){
+  const cmp=(v,f)=>others.length?'Other accounts average '+f(avg(others.map(v).filter(x=>x!=null))):'First account read, comparison comes with the next ones';
+  const vpf=x=>x.medViews!=null&&x.fol?x.medViews/x.fol*100:null;
+  const rows=[['Followers',nf(s.fol),cmp(x=>x.fol,nf)],['Posts per week',one(s.ppw),cmp(x=>x.ppw,one)],
+    ['Typical Reel views',nf(s.medViews),cmp(x=>x.medViews,nf)],['Comments per post',one(s.com),cmp(x=>x.com,one)]];
+  $('tiles').innerHTML=rows.map(r=>`<div class="tile"><div class="lab">${esc(s.a.name)} · ${r[0]}</div><div class="big">${r[1]}</div><div class="cmp">${r[2]}</div></div>`).join('');
+}
+
+function board(S){
+  $('board').innerHTML=`<tr><th class="l">Account</th><th>Followers</th><th>Posts</th><th>Posts / wk</th><th>Shared posts</th><th>Typical Reel views</th><th>Views vs followers</th><th>Comments / post</th><th>Typical likes</th><th class="l">Format mix</th></tr>`+
+  D.accounts.map(a=>{const s=S.find(x=>x.a===a);
+    if(!s)return `<tr><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td class="wait" colspan="9">Reading in progress</td></tr>`;
+    const vpf=s.medViews!=null&&s.fol?Math.round(s.medViews/s.fol*100)+'%':'n/a';
+    return `<tr class="${a.handle===focus?'focus':''}"><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td>${nf(s.fol)}</td><td>${s.ps.length}</td><td>${one(s.ppw)}</td><td>${s.collabShare==null?'n/a':Math.round(s.collabShare*100)+'%'}</td><td>${nf(s.medViews)}</td><td>${vpf}</td><td>${one(s.com)}</td><td>${s.likesHidden?'hidden':nf(s.likes)}</td><td class="l"><span class="mix" title="Reels ${Math.round(s.mix[0]*100)}%, Carousels ${Math.round(s.mix[1]*100)}%, Photos ${Math.round(s.mix[2]*100)}%">${s.mix.map((m,i)=>m>0?`<i style="flex:${m};background:var(--f${i+1})"></i>`:'').join('')}</span></td></tr>`}).join('');
+}
+
+function rhythm(s){
+  const box=$('rhythm');box.innerHTML='';const W=Math.max(300,box.clientWidth),H=230,m={l:30,r:8,t:14,b:26},from=pstart();
+  const wk=Array.from({length:P},(_,i)=>({start:new Date(+from+i*7*DAY),own:0,col:0}));
+  s.ps.forEach(p=>{const i=Math.min(P-1,Math.max(0,Math.floor((dt(p.date)-from-1)/(7*DAY))));p.collab?wk[i].col++:wk[i].own++});
+  const max=Math.max(2,...wk.map(w=>w.own+w.col)),bw=(W-m.l-m.r)/P,y=v=>H-m.b-(v/max)*(H-m.t-m.b);
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img','aria-label':'Posts per week'});
+  for(let t=0;t<=max;t+=max>6?2:1){svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:y(t),y2:y(t),style:`stroke:var(${t?'--grid':'--axis'})`,'stroke-width':1}));svg.appendChild(el('text',{x:m.l-8,y:y(t)+4,'text-anchor':'end'},t))}
+  wk.forEach((w,i)=>{const x=m.l+i*bw+bw*.18,ww=bw*.64;
+    if(i%Math.ceil(P/6)===0)svg.appendChild(el('text',{x:x+ww/2,y:H-8,'text-anchor':'middle'},dfmt(w.start)));
+    const g=el('g',{});
+    if(w.own)g.appendChild(el('rect',{x,y:y(w.own),width:ww,height:y(0)-y(w.own),rx:w.col?0:3,style:'fill:var(--own)'}));
+    if(w.col)g.appendChild(el('rect',{x,y:y(w.own+w.col),width:ww,height:Math.max(1,y(w.own)-y(w.own+w.col)-(w.own?2:0)),rx:3,style:'fill:var(--collab)'}));
+    g.appendChild(el('rect',{x:m.l+i*bw,y:m.t,width:bw,height:H-m.t-m.b,fill:'transparent'}));
+    hover(g,`<b>Week of ${dfmt(w.start)}</b><br>${w.own} own, ${w.col} shared<br>${w.own+w.col} posts`);svg.appendChild(g)});
+  box.appendChild(svg);
+}
+
+function views(s){
+  const box=$('views');box.innerHTML='';$('lgown').style.background=`var(${s.a.color})`;$('lgcol').style.borderColor=`var(${s.a.color})`;
+  if(!s.reels.length){box.innerHTML='<p class="empty">No Reels with a view count in this period.</p>';return}
+  const W=Math.max(300,box.clientWidth),H=230,m={l:44,r:16,t:16,b:26},from=pstart();
+  const max=Math.max(...s.reels.map(p=>p.views))*1.1,x=d=>m.l+((d-from)/(END-from))*(W-m.l-m.r),y=v=>H-m.b-(v/max)*(H-m.t-m.b);
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img','aria-label':'Views per Reel over time'});
+  const step=max>6000?2000:max>3000?1000:500;
+  for(let t=0;t<=max;t+=step){svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:y(t),y2:y(t),style:`stroke:var(${t?'--grid':'--axis'})`,'stroke-width':1}));svg.appendChild(el('text',{x:m.l-8,y:y(t)+4,'text-anchor':'end'},nf(t)))}
+  for(let i=0;i<=4;i++){const d=new Date(+from+(END-from)*i/4);svg.appendChild(el('text',{x:x(d),y:H-8,'text-anchor':i===0?'start':i===4?'end':'middle'},dfmt(d)))}
+  const mv=s.medViews;svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:y(mv),y2:y(mv),style:'stroke:var(--ink2)','stroke-width':1,'stroke-dasharray':'4 3'}));
+  svg.appendChild(el('text',{x:W-m.r,y:y(mv)-5,'text-anchor':'end',class:'v'},'Typical '+nf(mv)));
+  s.reels.forEach(p=>{const c=el('circle',{cx:x(dt(p.date)),cy:y(p.views),r:6,style:p.collab?`fill:var(--surface);stroke:var(${s.a.color})`:`fill:var(${s.a.color});stroke:var(--surface)`,'stroke-width':2});
+    const hit=el('circle',{cx:x(dt(p.date)),cy:y(p.views),r:14,fill:'transparent'});
+    hover(hit,`<b>${esc(cap(p.topic))}</b><br>${dfmt(dt(p.date))} · ${p.collab?'Shared from @'+esc(p.owner):'Own post'}<br>${nf(p.views)} views · ${p.comments} comments · ${p.seconds?Math.round(p.seconds)+' s':''}`);
+    svg.appendChild(c);svg.appendChild(hit)});
+  box.appendChild(svg);
+}
+
+function heat(s){
+  const DAYS=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],SL=['6 to 9 am','9 to 12','12 to 3 pm','3 to 6 pm','6 to 9 pm','9 to 12 pm'];
+  const box=$('heat');box.innerHTML='';const g=DAYS.map(()=>SL.map(()=>0));let off=0;
+  s.ps.forEach(p=>{const h=parseInt(p.hour,10),d=(dt(p.date).getDay()+6)%7;if(isNaN(h)||h<6){off++;return}g[d][Math.min(5,Math.floor((h-6)/3))]++});
+  const mx=Math.max(1,...g.flat()),W=Math.max(300,box.clientWidth),m={l:40,t:24},cw=(W-m.l)/SL.length,ch=26,H=m.t+DAYS.length*ch;
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img','aria-label':'Posting schedule'});
+  SL.forEach((t,j)=>svg.appendChild(el('text',{x:m.l+j*cw+cw/2,y:14,'text-anchor':'middle'},t)));
+  DAYS.forEach((d,i)=>{svg.appendChild(el('text',{x:m.l-8,y:m.t+i*ch+ch/2+4,'text-anchor':'end'},d));
+    SL.forEach((t,j)=>{const v=g[i][j],lv=v===0?0:Math.min(4,Math.ceil(v/mx*4));const r=el('rect',{x:m.l+j*cw+1,y:m.t+i*ch+1,width:cw-2,height:ch-2,rx:3,style:`fill:var(--h${lv})`});
+      hover(r,`<b>${d}, ${t}</b><br>${v} post${v===1?'':'s'}`);svg.appendChild(r);
+      if(v)svg.appendChild(el('text',{x:m.l+j*cw+cw/2,y:m.t+i*ch+ch/2+4,'text-anchor':'middle',style:`fill:${lv>=3?'#fff':'var(--ink)'};pointer-events:none`},v))})});
+  box.appendChild(svg);
+  $('heatleg').innerHTML='<span>Fewer posts</span>'+[0,1,2,3,4].map(i=>`<i class="sw" style="background:var(--h${i})"></i>`).join('')+'<span>More posts</span>'+(off?`<span>${off} posted outside these hours</span>`:'');
+}
+
+function hbar(id,rows,color){
+  const box=$(id);box.innerHTML='';rows=rows.filter(r=>r.n>0);
+  if(!rows.length){box.innerHTML='<p class="empty">No Reels with a view count in this period.</p>';return}
+  const W=Math.max(300,box.clientWidth),rh=34,m={l:Math.min(190,W*.42),r:84},H=rows.length*rh+4,max=Math.max(...rows.map(r=>r.v))*1.02;
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img'});
+  rows.forEach((r,i)=>{const y=i*rh+6,h=rh-14,w=Math.max(5,(r.v/max)*(W-m.l-m.r));
+    svg.appendChild(el('text',{x:m.l-10,y:y+h/2+4,'text-anchor':'end',class:'n'},r.label));
+    const b=el('path',{d:`M${m.l} ${y}h${w-4}a4 4 0 0 1 4 4v${h-8}a4 4 0 0 1 -4 4h${-(w-4)}z`,style:`fill:var(${r.color||color})`});
+    hover(b,`<b>${esc(r.label)}</b><br>Typical Reel: ${nf(r.v)} views<br>${r.n} Reel${r.n===1?'':'s'}, from ${nf(r.lo)} to ${nf(r.hi)}`);svg.appendChild(b);
+    svg.appendChild(el('text',{x:m.l+w+8,y:y+h/2+4,class:'v'},nf(r.v)));
+    svg.appendChild(el('text',{x:W,y:y+h/2+4,'text-anchor':'end'},r.n+(r.n===1?' Reel':' Reels')))});
+  box.appendChild(svg);
+}
+const grp=(reels,label,color)=>{const v=reels.map(p=>p.views);return{label,n:v.length,v:med(v),lo:Math.min(...v),hi:Math.max(...v),color}};
+function watched(s){
+  hbar('byown',[grp(s.reels.filter(p=>!p.collab),'Own Reels','--own'),grp(s.reels.filter(p=>p.collab),'Shared Reels','--collab')],'--own');
+  const kinds=[...new Set(s.reels.map(p=>p.visual))];
+  hbar('byvis',kinds.map(k=>grp(s.reels.filter(p=>p.visual===k),cap(k))).sort((a,b)=>b.v-a.v),'--f2');
+}
+
+function stats(s){
+  const L=[],v=s.reels.map(p=>p.views),own=s.reels.filter(p=>!p.collab),col=s.reels.filter(p=>p.collab);
+  if(v.length)L.push(['The typical Reel',`<b>${nf(med(v))} views.</b> Half of their Reels land between ${nf(q(v,.25))} and ${nf(q(v,.75))}. The best reached ${nf(Math.max(...v))}, the weakest ${nf(Math.min(...v))}.`]);
+  if(own.length&&col.length){const om=med(own.map(p=>p.views)),k=col.filter(p=>p.views>om).length;
+    L.push(['Shared posts against their own',`<b>${k} of ${col.length} shared Reels beat the typical own Reel</b> (${Math.round(k/col.length*100)}%). Shared Reels get ${nf(med(col.map(p=>p.views)))} views, their own get ${nf(om)}.`])}
+  const lg=s.reels.filter(p=>p.seconds>=45),sh=s.reels.filter(p=>p.seconds&&p.seconds<45);
+  if(lg.length>1&&sh.length>1)L.push(['Longer or shorter Reels',`Reels of 45 seconds or more get <b>${nf(med(lg.map(p=>p.views)))} views</b> (${lg.length} Reels). Shorter ones get <b>${nf(med(sh.map(p=>p.views)))}</b> (${sh.length} Reels).`]);
+  const ds=s.ps.map(p=>+dt(p.date)).sort((a,b)=>a-b);let gap=0;for(let i=1;i<ds.length;i++)gap=Math.max(gap,Math.round((ds[i]-ds[i-1])/DAY));
+  if(ds.length>1)L.push(['How steady they are',`<b>${one(s.ppw)} posts a week</b> on average, but the longest silence was <b>${gap} days</b>. ${gap>=10?'They post in bursts, not on a schedule.':'They keep a fairly regular pace.'}`]);
+  const lam=s.ppw*4,sd=Math.sqrt(Math.max(lam,.5));
+  if(s.ps.length)L.push(['Expected in the next 4 weeks',`<b>About ${Math.round(lam)} posts</b>, most likely between ${Math.max(0,Math.round(lam-1.28*sd))} and ${Math.round(lam+1.28*sd)}, if they keep the pace of this period.`]);
+  if(v.length>2)L.push(['Expected views on their next Reel',`<b>Most likely between ${nf(q(v,.1))} and ${nf(q(v,.9))} views</b>, based on how their last ${v.length} Reels spread out.`]);
+  const n=s.a.readings.length;
+  L.push(['Follower projection',n>=6?'':`<b>Starts after 6 weekly readings.</b> Instagram does not show past follower counts, so the history builds from our own readings. ${n} of 6 so far.`]);
+  $('stats').innerHTML=L.filter(x=>x[1]).map(x=>`<li><span class="k">${x[0]}</span>${x[1]}</li>`).join('');
+  $('statsub').textContent=`${s.a.name}, ${s.ps.length} posts, ${s.reels.length} Reels`;
+  const c=$('caveat');c.hidden=s.ps.length>=30;c.textContent=`Small sample: ${s.ps.length} posts in this period. Read these numbers as direction, not as fact. They firm up with every weekly reading.`;
+}
+
+function analysis(s){
+  const A=s.a.analysis,box=$('analysis');$('antitle').textContent='How '+s.a.name+' runs the account';
+  if(!A){box.innerHTML='<p class="empty">The written analysis is added once the reading of this account is complete.</p>';return}
+  box.innerHTML=`<p class="headline">${esc(A.headline)}</p>
+  <div class="an">${A.points.map(p=>`<div><h3>${esc(p[0])}</h3><p>${esc(p[1])}</p></div>`).join('')}</div>
+  <div class="readbox"><h3>My read of the strategy</h3><p>${esc(A.read)}</p></div>
+  <div class="lists"><div><h3>Worth borrowing</h3><ul>${A.borrow.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+  <div><h3>Where they are weak</h3><ul>${A.gaps.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`;
+}
+
+function posts(s){
+  const rows=[...s.ps].sort((a,b)=>(b.views==null?-1:b.views)-(a.views==null?-1:a.views));
+  $('posts').innerHTML=`<tr><th class="l">Date</th><th class="l">Format</th><th class="l">Published by</th><th class="l">What it is</th><th>Views</th><th>Comments</th><th>Likes</th><th class="l">Post</th></tr>`+
+  rows.map(p=>`<tr><td class="l">${dfmt(dt(p.date))}</td><td class="l">${esc(p.format)}</td><td class="l"><span class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):'Own'}</span></td><td class="cap"><b style="color:var(--ink);font-weight:650">${esc(cap(p.topic))}.</b> ${esc(p.caption)}…</td><td>${nf(p.views)}</td><td>${p.comments==null?'n/a':p.comments}</td><td>${p.likes_hidden?'hidden':nf(p.likes)}</td><td class="l"><a href="${esc(p.url)}" target="_blank" rel="noopener">Open</a></td></tr>`).join('');
+}
+
+function draw(){
+  controls();
+  const S=ready.map(stat),s=S.find(x=>x.a.handle===focus);
+  if(!s){$('tiles').innerHTML='<p class="empty">No readings loaded yet.</p>';return}
+  tiles(s,S.filter(x=>x!==s));board(S);rhythm(s);views(s);heat(s);watched(s);stats(s);analysis(s);posts(s);
+  const ln=$('likesnote');ln.hidden=!s.likesHidden;ln.textContent=s.a.name+' also hides the like count on every post, so for this account the reaction is measured with views and comments.';
+}
+$('asof').innerHTML=`Last reading: <b>${END.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})}</b> · Posts since <b>${dfmt(START)}</b> · <b>${ready.length} of ${D.accounts.length}</b> accounts read`;
+let t;addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(draw,120)});
+draw();
+})();
+</script>
+</body>
+</html>

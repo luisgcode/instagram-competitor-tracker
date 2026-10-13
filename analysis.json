@@ -1,0 +1,46 @@
+{
+  "davincifire": {
+    "headline": "A small account carried by its parent company. More than half of what appears on the grid belongs to sister brands.",
+    "points": [
+      ["Visual style", "Real phone video and photos, mostly shot on the factory floor under warehouse light. No renders, no branded templates. The on-screen text changes look from post to post, so the grid has no consistent visual identity."],
+      ["Topics and series", "One clear series: the President's Club dealer event, five posts in nine days. Around it, factory pride and Made in America. Their own posts push customisation: modular units, see-through models, glass heights, and the holographic electric line."],
+      ["Video style", "Reels run 22 to 89 seconds, most between 25 and 62. Licensed music on their own Reels, word by word subtitles whenever a person is on camera. No trending audio."],
+      ["How they write", "Medium captions in a confident product voice, few emojis. Hashtags dropped to zero on their four newest posts. One question to the audience in three months. Calls to action point to the link in bio or a phone number."],
+      ["Who appears", "Company staff and leadership, including the president, a recurring presenter, and dealers. One trade partner. No designers, no influencers, no customer homes."],
+      ["Community", "They do not reply to comments. In five posts checked there was not one answer, including two where people asked about installers."]
+    ],
+    "read": "This account talks to dealers and the trade, not to homeowners. The content that travels is the group's, not DaVinci's: the 90 second factory tour and the gas ban explainer were seen two to three times more than anything DaVinci posted alone. Posting has no rhythm, with a two week silence followed by five posts in one event.",
+    "borrow": [
+      "A fast factory tour. It is their most watched post by a wide margin, and we have a factory story to tell too.",
+      "An explainer on a topic people are already worried about (their gas ban video). It drew the most comments of the period.",
+      "Word by word subtitles on every Reel with a person speaking."
+    ],
+    "gaps": [
+      "They never answer comments. Replying, especially to where to buy and installer questions, is an easy way to look better than them.",
+      "No homeowner content at all: no real homes, no designers, no before and after.",
+      "No consistent look. A recognisable template would stand out next to them."
+    ]
+  },
+  "modernflamesusa": {
+    "headline": "The brand barely posts. Its grid is other people's work: creators, dealers and customers showing Modern Flames in real homes.",
+    "points": [
+      ["Visual style", "Real homes in warm interior light, shot by home creators, dealers and DIY customers. The single post the brand made itself is a polished product image that looks like a render. No branded template."],
+      ["Topics and series", "No series. The repeating pattern is the dealer showcase: one stone dealer appears twice with the same caption formula, location, a line to book a consultation, and eight or nine hashtags. The rest is finished rooms and installs."],
+      ["Video style", "Every Reel belongs to a creator: their voice or original audio, their editing, their on-screen text. Lengths go from 16 seconds to over two minutes."],
+      ["How they write", "The brand's own caption is long and editorial, points to an article, and uses no hashtags. Partner captions are short with four to nine hashtags. No questions to the audience."],
+      ["Who appears", "A home and design creator, a DIY creator, two dealers, a woodworker who bought the product. The brand's own people never appear."],
+      ["Community", "They do reply, but only with emoji or two words of praise on the posts they are tagged in."]
+    ],
+    "read": "Modern Flames lets its customers and dealers do the talking. It costs them almost nothing and it works when a creator has reach: one creator Reel was seen 23,600 times on an account with 2,500 followers, nine times its own audience. The weakness is the same thing. With seven posts in three months and one of their own, there is no rhythm and no brand voice, so the account depends entirely on who decides to tag them.",
+    "borrow": [
+      "Shared posts with home creators. Their two creator Reels are the most watched content of any account read so far, far above anything a brand posted alone.",
+      "Real homes over product shots. Finished rooms from customers and dealers are what gets watched.",
+      "Dealer showcases with a clear next step, such as booking a consultation."
+    ],
+    "gaps": [
+      "Almost silent: seven posts in three months. A steady weekly rhythm already puts us ahead.",
+      "No voice of their own. Nothing explains the product, the technology or how to choose.",
+      "Replies are emoji only. Real answers to real questions would stand out."
+    ]
+  }
+}
