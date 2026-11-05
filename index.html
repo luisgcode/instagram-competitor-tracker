@@ -136,20 +136,19 @@ a{color:var(--accent)}
 .toprow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-top:8px}
 .topcard{border:1px solid var(--line);border-radius:6px;background:var(--surface);display:flex;flex-direction:column;min-width:0;overflow:hidden}
 .topcard.none{border-style:dashed;background:transparent;align-items:center;justify-content:center;color:var(--muted);font-size:12.5px;padding:16px;text-align:center;min-height:120px}
-.tophead{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;padding:8px 10px;background:var(--head);border-bottom:1px solid var(--line)}
+.tophead{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:10px;padding:8px 10px;background:var(--head);border-bottom:1px solid var(--line)}
 .rank{font-size:18px;font-weight:700;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums}
-.tm{display:flex;gap:12px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums;min-width:0}
+.tm{display:flex;gap:10px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums;min-width:0}
 .tm b{display:block;font-size:14px;letter-spacing:0;text-transform:none;color:var(--ink);font-weight:650;line-height:1.2}
 .tm b.hi{color:var(--accent)}
-.tophead a{font-size:12px}
+.topopen{font-size:15px;line-height:1;text-decoration:none;flex:none}
 .topmeta{display:flex;align-items:center;gap:8px;padding:7px 10px;font-size:12px;color:var(--ink2);min-width:0;white-space:nowrap}
 .topmeta .tag{margin-left:auto;overflow:hidden;text-overflow:ellipsis;max-width:60%}
 .topembed{position:relative;aspect-ratio:1/1.1;overflow:hidden;background:var(--head)}
 .topembed iframe{position:absolute;left:0;top:calc(-58px * var(--k,1));width:326px;height:620px;border:0;transform:scale(var(--k,1));transform-origin:0 0}
 .topembed .fallback{display:block;padding:16px 12px;color:var(--muted);font-size:13px;white-space:normal}
 @media (max-width:1100px){ .toprow{grid-template-columns:repeat(3,minmax(0,1fr))} }
-@media (max-width:560px){ .toprow{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px} .tophead{gap:6px;padding:8px} .tm{gap:8px} .tophead .olong{display:none} .tophead .oshort{display:inline;font-size:15px;text-decoration:none} }
-.oshort{display:none}
+@media (max-width:560px){ .toprow{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px} .tophead{gap:6px;padding:8px} .tm{gap:8px} }
 .credit-tab{position:fixed;bottom:0;left:50%;transform:translateX(-50%);background:var(--dark);color:rgba(255,255,255,.55);font-family:"Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:6px 20px;border-radius:6px 6px 0 0;white-space:nowrap;z-index:50;pointer-events:none}
 .credit-tab strong{color:var(--accent);font-weight:700}
 @media (max-width:900px){ .layout{grid-template-columns:minmax(0,1fr)} .rail{top:0;margin:0 -16px;border-radius:0;border-width:0 0 1px;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:14px;padding:8px 16px;z-index:40;max-height:none} .rgroup,.rupd{flex-direction:row;align-items:center;flex:none;gap:6px} .rupd{border-top:0;padding-top:0} .rbtns{flex-direction:row} .rail .chip,.rail .pbtn,.rjump{width:auto;white-space:nowrap} .wrap{padding-inline:0} section[id]{scroll-margin-top:64px} .tiles{grid-template-columns:repeat(2,minmax(0,1fr))} .two,.stats,.an,.lists,.key{grid-template-columns:minmax(0,1fr)} .apphead{padding:8px 16px} }
@@ -206,8 +205,9 @@ a{color:var(--accent)}
 </div>
     <div class="pbody">
       <div><h3>Based on views</h3><div class="toprow" id="topviews"></div></div>
+      <div><h3>Based on likes</h3><div class="toprow" id="toplikes"></div></div>
       <div><h3>Based on comments</h3><div class="toprow" id="topcom"></div></div>
-      <p class="sub">Views count only for Reels, Instagram does not show them on photos or carousels. Shares are private and most accounts hide their likes, so comments are the measure of reaction that every account shows.</p>
+      <p class="sub">Views count only for Reels, Instagram does not show them on photos or carousels. Some partner accounts hide their likes, those posts sit out of the likes ranking. Shares and saves are private and never shown.</p>
     </div>
   </section>
 
@@ -290,7 +290,7 @@ function stat(a){
   const likes=ps.filter(p=>p.likes!=null).map(p=>p.likes);
   return {a,w,ps,reels,fol:rd.followers,ppw:ps.length/(w.days/7),collabShare:ps.length?ps.filter(p=>p.collab).length/ps.length:null,
     medViews:med(reels.map(p=>p.views)),com:avg(ps.filter(p=>p.comments!=null).map(p=>p.comments)),
-    likes:likes.length?med(likes):null,likesHidden:ps.length>0&&ps.every(p=>p.likes_hidden),
+    likes:likes.length?avg(likes):null,likesShown:likes.length,likesHidden:ps.length>0&&ps.every(p=>p.likes_hidden),
     mix:['Reel','Carousel','Photo'].map(f=>ps.filter(p=>p.format===f).length/Math.max(1,ps.length))};
 }
 
@@ -312,11 +312,11 @@ function tiles(s,others){
 }
 
 function board(S){
-  $('board').innerHTML=`<tr><th class="l">Account</th><th>Followers</th><th>Posts</th><th>Posts / wk</th><th>Posts from partners</th><th>Typical Reel views</th><th>Views compared to followers</th><th>Comments / post</th><th class="l">Format mix</th><th class="l">Read on</th></tr>`+
+  $('board').innerHTML=`<tr><th class="l">Account</th><th>Followers</th><th>Posts</th><th>Posts / wk</th><th>Posts from partners</th><th>Typical Reel views</th><th>Views compared to followers</th><th>Likes / post</th><th>Comments / post</th><th class="l">Format mix</th><th class="l">Read on</th></tr>`+
   D.accounts.map(a=>{const s=S.find(x=>x.a===a);
-    if(!s)return `<tr><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td class="wait" colspan="9">Reading in progress</td></tr>`;
+    if(!s)return `<tr><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td class="wait" colspan="10">Reading in progress</td></tr>`;
     const r=s.medViews!=null&&s.fol?s.medViews/s.fol:null,vpf=r==null?'n/a':r.toFixed(r<1?2:1)+'x';
-    return `<tr class="${a.handle===focus?'focus':''}"><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td>${nf(s.fol)}</td><td>${s.ps.length}</td><td>${one(s.ppw)}</td><td>${s.collabShare==null?'n/a':Math.round(s.collabShare*100)+'%'}</td><td>${nf(s.medViews)}</td><td>${vpf}</td><td>${one(s.com)}</td><td class="l"><span class="mix" title="Reels ${Math.round(s.mix[0]*100)}%, Carousels ${Math.round(s.mix[1]*100)}%, Photos ${Math.round(s.mix[2]*100)}%">${s.mix.map((m,i)=>m>0?`<i style="flex:${m};background:var(--f${i+1})"></i>`:'').join('')}</span></td><td class="l">${dfmt(s.w.end)}</td></tr>`}).join('');
+    return `<tr class="${a.handle===focus?'focus':''}"><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td>${nf(s.fol)}</td><td>${s.ps.length}</td><td>${one(s.ppw)}</td><td>${s.collabShare==null?'n/a':Math.round(s.collabShare*100)+'%'}</td><td>${nf(s.medViews)}</td><td>${vpf}</td><td>${s.likes==null?'hidden':one(s.likes)}</td><td>${one(s.com)}</td><td class="l"><span class="mix" title="Reels ${Math.round(s.mix[0]*100)}%, Carousels ${Math.round(s.mix[1]*100)}%, Photos ${Math.round(s.mix[2]*100)}%">${s.mix.map((m,i)=>m>0?`<i style="flex:${m};background:var(--f${i+1})"></i>`:'').join('')}</span></td><td class="l">${dfmt(s.w.end)}</td></tr>`}).join('');
 }
 
 function rhythm(s){
@@ -349,7 +349,7 @@ function views(s){
   svg.appendChild(el('text',{x:W-m.r,y:y(mv)-5,'text-anchor':'end',class:'v'},'Typical '+nf(mv)));
   s.reels.forEach(p=>{const c=el('circle',{cx:x(dt(p.date)),cy:y(p.views),r:6,style:p.collab?`fill:var(--surface);stroke:var(${s.a.color})`:`fill:var(${s.a.color});stroke:var(--surface)`,'stroke-width':2});
     const hit=el('circle',{cx:x(dt(p.date)),cy:y(p.views),r:14,fill:'transparent'});
-    hover(hit,`<b>${esc(cap(p.topic))}</b><br>${dfmt(dt(p.date))} · ${p.collab?'From partner @'+esc(p.owner):p.paid?'Own post, paid partnership':'Own post'}<br>${nf(p.views)} views · ${p.comments} comments · ${p.seconds?Math.round(p.seconds)+' s':''}`);
+    hover(hit,`<b>${esc(cap(p.topic))}</b><br>${dfmt(dt(p.date))} · ${p.collab?'From partner @'+esc(p.owner):p.paid?'Own post, paid partnership':'Own post'}<br>${nf(p.views)} views · ${p.likes==null?'likes hidden':nf(p.likes)+' likes'} · ${p.comments} comments · ${p.seconds?Math.round(p.seconds)+' s':''}`);
     svg.appendChild(c);svg.appendChild(hit)});
   box.appendChild(svg);
 }
@@ -427,8 +427,8 @@ function analysis(s){
 
 function posts(s){
   const rows=[...s.ps].sort((a,b)=>(b.views==null?-1:b.views)-(a.views==null?-1:a.views));
-  $('posts').innerHTML=`<tr><th class="l">Date</th><th class="l">Format</th><th class="l">Published by</th><th class="l">What it is</th><th>Views</th><th>Comments</th><th class="l">Post</th></tr>`+
-  rows.map(p=>`<tr><td class="l">${dfmt(dt(p.date))}</td><td class="l">${esc(p.format)}</td><td class="l"><span class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></td><td class="cap"><b style="color:var(--ink);font-weight:650">${esc(cap(p.topic))}.</b> ${esc(p.caption)}${(p.caption||'').length>=115?'…':''}</td><td>${nf(p.views)}</td><td>${p.comments==null?'n/a':p.comments}</td><td class="l"><a href="${esc(p.url)}" target="_blank" rel="noopener">Open</a></td></tr>`).join('');
+  $('posts').innerHTML=`<tr><th class="l">Date</th><th class="l">Format</th><th class="l">Published by</th><th class="l">What it is</th><th>Views</th><th>Likes</th><th>Comments</th><th class="l">Post</th></tr>`+
+  rows.map(p=>`<tr><td class="l">${dfmt(dt(p.date))}</td><td class="l">${esc(p.format)}</td><td class="l"><span class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></td><td class="cap"><b style="color:var(--ink);font-weight:650">${esc(cap(p.topic))}.</b> ${esc(p.caption)}${(p.caption||'').length>=115?'…':''}</td><td>${nf(p.views)}</td><td>${p.likes==null?'hidden':nf(p.likes)}</td><td>${p.comments==null?'n/a':p.comments}</td><td class="l"><a href="${esc(p.url)}" target="_blank" rel="noopener">Open</a></td></tr>`).join('');
 }
 
 const code=u=>(String(u).match(/\/(?:p|reel|tv)\/([A-Za-z0-9_-]+)/)||[])[1];
@@ -437,12 +437,14 @@ function top(s){
   $('toptitle').textContent=(a.us?'Our':a.name)+' top performing posts';
   $('topsub').textContent=`${ps.length} posts from ${dfmt(w.from)} to ${dfmt(w.end)}`+(w.short?`. Readings for this account start on ${dfmt(w.cov)}, earlier posts are not loaded yet`:'');
   const card=(p,i,hi)=>`<article class="topcard"><div class="tophead"><span class="rank">${i+1}</span>
-    <div class="tm"><span>Views<b class="${hi==='v'?'hi':''}">${p.views==null?'n/a':nf(p.views)}</b></span><span>Comments<b class="${hi==='c'?'hi':''}">${p.comments==null?'n/a':p.comments}</b></span></div><a href="${esc(p.url)}" target="_blank" rel="noopener" aria-label="Open post ${i+1}, ${esc(cap(p.topic))}, on Instagram"><span class="olong">Open</span><span class="oshort" aria-hidden="true">↗</span></a></div>
-    <div class="topmeta"><span>${dfmt(dt(p.date))} · ${esc(p.format)}</span><span title="${p.collab?'@'+esc(p.owner):''}" class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></div>
+    <div class="tm"><span>Views<b class="${hi==='v'?'hi':''}">${p.views==null?'n/a':nf(p.views)}</b></span><span>Likes<b class="${hi==='l'?'hi':''}">${p.likes==null?'hidden':nf(p.likes)}</b></span><span>Comments<b class="${hi==='c'?'hi':''}">${p.comments==null?'n/a':p.comments}</b></span></div></div>
+    <div class="topmeta"><span>${dfmt(dt(p.date))} · ${esc(p.format)}</span><span title="${p.collab?'@'+esc(p.owner):''}" class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span><a class="topopen" href="${esc(p.url)}" target="_blank" rel="noopener" aria-label="Open post ${i+1}, ${esc(cap(p.topic))}, on Instagram" title="Open on Instagram">↗</a></div>
     <div class="topembed">${code(p.url)?`<iframe src="https://www.instagram.com/p/${code(p.url)}/embed/" loading="lazy" scrolling="no" title="${esc(cap(p.topic))}"></iframe>`:`<a class="fallback" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(cap(p.topic))}</a>`}</div></article>`;
   const row=(id,list,hi,msg)=>{$(id).innerHTML=list.map((p,i)=>card(p,i,hi)).join('')+Array.from({length:5-list.length},(_,i)=>`<div class="topcard none">${i?'':msg||(list.length?'No more posts in this period':'No posts in this period')}</div>`).join('');fitTop()};
   const vr=ps.filter(p=>p.views!=null),rest=ps.length-vr.length;
   row('topviews',vr.sort((x,y)=>y.views-x.views).slice(0,5),'v',vr.length<5&&rest?`Only ${vr.length} Reel${vr.length===1?'':'s'} in this period. The other ${rest} post${rest===1?' is a photo or carousel':'s are photos or carousels'}, and Instagram shows no view count for those.`:'');
+  const lk=ps.filter(p=>p.likes!=null),hid=ps.length-lk.length;
+  row('toplikes',lk.sort((x,y)=>y.likes-x.likes||(y.comments||0)-(x.comments||0)).slice(0,5),'l',lk.length<5&&hid?`Only ${lk.length} post${lk.length===1?' shows':'s show'} likes in this period. The other ${hid} ${hid===1?'is':'are'} from accounts that hide their likes.`:'');
   row('topcom',ps.filter(p=>p.comments!=null).sort((x,y)=>y.comments-x.comments||(y.views||0)-(x.views||0)).slice(0,5),'c');
 }
 
