@@ -447,8 +447,9 @@ function top(s){
     <div class="tm"><span>Views<b class="${hi==='v'?'hi':''}">${p.views==null?'n/a':nf(p.views)}</b></span><span>Comments<b class="${hi==='c'?'hi':''}">${p.comments==null?'n/a':p.comments}</b></span></div><a href="${esc(p.url)}" target="_blank" rel="noopener" aria-label="Open post ${i+1}, ${esc(cap(p.topic))}, on Instagram"><span class="olong">Open</span><span class="oshort" aria-hidden="true">↗</span></a></div>
     <div class="topmeta"><span>${dfmt(dt(p.date))} · ${esc(p.format)}</span><span title="${p.collab?'@'+esc(p.owner):''}" class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></div>
     <div class="topembed">${code(p.url)?`<iframe src="https://www.instagram.com/p/${code(p.url)}/embed/" loading="lazy" scrolling="no" title="${esc(cap(p.topic))}"></iframe>`:`<a class="fallback" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(cap(p.topic))}</a>`}</div></article>`;
-  const row=(id,list,hi)=>{$(id).innerHTML=list.map((p,i)=>card(p,i,hi)).join('')+Array.from({length:5-list.length},(_,i)=>`<div class="topcard none">${i?'':list.length?'No more posts in this period':'No posts in this period'}</div>`).join('');fitTop()};
-  row('topviews',ps.filter(p=>p.views!=null).sort((x,y)=>y.views-x.views).slice(0,5),'v');
+  const row=(id,list,hi,msg)=>{$(id).innerHTML=list.map((p,i)=>card(p,i,hi)).join('')+Array.from({length:5-list.length},(_,i)=>`<div class="topcard none">${i?'':msg||(list.length?'No more posts in this period':'No posts in this period')}</div>`).join('');fitTop()};
+  const vr=ps.filter(p=>p.views!=null),rest=ps.length-vr.length;
+  row('topviews',vr.sort((x,y)=>y.views-x.views).slice(0,5),'v',vr.length<5&&rest?`Only ${vr.length} Reel${vr.length===1?'':'s'} in this period. The other ${rest} post${rest===1?' is a photo or carousel':'s are photos or carousels'}, and Instagram shows no view count for those.`:'');
   row('topcom',ps.filter(p=>p.comments!=null).sort((x,y)=>y.comments-x.comments||(y.views||0)-(x.views||0)).slice(0,5),'c');
 }
 
