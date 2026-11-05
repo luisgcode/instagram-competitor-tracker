@@ -68,8 +68,9 @@ def parse(path):
     if sc:
         profile["scope_from"] = sc.group(1)
     posts = []
-    block = re.search(r"```\n(.*?)```", txt, re.S)
-    for i, line in enumerate(block.group(1).splitlines() if block else [], 1):
+    # A long reading comes in parts, each with its own fenced block of posts: read them all.
+    lines = [l for b in re.findall(r"```\n(.*?)```", txt, re.S) for l in b.splitlines()]
+    for i, line in enumerate(lines, 1):
         if not line.strip():
             continue
         parts = [p.strip() for p in line.split(" | ")]
