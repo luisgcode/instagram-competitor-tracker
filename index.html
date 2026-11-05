@@ -54,6 +54,8 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font
 .rjump{background:var(--dark);border-color:var(--dark);color:#fff}
 .rjump:hover{background:var(--accent);border-color:var(--accent);color:#fff}
 .rjump+.rjump{background:#fff;color:var(--ink2);border-color:rgba(0,0,0,.14)}
+.rupd{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-direction:column;gap:2px}
+.rupd b{font-size:13px;font-weight:650;color:var(--ink)}
 .wrap{min-width:0;padding-inline:0 0;padding-left:14px;padding-block:32px 72px;display:flex;flex-direction:column;gap:22px}
 html{scroll-behavior:smooth} section[id]{scroll-margin-top:16px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -154,7 +156,7 @@ a{color:var(--accent)}
 .oshort{display:none}
 .credit-tab{position:fixed;bottom:0;left:50%;transform:translateX(-50%);background:var(--dark);color:rgba(255,255,255,.55);font-family:"Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:6px 20px;border-radius:6px 6px 0 0;white-space:nowrap;z-index:50;pointer-events:none}
 .credit-tab strong{color:var(--accent);font-weight:700}
-@media (max-width:900px){ .layout{grid-template-columns:minmax(0,1fr)} .rail{top:0;margin:0 -16px;border-radius:0;border-width:0 0 1px;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:14px;padding:8px 16px;z-index:40;max-height:none} .rgroup{flex-direction:row;align-items:center;flex:none} .rbtns{flex-direction:row} .rail .chip,.rail .pbtn,.rjump{width:auto;white-space:nowrap} .wrap{padding-inline:0} section[id]{scroll-margin-top:64px} .tiles{grid-template-columns:repeat(2,minmax(0,1fr))} .two,.stats,.an,.lists,.key{grid-template-columns:minmax(0,1fr)} .blind{grid-template-columns:repeat(2,minmax(0,1fr))} .apphead{padding:8px 16px} }
+@media (max-width:900px){ .layout{grid-template-columns:minmax(0,1fr)} .rail{top:0;margin:0 -16px;border-radius:0;border-width:0 0 1px;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:14px;padding:8px 16px;z-index:40;max-height:none} .rgroup,.rupd{flex-direction:row;align-items:center;flex:none;gap:6px} .rupd{border-top:0;padding-top:0} .rbtns{flex-direction:row} .rail .chip,.rail .pbtn,.rjump{width:auto;white-space:nowrap} .wrap{padding-inline:0} section[id]{scroll-margin-top:64px} .tiles{grid-template-columns:repeat(2,minmax(0,1fr))} .two,.stats,.an,.lists,.key{grid-template-columns:minmax(0,1fr)} .blind{grid-template-columns:repeat(2,minmax(0,1fr))} .apphead{padding:8px 16px} }
 @media (max-width:460px){ .wrap{padding-inline:0} .apright{margin-left:0;width:100%} }
 </style>
 </head>
@@ -174,6 +176,7 @@ a{color:var(--accent)}
     <a class="rjump" href="#top5">Top 5</a>
     <a class="rjump" href="#allposts">Every post</a>
     <a class="rjump" href="#pagetop">Back to top</a></div></div>
+  <div class="rupd"><span class="lab">Updated</span><b id="railupd"></b></div>
 </nav>
 <div class="wrap">
   <div>
@@ -459,6 +462,7 @@ function draw(){
   if(lastTop!==focus+PD){lastTop=focus+PD;top(s)}
   const ln=$('likesnote');ln.hidden=!S.every(x=>x.likesHidden);ln.textContent='Likes are missing from this dashboard on purpose: every account read hides its like counts, so reaction is measured with views and comments.';
 }
+$('railupd').textContent=END.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
 $('asof').innerHTML=`Last reading: <b>${END.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})}</b> · Posts since <b>${dfmt(START)}</b> · <b>${ready.length} of ${D.accounts.length}</b> accounts read`;
 if(D.overall&&ready.length===D.accounts.length){const O=D.overall;$('overallpanel').hidden=false;
   $('overall').innerHTML=`<p class="headline">${esc(O.headline)}</p><div class="an">${O.findings.map(f=>`<div><h3>${esc(f[0])}</h3><p>${esc(f[1])}</p></div>`).join('')}</div><div class="readbox"><h3>What I would do with this</h3><ol class="plan">${O.plan.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></div>`}
