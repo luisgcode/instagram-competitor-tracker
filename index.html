@@ -267,7 +267,7 @@ let focus=(ready.find(a=>a.us)||ready[0]||D.accounts[0]).handle, PD='90';
 const COV=new Date(Math.min(...D.accounts.map(a=>+dt(a.coverage_start||D.scope_start))));
 // Each account is measured on its own window: it ends on that account's last reading and never starts before the first day its readings cover.
 function win(a){const end=dt(a.last_reading||D.last_reading),cov=dt(a.coverage_start||D.scope_start);
-  const want=PD==='6m'?new Date(end.getFullYear(),end.getMonth()-6,end.getDate()+1,12):new Date(end-(+PD-1)*DAY);
+  const want=PD==='6m'?new Date(end.getFullYear(),end.getMonth()-6,end.getDate()+1,12):new Date(end.getFullYear(),end.getMonth(),end.getDate()-(+PD-1),12);
   const from=want<cov?cov:want,days=Math.round((end-from)/DAY)+1;return{end,cov,want,from,days,weeks:Math.max(1,Math.ceil(days/7)),short:want<cov}}
 const inWin=(p,w)=>{const d=dt(p.date);return d>=w.from&&d<=w.end};
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -322,7 +322,7 @@ function board(S){
 function rhythm(s){
   const box=$('rhythm');box.innerHTML='';const W=Math.max(300,box.clientWidth),H=230,m={l:30,r:8,t:14,b:26},from=s.w.from,P=s.w.weeks;
   const wk=Array.from({length:P},(_,i)=>({start:new Date(+from+i*7*DAY),own:0,col:0}));
-  s.ps.forEach(p=>{const i=Math.min(P-1,Math.max(0,Math.floor((dt(p.date)-from)/(7*DAY))));p.collab?wk[i].col++:wk[i].own++});
+  s.ps.forEach(p=>{const i=Math.min(P-1,Math.max(0,Math.floor(Math.round((dt(p.date)-from)/DAY)/7)));p.collab?wk[i].col++:wk[i].own++});
   const max=Math.max(2,...wk.map(w=>w.own+w.col)),bw=(W-m.l-m.r)/P,y=v=>H-m.b-(v/max)*(H-m.t-m.b);
   const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img','aria-label':'Posts per week'});
   for(let t=0;t<=max;t+=max>6?2:1){svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:y(t),y2:y(t),style:`stroke:var(${t?'--grid':'--axis'})`,'stroke-width':1}));svg.appendChild(el('text',{x:m.l-8,y:y(t)+4,'text-anchor':'end'},t))}
