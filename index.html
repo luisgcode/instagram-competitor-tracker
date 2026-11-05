@@ -278,7 +278,7 @@ const END=dt(D.last_reading), START=dt(D.scope_start);
 const ready=D.accounts.filter(a=>a.posts.length);
 let focus=(ready.find(a=>a.us)||ready[0]||D.accounts[0]).handle, PD='90', P=13, FROM=START, DAYS=91;
 const COV=new Date(Math.min(...D.accounts.map(a=>+dt(a.coverage_start||D.scope_start))));
-function setRange(){const want=PD==='all'?COV:new Date(END-(+PD-1)*DAY);
+function setRange(){const want=PD==='6m'?new Date(END.getFullYear(),END.getMonth()-6,END.getDate()+1,12):new Date(END-(+PD-1)*DAY);
   FROM=want<COV?COV:want;DAYS=Math.round((END-FROM)/DAY)+1;P=Math.max(1,Math.ceil(DAYS/7));return want}
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const nf=n=>n==null||isNaN(n)?'n/a':n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e4?(n/1e3).toFixed(1)+'K':Math.round(n).toLocaleString('en-US');
@@ -311,7 +311,7 @@ function controls(){
     b.disabled=!ok;b.setAttribute('aria-pressed',a.handle===focus);b.innerHTML=dot(a)+esc(a.name)+(ok?'':' <small>reading in progress</small>');
     if(ok)b.onclick=()=>{focus=a.handle;draw()};$('chips').appendChild(b)});
   $('period').innerHTML='';
-  [['all','All '+Math.max(1,Math.round((END-COV)/DAY/7))+' weeks'],['90','90 days'],['30','30 days']].forEach(([k,l])=>{const b=document.createElement('button');b.type='button';b.className='pbtn';b.id='per-'+k;b.textContent=l;b.setAttribute('aria-pressed',PD===k);b.onclick=()=>{PD=k;draw()};$('period').appendChild(b)});
+  [['6m','6 months'],['90','90 days'],['30','30 days']].forEach(([k,l])=>{const b=document.createElement('button');b.type='button';b.className='pbtn';b.id='per-'+k;b.textContent=l;b.setAttribute('aria-pressed',PD===k);b.onclick=()=>{PD=k;draw()};$('period').appendChild(b)});
 }
 
 function tiles(s,others){
