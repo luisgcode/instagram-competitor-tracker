@@ -58,7 +58,6 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font
 .rupd b{font-size:13px;font-weight:650;color:var(--ink)}
 .wrap{min-width:0;padding-inline:0 0;padding-left:14px;padding-block:32px 72px;display:flex;flex-direction:column;gap:22px}
 html{scroll-behavior:smooth} section[id]{scroll-margin-top:16px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 8px}
 h1{font-size:clamp(24px,3.4vw,34px);line-height:1.15;margin:0 0 10px;font-weight:750;letter-spacing:-.02em;text-wrap:balance}
 h2{font-size:15px;margin:0;font-weight:650}
@@ -130,9 +129,6 @@ a{color:var(--accent)}
 .lists{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 28px}
 .lists ul{margin:0;padding-left:18px;color:var(--ink2);font-size:13.5px}
 .lists li{margin-bottom:6px}
-.blind{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.blind div{border:1px dashed var(--axis);border-radius:4px;padding:10px 12px;font-size:13px;color:var(--muted)}
-.blind b{display:block;color:var(--ink);font-weight:650}
 .empty{color:var(--muted);font-size:13px;margin:0}
 .key{margin:0;padding:14px 16px;border-top:1px solid var(--line);background:var(--head);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 26px}
 .key dt{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);font-weight:600;margin-bottom:3px}
@@ -156,7 +152,7 @@ a{color:var(--accent)}
 .oshort{display:none}
 .credit-tab{position:fixed;bottom:0;left:50%;transform:translateX(-50%);background:var(--dark);color:rgba(255,255,255,.55);font-family:"Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:6px 20px;border-radius:6px 6px 0 0;white-space:nowrap;z-index:50;pointer-events:none}
 .credit-tab strong{color:var(--accent);font-weight:700}
-@media (max-width:900px){ .layout{grid-template-columns:minmax(0,1fr)} .rail{top:0;margin:0 -16px;border-radius:0;border-width:0 0 1px;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:14px;padding:8px 16px;z-index:40;max-height:none} .rgroup,.rupd{flex-direction:row;align-items:center;flex:none;gap:6px} .rupd{border-top:0;padding-top:0} .rbtns{flex-direction:row} .rail .chip,.rail .pbtn,.rjump{width:auto;white-space:nowrap} .wrap{padding-inline:0} section[id]{scroll-margin-top:64px} .tiles{grid-template-columns:repeat(2,minmax(0,1fr))} .two,.stats,.an,.lists,.key{grid-template-columns:minmax(0,1fr)} .blind{grid-template-columns:repeat(2,minmax(0,1fr))} .apphead{padding:8px 16px} }
+@media (max-width:900px){ .layout{grid-template-columns:minmax(0,1fr)} .rail{top:0;margin:0 -16px;border-radius:0;border-width:0 0 1px;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:14px;padding:8px 16px;z-index:40;max-height:none} .rgroup,.rupd{flex-direction:row;align-items:center;flex:none;gap:6px} .rupd{border-top:0;padding-top:0} .rbtns{flex-direction:row} .rail .chip,.rail .pbtn,.rjump{width:auto;white-space:nowrap} .wrap{padding-inline:0} section[id]{scroll-margin-top:64px} .tiles{grid-template-columns:repeat(2,minmax(0,1fr))} .two,.stats,.an,.lists,.key{grid-template-columns:minmax(0,1fr)} .apphead{padding:8px 16px} }
 @media (max-width:460px){ .wrap{padding-inline:0} .apright{margin-left:0;width:100%} }
 </style>
 </head>
@@ -182,7 +178,7 @@ a{color:var(--accent)}
   <div>
     <p class="eyebrow">Dimplex · Instagram</p>
     <h1>Instagram Competitor Tracker</h1>
-    <p class="lede">What Dimplex and four competitors do on Instagram, read from their public profiles once a week: how often they post, what gets watched, and how they run the account.</p>
+    <p class="lede">What Dimplex and four competitors do on Instagram, read from their public profiles at every update: how often they post, what gets watched, and how they run the account.</p>
     <p class="updated" id="asof"></p>
   </div>
 
@@ -211,7 +207,7 @@ a{color:var(--accent)}
     <div class="pbody">
       <div><h3>Based on views</h3><div class="toprow" id="topviews"></div></div>
       <div><h3>Based on comments</h3><div class="toprow" id="topcom"></div></div>
-      <p class="sub">Views count only for Reels, Instagram does not show them on photos or carousels. Likes and shares are hidden on every account, so comments are the public measure of reaction.</p>
+      <p class="sub">Views count only for Reels, Instagram does not show them on photos or carousels. Shares are private and most accounts hide their likes, so comments are the measure of reaction that every account shows.</p>
     </div>
   </section>
 
@@ -254,15 +250,6 @@ a{color:var(--accent)}
     <div class="pbody flush"><div class="scroll"><table id="posts"></table></div></div>
   </section>
 
-  <section class="panel">
-    <div class="phead"><h2>What stays hidden</h2><p class="sub">Private to each account. No outside reading can see these for a competitor.</p></div>
-    <div class="pbody"><div class="blind">
-      <div><b>Saves</b>How many people kept the post</div>
-      <div><b>Shares</b>How many sent it to someone</div>
-      <div><b>Reach</b>How many unique people saw it</div>
-      <div><b>Stories</b>They disappear after 24 hours</div>
-    </div><p class="sub" id="likesnote" hidden></p></div>
-  </section>
 </div>
 </div>
 <div class="credit-tab">Marketing <strong>Lab</strong> · GDA</div>
@@ -276,10 +263,13 @@ const $=id=>document.getElementById(id);
 const dt=s=>new Date(s+'T12:00:00');
 const END=dt(D.last_reading), START=dt(D.scope_start);
 const ready=D.accounts.filter(a=>a.posts.length);
-let focus=(ready.find(a=>a.us)||ready[0]||D.accounts[0]).handle, PD='90', P=13, FROM=START, DAYS=91;
+let focus=(ready.find(a=>a.us)||ready[0]||D.accounts[0]).handle, PD='90';
 const COV=new Date(Math.min(...D.accounts.map(a=>+dt(a.coverage_start||D.scope_start))));
-function setRange(){const want=PD==='6m'?new Date(END.getFullYear(),END.getMonth()-6,END.getDate()+1,12):new Date(END-(+PD-1)*DAY);
-  FROM=want<COV?COV:want;DAYS=Math.round((END-FROM)/DAY)+1;P=Math.max(1,Math.ceil(DAYS/7));return want}
+// Each account is measured on its own window: it ends on that account's last reading and never starts before the first day its readings cover.
+function win(a){const end=dt(a.last_reading||D.last_reading),cov=dt(a.coverage_start||D.scope_start);
+  const want=PD==='6m'?new Date(end.getFullYear(),end.getMonth()-6,end.getDate()+1,12):new Date(end-(+PD-1)*DAY);
+  const from=want<cov?cov:want,days=Math.round((end-from)/DAY)+1;return{end,cov,want,from,days,weeks:Math.max(1,Math.ceil(days/7)),short:want<cov}}
+const inWin=(p,w)=>{const d=dt(p.date);return d>=w.from&&d<=w.end};
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const nf=n=>n==null||isNaN(n)?'n/a':n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e4?(n/1e3).toFixed(1)+'K':Math.round(n).toLocaleString('en-US');
 const one=n=>n==null||isNaN(n)?'n/a':(Math.round(n*10)/10).toLocaleString('en-US');
@@ -293,13 +283,12 @@ const tip=$('tip');
 function showTip(ev,html){tip.innerHTML=html;tip.hidden=false;const w=tip.offsetWidth,h=tip.offsetHeight;let x=ev.clientX+14,y=ev.clientY+14;if(x+w>innerWidth-8)x=ev.clientX-w-14;if(y+h>innerHeight-8)y=ev.clientY-h-14;tip.style.left=Math.max(8,x)+'px';tip.style.top=Math.max(8,y)+'px'}
 function hover(node,html){node.addEventListener('mousemove',e=>showTip(e,html));node.addEventListener('mouseleave',()=>{tip.hidden=true})}
 const dot=a=>`<i class="dot" style="background:var(${a.color})"></i>`;
-const pstart=()=>new Date(+FROM-DAY/2);
 
 function stat(a){
-  const from=pstart(), ps=a.posts.filter(p=>dt(p.date)>from), reels=ps.filter(p=>p.format==='Reel'&&p.views!=null);
+  const w=win(a), ps=a.posts.filter(p=>inWin(p,w)), reels=ps.filter(p=>p.format==='Reel'&&p.views!=null);
   const rd=a.readings[a.readings.length-1]||{};
   const likes=ps.filter(p=>p.likes!=null).map(p=>p.likes);
-  return {a,ps,reels,fol:rd.followers,ppw:ps.length/(DAYS/7),collabShare:ps.length?ps.filter(p=>p.collab).length/ps.length:null,
+  return {a,w,ps,reels,fol:rd.followers,ppw:ps.length/(w.days/7),collabShare:ps.length?ps.filter(p=>p.collab).length/ps.length:null,
     medViews:med(reels.map(p=>p.views)),com:avg(ps.filter(p=>p.comments!=null).map(p=>p.comments)),
     likes:likes.length?med(likes):null,likesHidden:ps.length>0&&ps.every(p=>p.likes_hidden),
     mix:['Reel','Carousel','Photo'].map(f=>ps.filter(p=>p.format===f).length/Math.max(1,ps.length))};
@@ -323,15 +312,15 @@ function tiles(s,others){
 }
 
 function board(S){
-  $('board').innerHTML=`<tr><th class="l">Account</th><th>Followers</th><th>Posts</th><th>Posts / wk</th><th>Posts from partners</th><th>Typical Reel views</th><th>Views compared to followers</th><th>Comments / post</th><th class="l">Format mix</th></tr>`+
+  $('board').innerHTML=`<tr><th class="l">Account</th><th>Followers</th><th>Posts</th><th>Posts / wk</th><th>Posts from partners</th><th>Typical Reel views</th><th>Views compared to followers</th><th>Comments / post</th><th class="l">Format mix</th><th class="l">Read on</th></tr>`+
   D.accounts.map(a=>{const s=S.find(x=>x.a===a);
-    if(!s)return `<tr><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td class="wait" colspan="8">Reading in progress</td></tr>`;
+    if(!s)return `<tr><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td class="wait" colspan="9">Reading in progress</td></tr>`;
     const r=s.medViews!=null&&s.fol?s.medViews/s.fol:null,vpf=r==null?'n/a':r.toFixed(r<1?2:1)+'x';
-    return `<tr class="${a.handle===focus?'focus':''}"><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td>${nf(s.fol)}</td><td>${s.ps.length}</td><td>${one(s.ppw)}</td><td>${s.collabShare==null?'n/a':Math.round(s.collabShare*100)+'%'}</td><td>${nf(s.medViews)}</td><td>${vpf}</td><td>${one(s.com)}</td><td class="l"><span class="mix" title="Reels ${Math.round(s.mix[0]*100)}%, Carousels ${Math.round(s.mix[1]*100)}%, Photos ${Math.round(s.mix[2]*100)}%">${s.mix.map((m,i)=>m>0?`<i style="flex:${m};background:var(--f${i+1})"></i>`:'').join('')}</span></td></tr>`}).join('');
+    return `<tr class="${a.handle===focus?'focus':''}"><td><span class="who">${dot(a)}${esc(a.name)}</span></td><td>${nf(s.fol)}</td><td>${s.ps.length}</td><td>${one(s.ppw)}</td><td>${s.collabShare==null?'n/a':Math.round(s.collabShare*100)+'%'}</td><td>${nf(s.medViews)}</td><td>${vpf}</td><td>${one(s.com)}</td><td class="l"><span class="mix" title="Reels ${Math.round(s.mix[0]*100)}%, Carousels ${Math.round(s.mix[1]*100)}%, Photos ${Math.round(s.mix[2]*100)}%">${s.mix.map((m,i)=>m>0?`<i style="flex:${m};background:var(--f${i+1})"></i>`:'').join('')}</span></td><td class="l">${dfmt(s.w.end)}</td></tr>`}).join('');
 }
 
 function rhythm(s){
-  const box=$('rhythm');box.innerHTML='';const W=Math.max(300,box.clientWidth),H=230,m={l:30,r:8,t:14,b:26},from=pstart();
+  const box=$('rhythm');box.innerHTML='';const W=Math.max(300,box.clientWidth),H=230,m={l:30,r:8,t:14,b:26},from=s.w.from,P=s.w.weeks;
   const wk=Array.from({length:P},(_,i)=>({start:new Date(+from+i*7*DAY),own:0,col:0}));
   s.ps.forEach(p=>{const i=Math.min(P-1,Math.max(0,Math.floor((dt(p.date)-from)/(7*DAY))));p.collab?wk[i].col++:wk[i].own++});
   const max=Math.max(2,...wk.map(w=>w.own+w.col)),bw=(W-m.l-m.r)/P,y=v=>H-m.b-(v/max)*(H-m.t-m.b);
@@ -343,15 +332,15 @@ function rhythm(s){
     if(w.own)g.appendChild(el('rect',{x,y:y(w.own),width:ww,height:y(0)-y(w.own),rx:w.col?0:3,style:'fill:var(--own)'}));
     if(w.col)g.appendChild(el('rect',{x,y:y(w.own+w.col),width:ww,height:Math.max(1,y(w.own)-y(w.own+w.col)-(w.own?2:0)),rx:3,style:'fill:var(--collab)'}));
     g.appendChild(el('rect',{x:m.l+i*bw,y:m.t,width:bw,height:H-m.t-m.b,fill:'transparent'}));
-    hover(g,`<b>Week of ${dfmt(w.start)}</b><br>${w.own} own, ${w.col} from partners<br>${w.own+w.col} posts`);svg.appendChild(g)});
+    hover(g,`<b>${i===P-1&&s.w.days%7?'Last '+(s.w.days%7)+' days, from ':'Week of '}${dfmt(w.start)}</b><br>${w.own} own, ${w.col} from partners<br>${w.own+w.col} posts`);svg.appendChild(g)});
   box.appendChild(svg);
 }
 
 function views(s){
   const box=$('views');box.innerHTML='';$('lgown').style.background=`var(${s.a.color})`;$('lgcol').style.borderColor=`var(${s.a.color})`;
   if(!s.reels.length){box.innerHTML='<p class="empty">No Reels with a view count in this period.</p>';return}
-  const W=Math.max(300,box.clientWidth),H=230,m={l:44,r:16,t:16,b:26},from=pstart();
-  const max=Math.max(...s.reels.map(p=>p.views))*1.1,x=d=>m.l+((d-from)/(END-from))*(W-m.l-m.r),y=v=>H-m.b-(v/max)*(H-m.t-m.b);
+  const W=Math.max(300,box.clientWidth),H=230,m={l:44,r:16,t:16,b:26},from=s.w.from,END=s.w.end;
+  const max=Math.max(10,...s.reels.map(p=>p.views))*1.1,x=d=>m.l+((d-from)/(END-from))*(W-m.l-m.r),y=v=>H-m.b-(v/max)*(H-m.t-m.b);
   const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img','aria-label':'Views per Reel over time'});
   const raw=max/5,pw=Math.pow(10,Math.floor(Math.log10(raw))),step=[1,2,5,10].map(k=>k*pw).find(k=>k>=raw);
   for(let t=0;t<=max;t+=step){svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:y(t),y2:y(t),style:`stroke:var(${t?'--grid':'--axis'})`,'stroke-width':1}));svg.appendChild(el('text',{x:m.l-8,y:y(t)+4,'text-anchor':'end'},nf(t)))}
@@ -366,7 +355,7 @@ function views(s){
 }
 
 function heat(s){
-  const DAYS=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],SL=['6 to 9 am','9 to 12','12 to 3 pm','3 to 6 pm','6 to 9 pm','9 to 12 pm'];
+  const DAYS=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],SL=['6 to 9 am','9 am to 12','12 to 3 pm','3 to 6 pm','6 to 9 pm','9 pm to 12'];
   const box=$('heat');box.innerHTML='';const g=DAYS.map(()=>SL.map(()=>0));let off=0;
   s.ps.forEach(p=>{const h=parseInt(p.hour,10),d=(dt(p.date).getDay()+6)%7;if(isNaN(h)||h<6){off++;return}g[d][Math.min(5,Math.floor((h-6)/3))]++});
   const mx=Math.max(1,...g.flat()),W=Math.max(300,box.clientWidth),m={l:40,t:24},cw=(W-m.l)/SL.length,ch=26,H=m.t+DAYS.length*ch;
@@ -377,7 +366,7 @@ function heat(s){
       hover(r,`<b>${d}, ${t}</b><br>${v} post${v===1?'':'s'}`);svg.appendChild(r);
       if(v)svg.appendChild(el('text',{x:m.l+j*cw+cw/2,y:m.t+i*ch+ch/2+4,'text-anchor':'middle',style:`fill:${lv>=3?'#fff':'var(--ink)'};pointer-events:none`},v))})});
   box.appendChild(svg);
-  $('heatleg').innerHTML='<span>Fewer posts</span>'+[0,1,2,3,4].map(i=>`<i class="sw" style="background:var(--h${i})"></i>`).join('')+'<span>More posts</span>'+(off?`<span>${off} posted outside these hours</span>`:'');
+  $('heatleg').innerHTML='<span>Fewer posts</span>'+[0,1,2,3,4].map(i=>`<i class="sw" style="background:var(--h${i})"></i>`).join('')+'<span>More posts</span>'+(off?`<span>${off} posted between midnight and 6 am, not shown</span>`:'');
 }
 
 function hbar(id,rows,color){
@@ -416,16 +405,20 @@ function stats(s){
   if(s.ps.length)L.push(['Expected in the next 4 weeks',`<b>About ${Math.round(lam)} posts</b>, most likely between ${Math.max(0,Math.round(lam-1.28*sd))} and ${Math.round(lam+1.28*sd)}, if they keep the pace of this period.`]);
   if(v.length>2)L.push(['Expected views on their next Reel',`<b>Most likely between ${nf(q(v,.1))} and ${nf(q(v,.9))} views</b>, based on how their last ${v.length} Reels spread out.`]);
   const n=s.a.readings.length;
-  L.push(['Follower projection',n>=6?'':`<b>Starts after 6 weekly readings.</b> Instagram does not show past follower counts, so the history builds from our own readings. ${n} of 6 so far.`]);
+  const R=s.a.readings.filter(r=>r.followers!=null);let fp=`<b>Starts after 6 readings.</b> Instagram does not show past follower counts, so the history builds from our own readings. ${R.length} of 6 so far`+(R.length>1?`: ${nf(R[0].followers)} on ${dfmt(dt(R[0].date))}, ${nf(R[R.length-1].followers)} on ${dfmt(dt(R[R.length-1].date))}.`:'.');
+  if(R.length>=6){const X=R.map(r=>+dt(r.date)/DAY),Y=R.map(r=>r.followers),mx=avg(X),my=avg(Y),b=X.reduce((t,x,i)=>t+(x-mx)*(Y[i]-my),0)/X.reduce((t,x)=>t+(x-mx)**2,0);
+    fp=`<b>About ${nf(my+b*(X[X.length-1]+28-mx))} followers in 4 weeks</b>, a trend of ${b>=0?'+':''}${one(b*7)} a week across ${R.length} readings.`}
+  L.push(['Follower projection',fp]);
   $('stats').innerHTML=L.filter(x=>x[1]).map(x=>`<li><span class="k">${x[0]}</span>${x[1]}</li>`).join('');
-  $('statsub').textContent=`${s.a.name}, ${s.ps.length} posts, ${s.reels.length} Reels`;
-  const c=$('caveat');c.hidden=s.ps.length>=30;c.textContent=`Small sample: ${s.ps.length} posts in this period. Read these numbers as direction, not as fact. They firm up with every weekly reading.`;
+  $('statsub').textContent=`${s.a.name}, ${s.ps.length} posts, ${s.reels.length} Reels, ${dfmt(s.w.from)} to ${dfmt(s.w.end)}`;
+  const c=$('caveat');c.hidden=s.ps.length>=30;c.textContent=`Small sample: ${s.ps.length} posts in this period. Read these numbers as direction, not as fact. They firm up with every reading.`;
 }
 
 function analysis(s){
   const A=s.a.analysis,box=$('analysis');$('antitle').textContent=s.a.us?'How we run our account':'How '+s.a.name+' runs the account';
   if(!A){box.innerHTML='<p class="empty">The written analysis is added once the reading of this account is complete.</p>';return}
-  box.innerHTML=`<p class="headline">${esc(A.headline)}</p>
+  const asof=D.analysis_as_of,stale=asof&&dt(asof)<s.w.end;
+  box.innerHTML=`<p class="${stale?'caveat':'sub'}">Written on ${asof?dfmt(dt(asof)):'an unknown date'}${stale?`, before the last reading of ${dfmt(s.w.end)}. The numbers on the charts are current, this text is not updated yet.`:', from the reading of that day.'}</p><p class="headline">${esc(A.headline)}</p>
   <div class="an">${A.points.map(p=>`<div><h3>${esc(p[0])}</h3><p>${esc(p[1])}</p></div>`).join('')}</div>
   <div class="readbox"><h3>My read of the strategy</h3><p>${esc(A.read)}</p></div>
   <div class="lists"><div><h3>${esc(A.borrow_title||'Worth borrowing')}</h3><ul>${A.borrow.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
@@ -435,14 +428,14 @@ function analysis(s){
 function posts(s){
   const rows=[...s.ps].sort((a,b)=>(b.views==null?-1:b.views)-(a.views==null?-1:a.views));
   $('posts').innerHTML=`<tr><th class="l">Date</th><th class="l">Format</th><th class="l">Published by</th><th class="l">What it is</th><th>Views</th><th>Comments</th><th class="l">Post</th></tr>`+
-  rows.map(p=>`<tr><td class="l">${dfmt(dt(p.date))}</td><td class="l">${esc(p.format)}</td><td class="l"><span class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></td><td class="cap"><b style="color:var(--ink);font-weight:650">${esc(cap(p.topic))}.</b> ${esc(p.caption)}…</td><td>${nf(p.views)}</td><td>${p.comments==null?'n/a':p.comments}</td><td class="l"><a href="${esc(p.url)}" target="_blank" rel="noopener">Open</a></td></tr>`).join('');
+  rows.map(p=>`<tr><td class="l">${dfmt(dt(p.date))}</td><td class="l">${esc(p.format)}</td><td class="l"><span class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></td><td class="cap"><b style="color:var(--ink);font-weight:650">${esc(cap(p.topic))}.</b> ${esc(p.caption)}${(p.caption||'').length>=115?'…':''}</td><td>${nf(p.views)}</td><td>${p.comments==null?'n/a':p.comments}</td><td class="l"><a href="${esc(p.url)}" target="_blank" rel="noopener">Open</a></td></tr>`).join('');
 }
 
 const code=u=>(String(u).match(/\/(?:p|reel|tv)\/([A-Za-z0-9_-]+)/)||[])[1];
 function top(s){
-  const a=s.a,cov=dt(a.coverage_start||D.scope_start),want=setRange(),from=new Date(Math.max(+want,+cov)),ps=a.posts.filter(p=>dt(p.date)>=new Date(+from-DAY/2)&&dt(p.date)<=END);
+  const a=s.a,w=s.w,ps=s.ps;
   $('toptitle').textContent=(a.us?'Our':a.name)+' top performing posts';
-  $('topsub').textContent=`${ps.length} posts from ${dfmt(from)} to ${dfmt(END)}`+(want<cov?`. Readings for this account start on ${dfmt(cov)}, earlier posts are not loaded yet`:'');
+  $('topsub').textContent=`${ps.length} posts from ${dfmt(w.from)} to ${dfmt(w.end)}`+(w.short?`. Readings for this account start on ${dfmt(w.cov)}, earlier posts are not loaded yet`:'');
   const card=(p,i,hi)=>`<article class="topcard"><div class="tophead"><span class="rank">${i+1}</span>
     <div class="tm"><span>Views<b class="${hi==='v'?'hi':''}">${p.views==null?'n/a':nf(p.views)}</b></span><span>Comments<b class="${hi==='c'?'hi':''}">${p.comments==null?'n/a':p.comments}</b></span></div><a href="${esc(p.url)}" target="_blank" rel="noopener" aria-label="Open post ${i+1}, ${esc(cap(p.topic))}, on Instagram"><span class="olong">Open</span><span class="oshort" aria-hidden="true">↗</span></a></div>
     <div class="topmeta"><span>${dfmt(dt(p.date))} · ${esc(p.format)}</span><span title="${p.collab?'@'+esc(p.owner):''}" class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></div>
@@ -456,17 +449,20 @@ function top(s){
 function fitTop(){document.querySelectorAll('.topembed').forEach(e=>e.style.setProperty('--k',e.clientWidth/326))}
 let lastTop='';
 function draw(){
-  setRange();controls();
+  controls();
   const S=ready.map(stat),s=S.find(x=>x.a.handle===focus);
   if(!s){$('tiles').innerHTML='<p class="empty">No readings loaded yet.</p>';return}
   tiles(s,S.filter(x=>x!==s));board(S);rhythm(s);views(s);heat(s);watched(s);stats(s);analysis(s);posts(s);
   if(lastTop!==focus+PD){lastTop=focus+PD;top(s)}
-  const ln=$('likesnote');ln.hidden=!S.every(x=>x.likesHidden);ln.textContent='Likes are missing from this dashboard on purpose: every account read hides its like counts, so reaction is measured with views and comments.';
 }
-$('railupd').textContent=END.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
-$('asof').innerHTML=`Last reading: <b>${END.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})}</b> · Posts since <b>${dfmt(START)}</b> · <b>${ready.length} of ${D.accounts.length}</b> accounts read`;
+const LAST=new Date(Math.max(...ready.map(a=>+dt(a.last_reading||D.last_reading)))),FIRST=new Date(Math.min(...ready.map(a=>+dt(a.last_reading||D.last_reading))));
+$('railupd').textContent=LAST.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+$('asof').innerHTML=`Last reading: <b>${LAST.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})}</b>${+FIRST!==+LAST?` (some accounts were last read on ${dfmt(FIRST)}, see Read on in the table)`:''} · Posts since <b>${dfmt(COV)}</b> · <b>${ready.length} of ${D.accounts.length}</b> accounts read`;
 if(D.overall&&ready.length===D.accounts.length){const O=D.overall;$('overallpanel').hidden=false;
-  $('overall').innerHTML=`<p class="headline">${esc(O.headline)}</p><div class="an">${O.findings.map(f=>`<div><h3>${esc(f[0])}</h3><p>${esc(f[1])}</p></div>`).join('')}</div><div class="readbox"><h3>What I would do with this</h3><ol class="plan">${O.plan.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></div>`}
+  const oa=D.analysis_as_of,ost=oa&&dt(oa)<LAST;
+  $('overall').innerHTML=`<p class="${ost?'caveat':'sub'}">Written on ${oa?dfmt(dt(oa)):'an unknown date'}${ost?`, before the last reading of ${dfmt(LAST)}. Being updated with the new data.`:'.'}</p><p class="headline">${esc(O.headline)}</p><div class="an">${O.findings.map(f=>`<div><h3>${esc(f[0])}</h3><p>${esc(f[1])}</p></div>`).join('')}</div><div class="readbox"><h3>What I would do with this</h3><ol class="plan">${O.plan.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></div>`}
+document.querySelectorAll('.rjump').forEach(l=>l.addEventListener('click',e=>{const t=document.querySelector(l.getAttribute('href'));if(!t)return;e.preventDefault();
+  const off=matchMedia('(max-width:900px)').matches?document.querySelector('.rail').offsetHeight+8:16;window.scrollTo({top:Math.max(0,t.getBoundingClientRect().top+scrollY-off),behavior:'smooth'});try{history.replaceState(null,'',l.getAttribute('href'))}catch(_){}}));
 let t;addEventListener('resize',()=>{fitTop();clearTimeout(t);t=setTimeout(draw,120)});
 draw();
 })();

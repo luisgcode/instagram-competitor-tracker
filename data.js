@@ -1,6 +1,7 @@
 window.TRACKER_DATA = {
  "scope_start": "2026-07-13",
  "last_reading": "2026-11-05",
+ "analysis_as_of": "2026-10-13",
  "overall": {
   "headline": "Across five accounts the product alone does not get watched. A person with their own audience does.",
   "findings": [
@@ -57,6 +58,7 @@ window.TRACKER_DATA = {
    ],
    "posts": [
     {
+     "code": "DfTLDCkhxqN",
      "url": "https://www.instagram.com/dimplex_northamerica/reel/DfTLDCkhxqN/",
      "date": "2026-11-03",
      "hour": "19:30",
@@ -78,6 +80,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DfH6t-eIaoi",
      "url": "https://www.instagram.com/neutralsbydanee/reel/DfH6t-eIaoi/",
      "date": "2026-10-30",
      "hour": "15:48",
@@ -99,6 +102,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "De9O3Fdtp4R",
      "url": "https://www.instagram.com/the_rustic_home/reel/De9O3Fdtp4R/",
      "date": "2026-10-26",
      "hour": "08:00",
@@ -120,6 +124,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Deu4j9pBbxB",
      "url": "https://www.instagram.com/dimplex_northamerica/reel/Deu4j9pBbxB/",
      "date": "2026-10-20",
      "hour": "18:15",
@@ -141,6 +146,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Deho-bgF6tY",
      "url": "https://www.instagram.com/dimplex_northamerica/p/Deho-bgF6tY/",
      "date": "2026-10-15",
      "hour": "14:49",
@@ -162,6 +168,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DePVvm9horR",
      "url": "https://www.instagram.com/dimplex_northamerica/reel/DePVvm9horR/",
      "date": "2026-10-08",
      "hour": "12:15",
@@ -183,6 +190,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DeACj2euB-Q",
      "url": "https://www.instagram.com/nycfireplaces_outdoor_kitchens/reel/DeACj2euB-Q/",
      "date": "2026-10-02",
      "hour": "13:47",
@@ -204,6 +212,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dd6cEuqge-e",
      "url": "https://www.instagram.com/dimplex_northamerica/p/Dd6cEuqge-e/",
      "date": "2026-09-30",
      "hour": "09:26",
@@ -225,6 +234,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dd4KB6-F9Ih",
      "url": "https://www.instagram.com/dimplex_northamerica/reel/Dd4KB6-F9Ih/",
      "date": "2026-09-29",
      "hour": "12:10",
@@ -246,6 +256,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DducSlNF_uh",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DducSlNF_uh/",
      "date": "2026-09-25",
      "hour": "17:37",
@@ -267,6 +278,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Ddr01UMCQJ4",
      "url": "https://www.instagram.com/dimplex_northamerica/reel/Ddr01UMCQJ4/",
      "date": "2026-09-24",
      "hour": "17:14",
@@ -288,6 +300,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdZ8wYqF66E",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DdZ8wYqF66E/",
      "date": "2026-09-17",
      "hour": "18:37",
@@ -309,6 +322,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdH3HgVozbF",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DdH3HgVozbF/",
      "date": "2026-09-10",
      "hour": "18:01",
@@ -330,6 +344,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdCWQFHgMHu",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DdCWQFHgMHu/",
      "date": "2026-09-08",
      "hour": "14:38",
@@ -351,6 +366,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dc05WTXjniu",
      "url": "https://www.instagram.com/dimplex_northamerica/p/Dc05WTXjniu/",
      "date": "2026-09-03",
      "hour": "09:15",
@@ -372,6 +388,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DcviaU9xDNp",
      "url": "https://www.instagram.com/this_whole_house/reel/DcviaU9xDNp/",
      "date": "2026-09-01",
      "hour": "07:20",
@@ -393,6 +410,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DchCfCFoBfc",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DchCfCFoBfc/",
      "date": "2026-08-26",
      "hour": "16:10",
@@ -414,6 +432,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DcRmQROiTX2",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DcRmQROiTX2/",
      "date": "2026-08-20",
      "hour": "16:15",
@@ -435,6 +454,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DcMFP4oHIy0",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DcMFP4oHIy0/",
      "date": "2026-08-18",
      "hour": "12:50",
@@ -456,6 +476,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Db_sIRiAP-v",
      "url": "https://www.instagram.com/dimplex_northamerica/reel/Db_sIRiAP-v/",
      "date": "2026-08-13",
      "hour": "17:20",
@@ -477,6 +498,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbrE_WfII9U",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DbrE_WfII9U/",
      "date": "2026-08-05",
      "hour": "17:13",
@@ -498,6 +520,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbWL1Xjn_hP",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DbWL1Xjn_hP/",
      "date": "2026-07-28",
      "hour": "14:29",
@@ -519,6 +542,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Da32sBsGLY9",
      "url": "https://www.instagram.com/dimplex_northamerica/p/Da32sBsGLY9/",
      "date": "2026-07-16",
      "hour": "19:47",
@@ -540,6 +564,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dagab88Ac9K",
      "url": "https://www.instagram.com/dimplex_northamerica/p/Dagab88Ac9K/",
      "date": "2026-07-07",
      "hour": "17:18",
@@ -561,6 +586,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DaTSzvGn789",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DaTSzvGn789/",
      "date": "2026-07-02",
      "hour": "15:01",
@@ -582,6 +608,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DaEj3mzMYSr",
      "url": "https://www.instagram.com/dimplex_northamerica/reel/DaEj3mzMYSr/",
      "date": "2026-06-26",
      "hour": "21:44",
@@ -603,6 +630,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DZvlVMgDNmQ",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DZvlVMgDNmQ/",
      "date": "2026-06-18",
      "hour": "18:10",
@@ -624,6 +652,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DZgJf3YiWEq",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DZgJf3YiWEq/",
      "date": "2026-06-12",
      "hour": "18:18",
@@ -645,6 +674,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DZdpQZciR4i",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DZdpQZciR4i/",
      "date": "2026-06-11",
      "hour": "18:58",
@@ -666,6 +696,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DZTLehvnx3O",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DZTLehvnx3O/",
      "date": "2026-06-07",
      "hour": "17:25",
@@ -687,6 +718,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DY5j9CIDfkE",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DY5j9CIDfkE/",
      "date": "2026-05-28",
      "hour": "18:39",
@@ -708,6 +740,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DYzVXXejSHR",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DYzVXXejSHR/",
      "date": "2026-05-26",
      "hour": "08:36",
@@ -729,6 +762,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DYk_N5DDVzf",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DYk_N5DDVzf/",
      "date": "2026-05-20",
      "hour": "18:53",
@@ -750,6 +784,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DYUiaOOFJC_",
      "url": "https://www.instagram.com/dimplex_northamerica/p/DYUiaOOFJC_/",
      "date": "2026-05-14",
      "hour": "09:33",
@@ -771,6 +806,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DYP1YTsiv95",
      "url": "https://www.instagram.com/dimplex_northamerica/reel/DYP1YTsiv95/",
      "date": "2026-05-12",
      "hour": "13:44",
@@ -836,6 +872,7 @@ window.TRACKER_DATA = {
      "Give every post a next step: where to buy, find a dealer, see it at a showroom."
     ]
    },
+   "last_reading": "2026-11-05",
    "coverage_start": "2026-05-05"
   },
   {
@@ -850,121 +887,244 @@ window.TRACKER_DATA = {
      "posts_total": 739,
      "scope_from": "2026-07-13",
      "date": "2026-10-13"
+    },
+    {
+     "followers": 3130,
+     "following": 448,
+     "posts_total": 744,
+     "scope_from": "2026-05-05",
+     "date": "2026-11-05"
     }
    ],
    "posts": [
     {
+     "code": "DfIIU3UhsLT",
+     "url": "https://www.instagram.com/lopistoves/reel/DfIIU3UhsLT/",
+     "date": "2026-10-30",
+     "hour": "13:40",
+     "format": "Reel",
+     "likes": 39,
+     "likes_hidden": false,
+     "comments": 1,
+     "views": 1487,
+     "slides": null,
+     "seconds": 8.9,
+     "hashtags": 0,
+     "owner": "lopistoves",
+     "partners": "collab: lopistoves, firegardenoutdoors, fireplacextrordinair",
+     "visual": "person on camera",
+     "topic": "Halloween costume fireside skit",
+     "cta": false,
+     "caption": "Happy Halloween! 🎃 👻 🔥",
+     "collab": true,
+     "paid": false
+    },
+    {
+     "code": "DfFw5Yhkra2",
+     "url": "https://www.instagram.com/lopistoves/p/DfFw5Yhkra2/",
+     "date": "2026-10-29",
+     "hour": "15:31",
+     "format": "Carousel",
+     "likes": 37,
+     "likes_hidden": false,
+     "comments": 4,
+     "views": null,
+     "slides": 11,
+     "seconds": null,
+     "hashtags": 0,
+     "owner": "lopistoves",
+     "partners": "collab: lopistoves, fireplacextrordinair, firegardenoutdoors",
+     "visual": "office soup potluck photos",
+     "topic": "office soup day culture",
+     "cta": true,
+     "caption": "Soup day at the office hits different 🤤 Which one are you choosing? Going back for seconds? Thirds? Fourths?",
+     "collab": true,
+     "paid": false
+    },
+    {
+     "code": "DfFpusat90V",
+     "url": "https://www.instagram.com/davincifire/reel/DfFpusat90V/",
+     "date": "2026-10-29",
+     "hour": "14:31",
+     "format": "Reel",
+     "likes": 75,
+     "likes_hidden": false,
+     "comments": 1,
+     "views": 11049,
+     "slides": null,
+     "seconds": 30.1,
+     "hashtags": 0,
+     "owner": "davincifire",
+     "partners": "none",
+     "visual": "person on camera",
+     "topic": "Travis Fire App launch",
+     "cta": true,
+     "caption": "The Travis Fire App is now available! Download it for free on your platform of choice and control your DaVinci Electric",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "code": "DfBDKEUvWjD",
+     "url": "https://www.instagram.com/lopistoves/reel/DfBDKEUvWjD/",
+     "date": "2026-10-27",
+     "hour": "19:39",
+     "format": "Reel",
+     "likes": 90,
+     "likes_hidden": false,
+     "comments": 5,
+     "views": 2632,
+     "slides": null,
+     "seconds": 59.0,
+     "hashtags": 0,
+     "owner": "lopistoves",
+     "partners": "collab: lopistoves, firegardenoutdoors, fireplacextrordinair",
+     "visual": "person on camera",
+     "topic": "sales team humor skit",
+     "cta": false,
+     "caption": "Over the last year, Marty’s performance has been excellent. We’re thrilled to have his son onboard to slay it in sales.",
+     "collab": true,
+     "paid": false
+    },
+    {
+     "code": "Dekiju5hePh",
+     "url": "https://www.instagram.com/davincifire/reel/Dekiju5hePh/",
+     "date": "2026-10-16",
+     "hour": "17:59",
+     "format": "Reel",
+     "likes": 243,
+     "likes_hidden": false,
+     "comments": 9,
+     "views": 65759,
+     "slides": null,
+     "seconds": 20.9,
+     "hashtags": 0,
+     "owner": "davincifire",
+     "partners": "none",
+     "visual": "person on camera",
+     "topic": "holographic electric fireplace reveal",
+     "cta": false,
+     "caption": "Wow is right! There’s no electric fireplace like it. The holographic technology provides a stunningly realistic looking",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "code": "DeSsmP1vvqb",
      "url": "https://www.instagram.com/davincifire/reel/DeSsmP1vvqb/",
      "date": "2026-10-09",
      "hour": "19:37",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 39,
+     "likes_hidden": false,
      "comments": 0,
-     "views": 521,
+     "views": 953,
      "slides": null,
      "seconds": 22.5,
      "hashtags": 0,
      "owner": "davincifire",
      "partners": "none",
      "visual": "room or lifestyle interior",
-     "topic": "fall Timber Fire mood",
+     "topic": "Timber Fire fall coziness",
      "cta": true,
-     "caption": "Sitting by the fire is always cozy, but during fall it hits different. The DaVinci Timber Fire series brings a rustic",
+     "caption": "Sitting by the fire is always cozy, but during fall it hits different. The DaVinci Timber Fire™️ series brings a rustic",
      "collab": false,
      "paid": false
     },
     {
+     "code": "Dd699i-vF2P",
      "url": "https://www.instagram.com/lopistoves/reel/Dd699i-vF2P/",
      "date": "2026-09-30",
-     "hour": "15:15",
+     "hour": "15:16",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 126,
+     "likes_hidden": false,
      "comments": 15,
-     "views": 5190,
+     "views": 5450,
      "slides": null,
-     "seconds": 89.4,
+     "seconds": 89.3,
      "hashtags": 0,
      "owner": "lopistoves",
      "partners": "collab: lopistoves, firegardenoutdoors, fireplacextrordinair",
      "visual": "person on camera",
-     "topic": "Washington gas ban explainer",
-     "cta": false,
-     "caption": "Natural gas in Washington: Is it being banned? What's actually in the legislation? And what does it mean for homeowners",
+     "topic": "Washington gas legislation explainer",
+     "cta": true,
+     "caption": "Natural gas in Washington: Is it being banned? What’s actually in the legislation? And what does it mean for homeowners?",
      "collab": true,
      "paid": false
     },
     {
+     "code": "Dd4e-SwhKzt",
      "url": "https://www.instagram.com/davincifire/reel/Dd4e-SwhKzt/",
      "date": "2026-09-29",
      "hour": "15:22",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
-     "comments": 3,
-     "views": 1809,
+     "likes": 274,
+     "likes_hidden": false,
+     "comments": 5,
+     "views": 49256,
      "slides": null,
      "seconds": 29.8,
      "hashtags": 0,
      "owner": "davincifire",
      "partners": "none",
      "visual": "person on camera",
-     "topic": "modular custom range",
+     "topic": "modular custom fireplace options",
      "cta": true,
-     "caption": "The sky's the limit with DaVinci Custom Fireplaces. With modular design, seven different unit types, and multiple glass",
+     "caption": "The sky’s the limit with DaVinci Custom Fireplaces. With modular design, seven different unit types, and multiple glass",
      "collab": false,
      "paid": false
     },
     {
+     "code": "DduEdL6h3je",
      "url": "https://www.instagram.com/lopistoves/reel/DduEdL6h3je/",
      "date": "2026-09-25",
      "hour": "14:09",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 63,
+     "likes_hidden": false,
      "comments": 2,
-     "views": 2948,
+     "views": 3214,
      "slides": null,
      "seconds": 27.4,
      "hashtags": 0,
      "owner": "lopistoves",
      "partners": "collab: lopistoves, firegardenoutdoors, fireplacextrordinair",
      "visual": "person on camera",
-     "topic": "dealer training facility",
+     "topic": "Travis dealer training facilities",
      "cta": false,
-     "caption": "At Travis Industries, our training facilities give hearth professionals hands-on experience selling, installing, and se",
+     "caption": "At Travis Industries, our training facilities give hearth professionals hands-on experience selling, installing, and ser",
      "collab": true,
      "paid": false
     },
     {
+     "code": "DdFU5uYhxC8",
      "url": "https://www.instagram.com/davincifire/reel/DdFU5uYhxC8/",
      "date": "2026-09-09",
      "hour": "18:32",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
-     "comments": 0,
-     "views": 1215,
+     "likes": 146,
+     "likes_hidden": false,
+     "comments": 1,
+     "views": 38990,
      "slides": null,
      "seconds": 24.2,
      "hashtags": 0,
      "owner": "davincifire",
      "partners": "none",
      "visual": "person on camera",
-     "topic": "holographic electric fireplaces",
+     "topic": "GreenSmart holographic 50-inch demo",
      "cta": false,
      "caption": "These holographic fireplaces are truly next level. They retain many of the customization options that DaVinci Custom Fir",
      "collab": false,
      "paid": false
     },
     {
+     "code": "Dc4QB5oj37C",
      "url": "https://www.instagram.com/lopistoves/p/Dc4QB5oj37C/",
      "date": "2026-09-04",
      "hour": "16:31",
      "format": "Carousel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 71,
+     "likes_hidden": false,
      "comments": 1,
      "views": null,
      "slides": 5,
@@ -972,132 +1132,138 @@ window.TRACKER_DATA = {
      "hashtags": 0,
      "owner": "lopistoves",
      "partners": "collab: lopistoves, firegardenoutdoors, fireplacextrordinair",
-     "visual": "factory floor / manufacturing",
-     "topic": "factory production pride",
+     "visual": "factory production",
+     "topic": "precision manufacturing craftsmanship",
      "cta": false,
-     "caption": "Precision starts here. Every detail matters when raw materials become something built to last. Built by skilled hands.",
+     "caption": "Precision starts here. Every detail matters when raw materials become something built to last. Built by skilled hands. B",
      "collab": true,
      "paid": false
     },
     {
+     "code": "Dcy8oMBhMi6",
      "url": "https://www.instagram.com/davincifire/reel/Dcy8oMBhMi6/",
      "date": "2026-09-02",
      "hour": "15:10",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 56,
+     "likes_hidden": false,
      "comments": 3,
-     "views": 2251,
+     "views": 2538,
      "slides": null,
-     "seconds": 59.3,
+     "seconds": 59.2,
      "hashtags": 4,
      "owner": "davincifire",
-     "partners": "tagged @wickedwraps",
-     "visual": "installation or how-to",
-     "topic": "marble-wrapped lobby unit",
+     "partners": "none",
+     "visual": "product only",
+     "topic": "custom wrapped fireplace showcase",
      "cta": false,
-     "caption": "\"Of the original phenomena, light is the most enthralling.\" - Leonardo da Vinci Thanks to @wickedwraps for dressing up",
+     "caption": "“Of the original phenomena, light is the most enthralling.” - Leonardo da Vinci Thanks to @wickedwraps for dressing up t",
      "collab": false,
      "paid": false
     },
     {
+     "code": "Dce1WYtjyRP",
      "url": "https://www.instagram.com/lopistoves/p/Dce1WYtjyRP/",
      "date": "2026-08-25",
      "hour": "19:37",
      "format": "Carousel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 90,
+     "likes_hidden": false,
      "comments": 1,
      "views": null,
      "slides": 17,
      "seconds": null,
      "hashtags": 4,
      "owner": "lopistoves",
-     "partners": "collab: lopistoves, fireplacextrordinair, firegardenoutdoors; tagged @mcmenamins_anderson_school",
+     "partners": "collab: lopistoves, fireplacextrordinair, firegardenoutdoors",
      "visual": "event or trade show",
-     "topic": "President's Club dealer event",
+     "topic": "President's Club dealer event recap",
      "cta": false,
-     "caption": "We had a great time last week with our President's Club dealers showing off new products and getting feedback. Thanks t",
+     "caption": "We had a great time last week with our President’s Club dealers showing off new products and getting feedback. Thanks to",
      "collab": true,
      "paid": false
     },
     {
+     "code": "DcOpm3cgA0j",
      "url": "https://www.instagram.com/firegardenoutdoors/reel/DcOpm3cgA0j/",
      "date": "2026-08-19",
-     "hour": "12:48",
+     "hour": "12:50",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 93,
+     "likes_hidden": false,
      "comments": 7,
-     "views": 2801,
+     "views": 2862,
      "slides": null,
      "seconds": 80.6,
      "hashtags": 4,
      "owner": "firegardenoutdoors",
      "partners": "collab: firegardenoutdoors, fireplacextrordinair, lopistoves",
      "visual": "event or trade show",
-     "topic": "President's Club day 2",
+     "topic": "Prism fire feature, President's Club",
      "cta": false,
-     "caption": "The Prism. Day 2 of 2026 Presidents Club went off without a hitch. We spent all day at the factory learning and seeing",
+     "caption": "The Prism 👀 Day 2 of 2026 Presidents Club went off without a hitch. We spent all day at the factory learning and seeing",
      "collab": true,
      "paid": false
     },
     {
+     "code": "DcNCSvKAleH",
      "url": "https://www.instagram.com/firegardenoutdoors/reel/DcNCSvKAleH/",
      "date": "2026-08-18",
      "hour": "21:45",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 48,
+     "likes_hidden": false,
      "comments": 3,
-     "views": 1294,
+     "views": 1337,
      "slides": null,
-     "seconds": 37.0,
+     "seconds": 36.9,
      "hashtags": 5,
      "owner": "firegardenoutdoors",
      "partners": "collab: firegardenoutdoors, fireplacextrordinair, lopistoves",
      "visual": "event or trade show",
-     "topic": "President's Club music night",
+     "topic": "President's Club roping contest",
      "cta": false,
-     "caption": "Pure vibes at this years presidents club...and a roping contest #summer #firegarden #lopi #fireplacex #davincifireplace",
+     "caption": "Pure vibes at this years presidents club…and a roping contest 😆 #summer #firegarden #lopi #fireplacex #davincifireplace",
      "collab": true,
      "paid": false
     },
     {
+     "code": "DcMkmqvyr6c",
      "url": "https://www.instagram.com/firegardenoutdoors/reel/DcMkmqvyr6c/",
      "date": "2026-08-18",
-     "hour": "17:24",
+     "hour": "17:25",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 60,
+     "likes_hidden": false,
      "comments": 0,
-     "views": 1665,
+     "views": 1713,
      "slides": null,
-     "seconds": 46.8,
+     "seconds": 46.7,
      "hashtags": 5,
      "owner": "firegardenoutdoors",
      "partners": "collab: firegardenoutdoors, lopistoves, fireplacextrordinair",
      "visual": "event or trade show",
-     "topic": "dealer training meeting",
+     "topic": "top dealer training week",
      "cta": false,
      "caption": "We're sharing the love this week with some of our top dealers. Training on new gas and electric fireplaces, social media",
      "collab": true,
      "paid": false
     },
     {
+     "code": "DcKkaiSg-3L",
      "url": "https://www.instagram.com/firegardenoutdoors/reel/DcKkaiSg-3L/",
      "date": "2026-08-17",
-     "hour": "22:45",
+     "hour": "22:46",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 88,
+     "likes_hidden": false,
      "comments": 4,
-     "views": 3308,
+     "views": 3349,
      "slides": null,
-     "seconds": 62.3,
+     "seconds": 62.2,
      "hashtags": 5,
      "owner": "firegardenoutdoors",
-     "partners": "collab: firegardenoutdoors, fireplacextrordinair, lopistoves; tagged @mcmenamins_anderson_school",
+     "partners": "collab: firegardenoutdoors, fireplacextrordinair, lopistoves",
      "visual": "event or trade show",
      "topic": "President's Club kickoff",
      "cta": false,
@@ -1106,12 +1272,13 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DblherwGtUH",
      "url": "https://www.instagram.com/davincifire/p/DblherwGtUH/",
      "date": "2026-08-03",
      "hour": "13:26",
      "format": "Carousel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 47,
+     "likes_hidden": false,
      "comments": 0,
      "views": null,
      "slides": 3,
@@ -1120,19 +1287,20 @@ window.TRACKER_DATA = {
      "owner": "davincifire",
      "partners": "none",
      "visual": "product only",
-     "topic": "see-thru units in testing",
+     "topic": "see-thru units in production testing",
      "cta": true,
-     "caption": "A couple see thru units coming through production and testing today give you an idea of the unique possibilities and ma",
+     "caption": "A couple see thru units coming through production and testing today give you an idea of the unique possibilities and mas",
      "collab": false,
      "paid": false
     },
     {
+     "code": "DbeI7m9ySYf",
      "url": "https://www.instagram.com/davincifire/p/DbeI7m9ySYf/",
      "date": "2026-07-31",
      "hour": "16:39",
      "format": "Photo",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 21,
+     "likes_hidden": false,
      "comments": 1,
      "views": null,
      "slides": null,
@@ -1141,52 +1309,120 @@ window.TRACKER_DATA = {
      "owner": "davincifire",
      "partners": "none",
      "visual": "room or lifestyle interior",
-     "topic": "see-thru modern entry",
+     "topic": "Timber Fire See-Thru entryway",
      "cta": false,
-     "caption": "Some fireplaces warm a room. This one connects two. The Timber Fire See-Thru brings dual fire views to this modern entr",
+     "caption": "Some fireplaces warm a room. This one connects two. The Timber Fire™ See-Thru brings dual fire views to this modern entr",
      "collab": false,
      "paid": false
     },
     {
+     "code": "DbMOLGCScL7",
      "url": "https://www.instagram.com/davincifire/reel/DbMOLGCScL7/",
      "date": "2026-07-24",
      "hour": "17:41",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 34,
+     "likes_hidden": false,
      "comments": 1,
-     "views": 2780,
+     "views": 3091,
      "slides": null,
-     "seconds": 62.2,
+     "seconds": 62.1,
      "hashtags": 3,
      "owner": "davincifire",
      "partners": "none",
-     "visual": "dealer showroom display",
-     "topic": "corner custom fireplace",
+     "visual": "person on camera",
+     "topic": "42x20 right corner custom unit",
      "cta": true,
      "caption": "This 42 by 20 right hand corner custom fireplace is just one of limitless possibilities when it comes to DaVinci. What w",
      "collab": false,
      "paid": false
     },
     {
+     "code": "DbG49fOSDDH",
      "url": "https://www.instagram.com/lopistoves/reel/DbG49fOSDDH/",
      "date": "2026-07-22",
      "hour": "16:01",
      "format": "Reel",
-     "likes": null,
-     "likes_hidden": true,
+     "likes": 151,
+     "likes_hidden": false,
      "comments": 6,
-     "views": 6883,
+     "views": 6969,
      "slides": null,
-     "seconds": 88.4,
+     "seconds": 88.3,
      "hashtags": 5,
      "owner": "lopistoves",
      "partners": "collab: lopistoves, fireplacextrordinair, firegardenoutdoors",
-     "visual": "person on camera",
-     "topic": "90-second factory tour",
-     "cta": false,
-     "caption": "Have you ever seen a tour of an 11 acre factory in 90 seconds? Don't blink! #lopi #fireplacex #firegarden #davinci #made",
+     "visual": "factory tour",
+     "topic": "11-acre factory tour in 90s",
+     "cta": true,
+     "caption": "Have you ever seen a tour of an 11 acre factory in 90 seconds? Don’t blink! #lopi #fireplacex #firegarden #davinci #made",
      "collab": true,
+     "paid": false
+    },
+    {
+     "code": "DaQqLgTP6Zn",
+     "url": "https://www.instagram.com/lopistoves/reel/DaQqLgTP6Zn/",
+     "date": "2026-07-01",
+     "hour": "15:20",
+     "format": "Reel",
+     "likes": 182,
+     "likes_hidden": false,
+     "comments": 7,
+     "views": 8318,
+     "slides": null,
+     "seconds": 71.6,
+     "hashtags": 5,
+     "owner": "lopistoves",
+     "partners": "collab: lopistoves, firegardenoutdoors, fireplacextrordinair",
+     "visual": "Made in America brand montage",
+     "topic": "America 250, made in USA",
+     "cta": false,
+     "caption": "For 250 years, the American story has been written by people willing to work hard, take risks, build something meaningfu",
+     "collab": true,
+     "paid": false
+    },
+    {
+     "code": "DZajySZSL0d",
+     "url": "https://www.instagram.com/davincifire/reel/DZajySZSL0d/",
+     "date": "2026-06-10",
+     "hour": "14:21",
+     "format": "Reel",
+     "likes": 77,
+     "likes_hidden": false,
+     "comments": 1,
+     "views": 3970,
+     "slides": null,
+     "seconds": 38.1,
+     "hashtags": 3,
+     "owner": "davincifire",
+     "partners": "none",
+     "visual": "person on camera",
+     "topic": "GreenSmart 31 install versatility",
+     "cta": false,
+     "caption": "The DaVinci 31 GreenSmart Electric Fireplace & Insert is an extremely versatile unit when it comes to installation and l",
+     "collab": false,
+     "paid": false
+    },
+    {
+     "code": "DYkij3bSDHR",
+     "url": "https://www.instagram.com/davincifire/reel/DYkij3bSDHR/",
+     "date": "2026-05-20",
+     "hour": "14:52",
+     "format": "Reel",
+     "likes": 73,
+     "likes_hidden": false,
+     "comments": 2,
+     "views": 2271,
+     "slides": null,
+     "seconds": 40.6,
+     "hashtags": 3,
+     "owner": "davincifire",
+     "partners": "none",
+     "visual": "person on camera",
+     "topic": "7.5 ft custom pier unit",
+     "cta": false,
+     "caption": "Check out this 7 and a half foot pier unit with 20 inch tall glass! The finish work goes all the way up to the edge of t",
+     "collab": false,
      "paid": false
     }
    ],
@@ -1230,7 +1466,8 @@ window.TRACKER_DATA = {
      "No consistent look. A recognisable template would stand out next to them."
     ]
    },
-   "coverage_start": "2026-07-13"
+   "last_reading": "2026-11-05",
+   "coverage_start": "2026-05-05"
   },
   {
    "handle": "modernflamesusa",
@@ -1248,6 +1485,7 @@ window.TRACKER_DATA = {
    ],
    "posts": [
     {
+     "code": "DeIIBJjNXRG",
      "url": "https://www.instagram.com/builtbycarlene/reel/DeIIBJjNXRG/",
      "date": "2026-10-05",
      "hour": "17:00",
@@ -1269,6 +1507,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dd4HWOJm9ox",
      "url": "https://www.instagram.com/smokystonenaples/p/Dd4HWOJm9ox/",
      "date": "2026-09-29",
      "hour": "11:46",
@@ -1290,6 +1529,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdsR9WKoGJe",
      "url": "https://www.instagram.com/hbwc_woodworks/reel/DdsR9WKoGJe/",
      "date": "2026-09-24",
      "hour": "21:37",
@@ -1311,6 +1551,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdovXQGx-pf",
      "url": "https://www.instagram.com/taylorsfireplaces/p/DdovXQGx-pf/",
      "date": "2026-09-23",
      "hour": "12:29",
@@ -1332,6 +1573,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdUcvBqm616",
      "url": "https://www.instagram.com/smokystonenaples/p/DdUcvBqm616/",
      "date": "2026-09-15",
      "hour": "15:21",
@@ -1353,6 +1595,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DcUHrmbylB3",
      "url": "https://www.instagram.com/ourhartfulhome/reel/DcUHrmbylB3/",
      "date": "2026-08-21",
      "hour": "15:46",
@@ -1374,6 +1617,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DcO3TNtSEqk",
      "url": "https://www.instagram.com/modernflamesusa/p/DcO3TNtSEqk/",
      "date": "2026-08-19",
      "hour": "14:54",
@@ -1435,6 +1679,7 @@ window.TRACKER_DATA = {
      "Replies are emoji only. Real answers to real questions would stand out."
     ]
    },
+   "last_reading": "2026-10-13",
    "coverage_start": "2026-07-13"
   },
   {
@@ -1453,6 +1698,7 @@ window.TRACKER_DATA = {
    ],
    "posts": [
     {
+     "code": "DeSYTqSDDD_",
      "url": "https://www.instagram.com/valorfireplaces/p/DeSYTqSDDD_/",
      "date": "2026-10-09",
      "hour": "16:35",
@@ -1474,6 +1720,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DeKL-Lpm3yN",
      "url": "https://www.instagram.com/valorfireplaces/p/DeKL-Lpm3yN/",
      "date": "2026-10-06",
      "hour": "12:13",
@@ -1495,6 +1742,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DeAFGgvDFRT",
      "url": "https://www.instagram.com/valorfireplaces/p/DeAFGgvDFRT/",
      "date": "2026-10-02",
      "hour": "14:01",
@@ -1516,6 +1764,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dd44kp0hJ0e",
      "url": "https://www.instagram.com/vintage_stove/p/Dd44kp0hJ0e/",
      "date": "2026-09-29",
      "hour": "18:59",
@@ -1537,6 +1786,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dd2KbQfF5qs",
      "url": "https://www.instagram.com/valorfireplaces/p/Dd2KbQfF5qs/",
      "date": "2026-09-28",
      "hour": "17:35",
@@ -1558,6 +1808,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DduIA_ll0Ao",
      "url": "https://www.instagram.com/valorfireplaces/p/DduIA_ll0Ao/",
      "date": "2026-09-25",
      "hour": "14:40",
@@ -1579,6 +1830,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Ddt_wYnxVuB",
      "url": "https://www.instagram.com/barbecuesgalore/reel/Ddt_wYnxVuB/",
      "date": "2026-09-25",
      "hour": "13:32",
@@ -1600,6 +1852,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdmVHUVjCrR",
      "url": "https://www.instagram.com/valorfireplaces/p/DdmVHUVjCrR/",
      "date": "2026-09-22",
      "hour": "14:00",
@@ -1621,6 +1874,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdZWP_5l51-",
      "url": "https://www.instagram.com/valorfireplaces/p/DdZWP_5l51-/",
      "date": "2026-09-17",
      "hour": "13:00",
@@ -1642,6 +1896,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdUTk2Pided",
      "url": "https://www.instagram.com/valorfireplaces/p/DdUTk2Pided/",
      "date": "2026-09-15",
      "hour": "14:01",
@@ -1663,6 +1918,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dc_mSTvkfq0",
      "url": "https://www.instagram.com/valorfireplaces/p/Dc_mSTvkfq0/",
      "date": "2026-09-07",
      "hour": "13:00",
@@ -1684,6 +1940,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dctu_6QjKwe",
      "url": "https://www.instagram.com/valorfireplaces/p/Dctu_6QjKwe/",
      "date": "2026-08-31",
      "hour": "14:30",
@@ -1705,6 +1962,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DboBwSQRg1U",
      "url": "https://www.instagram.com/thecozydogfireplaceshoppe/p/DboBwSQRg1U/",
      "date": "2026-08-31",
      "hour": "07:00",
@@ -1726,6 +1984,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DchCku9AvPp",
      "url": "https://www.instagram.com/valorfireplaces/reel/DchCku9AvPp/",
      "date": "2026-08-26",
      "hour": "16:16",
@@ -1747,6 +2006,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DcRP_w2FnOI",
      "url": "https://www.instagram.com/valorfireplaces/p/DcRP_w2FnOI/",
      "date": "2026-08-20",
      "hour": "13:00",
@@ -1768,6 +2028,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DcMS9L3mk2T",
      "url": "https://www.instagram.com/valorfireplaces/p/DcMS9L3mk2T/",
      "date": "2026-08-18",
      "hour": "14:50",
@@ -1789,6 +2050,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Db_QHCFGnju",
      "url": "https://www.instagram.com/valorfireplaces/p/Db_QHCFGnju/",
      "date": "2026-08-13",
      "hour": "13:15",
@@ -1810,6 +2072,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Db3olyIGlwy",
      "url": "https://www.instagram.com/valorfireplaces/p/Db3olyIGlwy/",
      "date": "2026-08-10",
      "hour": "14:15",
@@ -1831,6 +2094,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbwCzArmp7P",
      "url": "https://www.instagram.com/valorfireplaces/p/DbwCzArmp7P/",
      "date": "2026-08-07",
      "hour": "15:30",
@@ -1852,6 +2116,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbeBOXjjXMt",
      "url": "https://www.instagram.com/valorfireplaces/p/DbeBOXjjXMt/",
      "date": "2026-07-31",
      "hour": "15:30",
@@ -1873,6 +2138,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbTk4zukSma",
      "url": "https://www.instagram.com/valorfireplaces/p/DbTk4zukSma/",
      "date": "2026-07-27",
      "hour": "14:10",
@@ -1894,6 +2160,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbGvybnjih2",
      "url": "https://www.instagram.com/valorfireplaces/reel/DbGvybnjih2/",
      "date": "2026-07-22",
      "hour": "14:40",
@@ -1915,6 +2182,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Da5s9ZyjESB",
      "url": "https://www.instagram.com/valorfireplaces/p/Da5s9ZyjESB/",
      "date": "2026-07-17",
      "hour": "13:00",
@@ -1936,6 +2204,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DayFdKhFLMa",
      "url": "https://www.instagram.com/valorfireplaces/p/DayFdKhFLMa/",
      "date": "2026-07-14",
      "hour": "14:00",
@@ -1997,6 +2266,7 @@ window.TRACKER_DATA = {
      "No people. No creators, no designers, no customers, and no replies to comments."
     ]
    },
+   "last_reading": "2026-10-13",
    "coverage_start": "2026-07-13"
   },
   {
@@ -2015,6 +2285,7 @@ window.TRACKER_DATA = {
    ],
    "posts": [
     {
+     "code": "DePgexZR7dk",
      "url": "https://www.instagram.com/napoleonfireplace/p/DePgexZR7dk/",
      "date": "2026-10-12",
      "hour": "15:00",
@@ -2036,6 +2307,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DePgPPdxUat",
      "url": "https://www.instagram.com/napoleonfireplace/p/DePgPPdxUat/",
      "date": "2026-10-10",
      "hour": "17:00",
@@ -2057,6 +2329,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DePq68bNIOb",
      "url": "https://www.instagram.com/napoleonfireplace/p/DePq68bNIOb/",
      "date": "2026-10-08",
      "hour": "15:20",
@@ -2078,6 +2351,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "DeM4YKCRJrf",
      "url": "https://www.instagram.com/nycfireplaces_outdoor_kitchens/reel/DeM4YKCRJrf/",
      "date": "2026-10-07",
      "hour": "13:30",
@@ -2099,6 +2373,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DeKXB04kXty",
      "url": "https://www.instagram.com/napoleonfireplace/p/DeKXB04kXty/",
      "date": "2026-10-06",
      "hour": "13:50",
@@ -2120,6 +2395,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dd_8RYOxhqX",
      "url": "https://www.instagram.com/napoleonfireplace/p/Dd_8RYOxhqX/",
      "date": "2026-10-02",
      "hour": "12:44",
@@ -2141,6 +2417,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dd7C6zQBWZr",
      "url": "https://www.instagram.com/napoleonfireplace/p/Dd7C6zQBWZr/",
      "date": "2026-09-30",
      "hour": "15:05",
@@ -2162,6 +2439,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dd1xLokRCyd",
      "url": "https://www.instagram.com/napoleonfireplace/reel/Dd1xLokRCyd/",
      "date": "2026-09-28",
      "hour": "14:04",
@@ -2183,6 +2461,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dd1hC7lRVuh",
      "url": "https://www.instagram.com/napoleonfireplace/reel/Dd1hC7lRVuh/",
      "date": "2026-09-28",
      "hour": "11:35",
@@ -2204,6 +2483,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "DdxAU2rj_q-",
      "url": "https://www.instagram.com/napoleonfireplace/p/DdxAU2rj_q-/",
      "date": "2026-09-26",
      "hour": "17:30",
@@ -2225,6 +2505,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdruRYUPRbo",
      "url": "https://www.instagram.com/napoleonfireplace/reel/DdruRYUPRbo/",
      "date": "2026-09-24",
      "hour": "16:17",
@@ -2246,6 +2527,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "DdmBxtZNMEC",
      "url": "https://www.instagram.com/cwilighting/reel/DdmBxtZNMEC/",
      "date": "2026-09-22",
      "hour": "11:12",
@@ -2267,6 +2549,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdjtSUexaiF",
      "url": "https://www.instagram.com/napoleonfireplace/p/DdjtSUexaiF/",
      "date": "2026-09-21",
      "hour": "13:34",
@@ -2288,6 +2571,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdcRcWFPQoj",
      "url": "https://www.instagram.com/napoleonfireplace/reel/DdcRcWFPQoj/",
      "date": "2026-09-18",
      "hour": "16:19",
@@ -2309,6 +2593,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "DdW7OluxEEU",
      "url": "https://www.instagram.com/napoleonfireplace/p/DdW7OluxEEU/",
      "date": "2026-09-16",
      "hour": "14:26",
@@ -2330,6 +2615,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdUcE2_OPO8",
      "url": "https://www.instagram.com/napoleonfireplace/p/DdUcE2_OPO8/",
      "date": "2026-09-15",
      "hour": "15:42",
@@ -2351,6 +2637,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdM5aPtvrbC",
      "url": "https://www.instagram.com/napoleonfireplace/p/DdM5aPtvrbC/",
      "date": "2026-09-12",
      "hour": "16:57",
@@ -2372,6 +2659,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdHpQKXPF0j",
      "url": "https://www.instagram.com/napoleonfireplace/reel/DdHpQKXPF0j/",
      "date": "2026-09-10",
      "hour": "16:01",
@@ -2393,6 +2681,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "DdFEVE9vN93",
      "url": "https://www.instagram.com/napoleonfireplace/p/DdFEVE9vN93/",
      "date": "2026-09-09",
      "hour": "15:59",
@@ -2414,6 +2703,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DdEv11Vh2UO",
      "url": "https://www.instagram.com/trulitegasproducts/reel/DdEv11Vh2UO/",
      "date": "2026-09-09",
      "hour": "13:00",
@@ -2435,6 +2725,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dc6P-x3xHGr",
      "url": "https://www.instagram.com/napoleonfireplace/p/Dc6P-x3xHGr/",
      "date": "2026-09-05",
      "hour": "11:09",
@@ -2456,6 +2747,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dc1eBedBqxR",
      "url": "https://www.instagram.com/napoleonfireplace/p/Dc1eBedBqxR/",
      "date": "2026-09-03",
      "hour": "14:36",
@@ -2477,6 +2769,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dcwi3i0P8Qh",
      "url": "https://www.instagram.com/napoleonfireplace/reel/Dcwi3i0P8Qh/",
      "date": "2026-09-01",
      "hour": "16:43",
@@ -2498,6 +2791,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "Dco2YjovqZx",
      "url": "https://www.instagram.com/napoleonfireplace/p/Dco2YjovqZx/",
      "date": "2026-08-29",
      "hour": "16:58",
@@ -2519,6 +2813,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dcjil6ivkY1",
      "url": "https://www.instagram.com/napoleonfireplace/p/Dcjil6ivkY1/",
      "date": "2026-08-27",
      "hour": "15:30",
@@ -2540,6 +2835,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "DcbRXOaxqeW",
      "url": "https://www.instagram.com/napoleonfireplace/reel/DcbRXOaxqeW/",
      "date": "2026-08-24",
      "hour": "10:25",
@@ -2561,6 +2857,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DcYzn-aRJAJ",
      "url": "https://www.instagram.com/napoleonfireplace/p/DcYzn-aRJAJ/",
      "date": "2026-08-23",
      "hour": "11:27",
@@ -2582,6 +2879,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "DcTryLRxEqT",
      "url": "https://www.instagram.com/napoleonfireplace/reel/DcTryLRxEqT/",
      "date": "2026-08-21",
      "hour": "11:43",
@@ -2603,6 +2901,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DcOtTTUR6WI",
      "url": "https://www.instagram.com/napoleonfireplace/p/DcOtTTUR6WI/",
      "date": "2026-08-19",
      "hour": "13:19",
@@ -2624,6 +2923,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DcOMk37REiW",
      "url": "https://www.instagram.com/michelleberwickdesign_/reel/DcOMk37REiW/",
      "date": "2026-08-19",
      "hour": "08:34",
@@ -2645,6 +2945,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DcMSrRZRH0R",
      "url": "https://www.instagram.com/napoleonfireplace/reel/DcMSrRZRH0R/",
      "date": "2026-08-18",
      "hour": "14:48",
@@ -2666,6 +2967,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Db_waItPekB",
      "url": "https://www.instagram.com/napoleonfireplace/reel/Db_waItPekB/",
      "date": "2026-08-13",
      "hour": "17:58",
@@ -2687,6 +2989,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "Db6cV2sPl9K",
      "url": "https://www.instagram.com/napoleonfireplace/reel/Db6cV2sPl9K/",
      "date": "2026-08-11",
      "hour": "16:26",
@@ -2708,6 +3011,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dbyn_GAvDxi",
      "url": "https://www.instagram.com/napoleonfireplace/reel/Dbyn_GAvDxi/",
      "date": "2026-08-08",
      "hour": "15:34",
@@ -2729,6 +3033,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dbtau6DD2zB",
      "url": "https://www.instagram.com/houseandhomemag/reel/Dbtau6DD2zB/",
      "date": "2026-08-06",
      "hour": "15:02",
@@ -2750,6 +3055,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Dbq2vmGxYII",
      "url": "https://www.instagram.com/napoleonfireplace/p/Dbq2vmGxYII/",
      "date": "2026-08-05",
      "hour": "15:09",
@@ -2771,6 +3077,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DboPPiWR1W3",
      "url": "https://www.instagram.com/napoleonfireplace/p/DboPPiWR1W3/",
      "date": "2026-08-04",
      "hour": "14:45",
@@ -2792,6 +3099,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "Dblq3ZgRqLm",
      "url": "https://www.instagram.com/napoleonfireplace/p/Dblq3ZgRqLm/",
      "date": "2026-08-03",
      "hour": "14:49",
@@ -2813,6 +3121,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbjRuJOhADc",
      "url": "https://www.instagram.com/napoleonfireplace/reel/DbjRuJOhADc/",
      "date": "2026-08-02",
      "hour": "16:30",
@@ -2834,6 +3143,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "DbgDvGVB7aV",
      "url": "https://www.instagram.com/napoleonfireplace/reel/DbgDvGVB7aV/",
      "date": "2026-08-01",
      "hour": "10:30",
@@ -2855,6 +3165,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbdkfJTRcez",
      "url": "https://www.instagram.com/napoleonfireplace/p/DbdkfJTRcez/",
      "date": "2026-07-31",
      "hour": "11:20",
@@ -2876,6 +3187,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "Dba1j_yxuYE",
      "url": "https://www.instagram.com/napoleonfireplace/p/Dba1j_yxuYE/",
      "date": "2026-07-30",
      "hour": "09:51",
@@ -2897,6 +3209,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbWY308PbZt",
      "url": "https://www.instagram.com/napoleonfireplace/p/DbWY308PbZt/",
      "date": "2026-07-28",
      "hour": "16:23",
@@ -2918,6 +3231,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbW73-SI6lm",
      "url": "https://www.instagram.com/uintahfireplace/reel/DbW73-SI6lm/",
      "date": "2026-07-28",
      "hour": "21:47",
@@ -2939,6 +3253,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbOHQ9MBekV",
      "url": "https://www.instagram.com/napoleonfireplace/reel/DbOHQ9MBekV/",
      "date": "2026-07-25",
      "hour": "11:15",
@@ -2960,6 +3275,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "DbL6FZbxF4l",
      "url": "https://www.instagram.com/napoleonfireplace/reel/DbL6FZbxF4l/",
      "date": "2026-07-24",
      "hour": "14:42",
@@ -2981,6 +3297,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "DbENZ5hxNrU",
      "url": "https://www.instagram.com/napoleonfireplace/p/DbENZ5hxNrU/",
      "date": "2026-07-21",
      "hour": "14:56",
@@ -3002,6 +3319,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Da-mimNR37-",
      "url": "https://www.instagram.com/napoleonfireplace/p/Da-mimNR37-/",
      "date": "2026-07-19",
      "hour": "10:41",
@@ -3023,6 +3341,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Da5wf6hkggA",
      "url": "https://www.instagram.com/houseandhomemag/reel/Da5wf6hkggA/",
      "date": "2026-07-17",
      "hour": "13:32",
@@ -3044,6 +3363,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Da6GsR3Pl-4",
      "url": "https://www.instagram.com/napoleonfireplace/p/Da6GsR3Pl-4/",
      "date": "2026-07-17",
      "hour": "16:46",
@@ -3065,6 +3385,7 @@ window.TRACKER_DATA = {
      "paid": false
     },
     {
+     "code": "Da3S1MrR4I4",
      "url": "https://www.instagram.com/napoleonfireplace/p/Da3S1MrR4I4/",
      "date": "2026-07-16",
      "hour": "14:34",
@@ -3086,6 +3407,7 @@ window.TRACKER_DATA = {
      "paid": true
     },
     {
+     "code": "DayBTViCKGC",
      "url": "https://www.instagram.com/houseandhomemag/reel/DayBTViCKGC/",
      "date": "2026-07-14",
      "hour": "13:25",
@@ -3149,6 +3471,7 @@ window.TRACKER_DATA = {
      "The reach depends on budget. If the programme stops, the numbers go with it."
     ]
    },
+   "last_reading": "2026-10-13",
    "coverage_start": "2026-07-13"
   }
  ]
