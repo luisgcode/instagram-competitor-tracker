@@ -123,6 +123,17 @@ a{color:var(--accent)}
 .key{margin:0;padding:14px 16px;border-top:1px solid var(--line);background:var(--head);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 26px}
 .key dt{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);font-weight:600;margin-bottom:3px}
 .key dd{margin:0;font-size:12.5px;color:var(--muted)}
+.toprow{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(230px,1fr);gap:14px;overflow-x:auto;padding-bottom:6px;margin-top:6px}
+.topcard{border:1px solid var(--line);border-radius:6px;background:var(--surface);display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.tophead{display:flex;align-items:baseline;gap:10px;padding:10px 12px;background:var(--head);border-bottom:1px solid var(--line)}
+.rank{font-size:20px;font-weight:700;color:var(--accent);line-height:1}
+.tm{display:flex;gap:14px;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tm b{display:block;font-size:15px;color:var(--ink);font-weight:650}
+.tm b.hi{color:var(--accent)}
+.topmeta{padding:8px 12px;overflow:hidden;font-size:12.5px;color:var(--ink2);display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.topembed{height:460px;overflow:hidden;background:var(--head)}
+.topembed iframe{display:block;width:100%;height:560px;border:0}
+.topembed .fallback{display:block;padding:16px 12px;color:var(--muted);font-size:13px}
 .credit-tab{position:fixed;bottom:0;left:50%;transform:translateX(-50%);background:var(--dark);color:rgba(255,255,255,.55);font-family:"Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:6px 20px;border-radius:6px 6px 0 0;white-space:nowrap;z-index:50;pointer-events:none}
 .credit-tab strong{color:var(--accent);font-weight:700}
 @media (max-width:900px){ .tiles{grid-template-columns:repeat(2,minmax(0,1fr))} .two,.stats,.an,.lists,.key{grid-template-columns:minmax(0,1fr)} .blind{grid-template-columns:repeat(2,minmax(0,1fr))} .apphead{padding:8px 16px} }
@@ -168,6 +179,16 @@ a{color:var(--accent)}
         <div><dt>Typical Reel views</dt><dd>The middle Reel of the period: half of their Reels got more views, half got less. It is not thrown off by one viral post the way an average is.</dd></div>
         <div><dt>Views compared to followers</dt><dd>Typical Reel views divided by followers. 1.0x means a typical Reel is seen about as many times as the account has followers. Above 1.0x the Reels travel beyond their own audience, below it they do not even reach it.</dd></div>
       </dl></div>
+  </section>
+
+  <section class="panel">
+    <div class="phead"><div><h2 id="toptitle">Top performing posts</h2><p class="sub" id="topsub"></p></div>
+      <div class="seg" id="topper"></div></div>
+    <div class="pbody">
+      <div><h3>Based on views</h3><div class="toprow" id="topviews"></div></div>
+      <div><h3>Based on comments</h3><div class="toprow" id="topcom"></div></div>
+      <p class="sub">Views count only for Reels, Instagram does not show them on photos or carousels. Likes and shares are hidden on every account, so comments are the public measure of reaction.</p>
+    </div>
   </section>
 
   <div class="two">
@@ -389,11 +410,31 @@ function posts(s){
   rows.map(p=>`<tr><td class="l">${dfmt(dt(p.date))}</td><td class="l">${esc(p.format)}</td><td class="l"><span class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></td><td class="cap"><b style="color:var(--ink);font-weight:650">${esc(cap(p.topic))}.</b> ${esc(p.caption)}…</td><td>${nf(p.views)}</td><td>${p.comments==null?'n/a':p.comments}</td><td class="l"><a href="${esc(p.url)}" target="_blank" rel="noopener">Open</a></td></tr>`).join('');
 }
 
+let TP='30';
+const code=u=>(String(u).match(/\/(?:p|reel|tv)\/([A-Za-z0-9_-]+)/)||[])[1];
+function top(s){
+  const a=s.a,yr=new Date(END.getFullYear(),0,1),cov=dt(a.coverage_start||D.scope_start);
+  const from=TP==='ytd'?yr:new Date(END-(+TP)*DAY),ps=a.posts.filter(p=>dt(p.date)>=from&&dt(p.date)<=END);
+  $('topper').innerHTML='';
+  [['ytd','YTD'],['90','90 days'],['30','30 days']].forEach(([k,l])=>{const b=document.createElement('button');b.type='button';b.textContent=l;b.setAttribute('aria-pressed',TP===k);b.onclick=()=>{TP=k;top(s)};$('topper').appendChild(b)});
+  $('toptitle').textContent=(a.us?'Our':a.name)+' top performing posts';
+  $('topsub').textContent=`${ps.length} posts from ${dfmt(from>cov?from:cov)} to ${dfmt(END)}`+(from<cov?`. Readings for this account start on ${dfmt(cov)}, earlier posts are not loaded yet`:'');
+  const card=(p,i,hi)=>`<article class="topcard"><div class="tophead"><span class="rank">${i+1}</span>
+    <div class="tm"><span>Views<b class="${hi==='v'?'hi':''}">${p.views==null?'n/a':nf(p.views)}</b></span><span>Comments<b class="${hi==='c'?'hi':''}">${p.comments==null?'n/a':p.comments}</b></span></div><a href="${esc(p.url)}" target="_blank" rel="noopener" style="margin-left:auto;font-size:12px">Open</a></div>
+    <div class="topmeta"><span>${dfmt(dt(p.date))} · ${esc(p.format)}</span><span class="tag ${p.collab?'collab':'own'}">${p.collab?'@'+esc(p.owner):p.paid?'Own, paid':'Own'}</span></div>
+    <div class="topembed">${code(p.url)?`<iframe src="https://www.instagram.com/p/${code(p.url)}/embed/" loading="lazy" scrolling="no" title="${esc(cap(p.topic))}"></iframe>`:`<a class="fallback" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(cap(p.topic))}</a>`}</div></article>`;
+  const row=(id,list,hi)=>{$(id).innerHTML=list.length?list.map((p,i)=>card(p,i,hi)).join(''):'<p class="empty">No posts in this period.</p>'};
+  row('topviews',ps.filter(p=>p.views!=null).sort((x,y)=>y.views-x.views).slice(0,5),'v');
+  row('topcom',ps.filter(p=>p.comments!=null).sort((x,y)=>y.comments-x.comments||(y.views||0)-(x.views||0)).slice(0,5),'c');
+}
+
+let lastTop='';
 function draw(){
   controls();
   const S=ready.map(stat),s=S.find(x=>x.a.handle===focus);
   if(!s){$('tiles').innerHTML='<p class="empty">No readings loaded yet.</p>';return}
   tiles(s,S.filter(x=>x!==s));board(S);rhythm(s);views(s);heat(s);watched(s);stats(s);analysis(s);posts(s);
+  if(lastTop!==focus){lastTop=focus;top(s)}
   const ln=$('likesnote');ln.hidden=!S.every(x=>x.likesHidden);ln.textContent='Likes are missing from this dashboard on purpose: every account read hides its like counts, so reaction is measured with views and comments.';
 }
 $('asof').innerHTML=`Last reading: <b>${END.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})}</b> · Posts since <b>${dfmt(START)}</b> · <b>${ready.length} of ${D.accounts.length}</b> accounts read`;

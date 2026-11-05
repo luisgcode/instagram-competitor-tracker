@@ -44,6 +44,7 @@ window.TRACKER_DATA = {
      "followers": 19413,
      "following": 555,
      "posts_total": 1413,
+     "scope_from": "2026-07-13",
      "date": "2026-10-13"
     }
    ],
@@ -470,7 +471,8 @@ window.TRACKER_DATA = {
      "Answer comments. No account of the five does it on its own posts, so it is an open lane.",
      "Give every post a next step: where to buy, find a dealer, see it at a showroom."
     ]
-   }
+   },
+   "coverage_start": "2026-07-13"
   },
   {
    "handle": "davincifire",
@@ -482,6 +484,7 @@ window.TRACKER_DATA = {
      "followers": 3122,
      "following": 448,
      "posts_total": 739,
+     "scope_from": "2026-07-13",
      "date": "2026-10-13"
     }
    ],
@@ -862,7 +865,8 @@ window.TRACKER_DATA = {
      "No homeowner content at all: no real homes, no designers, no before and after.",
      "No consistent look. A recognisable template would stand out next to them."
     ]
-   }
+   },
+   "coverage_start": "2026-07-13"
   },
   {
    "handle": "modernflamesusa",
@@ -874,6 +878,7 @@ window.TRACKER_DATA = {
      "followers": 2523,
      "following": 385,
      "posts_total": 210,
+     "scope_from": "2026-07-13",
      "date": "2026-10-13"
     }
    ],
@@ -1065,7 +1070,8 @@ window.TRACKER_DATA = {
      "No voice of their own. Nothing explains the product, the technology or how to choose.",
      "Replies are emoji only. Real answers to real questions would stand out."
     ]
-   }
+   },
+   "coverage_start": "2026-07-13"
   },
   {
    "handle": "valorfireplaces",
@@ -1077,6 +1083,7 @@ window.TRACKER_DATA = {
      "followers": 4307,
      "following": 1306,
      "posts_total": 1077,
+     "scope_from": "2026-07-13",
      "date": "2026-10-13"
     }
    ],
@@ -1625,7 +1632,8 @@ window.TRACKER_DATA = {
      "Photos with long captions get no reaction: zero to two comments per post.",
      "No people. No creators, no designers, no customers, and no replies to comments."
     ]
-   }
+   },
+   "coverage_start": "2026-07-13"
   },
   {
    "handle": "napoleonfireplace",
@@ -1637,6 +1645,7 @@ window.TRACKER_DATA = {
      "followers": 16303,
      "following": 550,
      "posts_total": 2291,
+     "scope_from": "2026-07-13",
      "date": "2026-10-13"
     }
    ],
@@ -2775,7 +2784,8 @@ window.TRACKER_DATA = {
      "Many interiors look rendered. Real homes and real installs would feel more honest next to them.",
      "The reach depends on budget. If the programme stops, the numbers go with it."
     ]
-   }
+   },
+   "coverage_start": "2026-07-13"
   }
  ]
 };

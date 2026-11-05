@@ -36,6 +36,9 @@ def parse(path):
     txt = io.open(path, encoding="utf-8").read()
     m = re.search(r"([\d,]+)\s+followers\s*\|\s*([\d,]+)\s+following\s*\|\s*([\d,]+)\s+posts", txt)
     profile = {"followers": num(m.group(1)), "following": num(m.group(2)), "posts_total": num(m.group(3))} if m else {}
+    sc = re.search(r"Scope: posts from (\d{4}-\d{2}-\d{2})", txt)
+    if sc:
+        profile["scope_from"] = sc.group(1)
     posts = []
     block = re.search(r"```\n(.*?)```", txt, re.S)
     for line in (block.group(1).splitlines() if block else []):
@@ -72,6 +75,7 @@ def main():
                 p["paid"] = p["partners"].lower().startswith("paid partnership")
                 by_url[p["url"]] = p
             last = max(last or day, day)
+        a["coverage_start"] = min([r["scope_from"] for r in a["readings"] if r.get("scope_from")] or [SCOPE_START])
         a["posts"] = sorted(by_url.values(), key=lambda p: p["date"], reverse=True)
         out.append(a)
     data = {"scope_start": SCOPE_START, "last_reading": last, "overall": analysis.get("_overall"), "accounts": out}
